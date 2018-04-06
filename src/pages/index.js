@@ -5,29 +5,21 @@ import styles from "./index.module.css";
 
 import FrontpageHeader from "../components/Frontpage-header";
 import FrontpageLanding from "../components/Frontpage-landing";
+import FrontpageCta from "../components/Frontpage-cta";
+import FrontpageSpeakers from "../components/Frontpage-speakers";
+import FrontpageCasestudies from "../components/Frontpage-casestudies";
+import FrontpageDebat from "../components/Frontpage-debat";
+import FrontpageLocation from "../components/Frontpage-location";
 
 const IndexPage = () => (
   <div>
     <FrontpageHeader />
     <FrontpageLanding />
-    <section>
-      {/* sprekers */}
-
-    </section>
-    <section>
-      <div className="movingHeader"></div>
-      {/* casestudies */}
-
-    </section>
-    <section>
-      <div className="movingHeader"></div>
-      {/* debat */}
-
-    </section>
-    <section>
-      <div>  {/* gmaps */} </div>
-      <div>  {/* foto? */} </div>
-    </section>
+    <FrontpageCta />
+    <FrontpageSpeakers />
+    <FrontpageCasestudies />
+    <FrontpageDebat />
+    <FrontpageLocation />
   </div>
 )
 
