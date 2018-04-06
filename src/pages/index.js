@@ -17,12 +17,12 @@ const IndexPage = () => (
 
     </section>
     <section>
-      <div class="movingHeader"></div>
+      <div className="movingHeader"></div>
       {/* casestudies */}
 
     </section>
     <section>
-      <div class="movingHeader"></div>
+      <div className="movingHeader"></div>
       {/* debat */}
 
     </section>

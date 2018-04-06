@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "Fedra Serif A Book";
+	src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000003-88dde5149a3a46af6819063a9260c1ac.eot");
+	src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000003-88dde5149a3a46af6819063a9260c1ac.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000003-88dde5149a3a46af6819063a9260c1ac.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000003-88dde5149a3a46af6819063a9260c1ac.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000003-88dde5149a3a46af6819063a9260c1ac.svg#typotheque_webfonts_service") format("svg");
+}
+
+@font-face {
+	font-family: "Fedra Mono Medium";
+	src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.eot");
+	src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.svg#typotheque_webfonts_service") format("svg");
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Fedra Serif A Book";
+	color: rgb(102,102,102);
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+	font-size: 1rem;
+}
