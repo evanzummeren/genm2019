@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+}
+
+.block {
+  padding: 1rem;
+}
+
+.title {
+}
+
+.subtitle {
+  color: rgb(255, 253, 84);
+}
+
+.text {
+  
+}
