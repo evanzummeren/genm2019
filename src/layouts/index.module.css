@@ -1,0 +1,10 @@
+.main {
+  background: rgb(206,189,168);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.body {
+  margin: 0 auto;
+  padding: 0 1.0875rem 1.45rem;
+}

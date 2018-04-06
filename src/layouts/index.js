@@ -2,18 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
+{/* Global CSS */}
 import './index.css'
 import './typography.css'
 
+{/* Modular CSS */}
+import styles from "./index.module.css";
+
 const TemplateWrapper = ({ children }) => (
-  <div
-    style={{
-      background: 'rgb(206,189,168)',
-      minHeight: '100vh',
-      minWidth: '100vw'
-    }}
-  >
+  <main className={styles.main} >
     <Helmet
       title="Gatsby Default Starter"
       meta={[
@@ -21,18 +18,11 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    <img className={styles.backgroundImg}></img>
+    <div className={styles.body}>
       {children()}
     </div>
-  </div>
+  </main>
 )
 
 TemplateWrapper.propTypes = {

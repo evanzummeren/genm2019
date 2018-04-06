@@ -12,10 +12,10 @@
 
 h1, h2, h3, h4, h5, h6 {
 	color: rgb(102,102,102);
-	font-family: "Fedra Serif A Book";
+	font-family: "Fedra Mono Medium";
 }
 
 p, li {
 	color: white;
-	font-family: "Fedra Mono Medium";
+	font-family: "Fedra Serif A Book";
 }

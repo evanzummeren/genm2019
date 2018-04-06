@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import styles from "./header.module.css";
+import styles from "./index.module.css";
 import logo from "./logo.svg";
 
-const Header = () => (
+const FrontpageHeader = () => (
   <div className={styles.header}>
     <img src={logo} className={styles.logo}></img>
     <div className={styles.nav}>
@@ -16,4 +16,4 @@ const Header = () => (
   </div>
 )
 
-export default Header
+export default FrontpageHeader
