@@ -15,7 +15,7 @@ const Speaker = () => (
       </p>
     </div>
     <div>
-      <img src={keith}></img>
+      <img src={keith} className={styles.image}></img>
     </div>
   </div>
 )

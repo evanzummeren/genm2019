@@ -7,12 +7,19 @@
 }
 
 .title {
+  width: 20rem;
 }
 
 .subtitle {
+  width: 20rem;
   color: rgb(255, 253, 84);
 }
 
 .text {
-  
+  width: 20rem;
+}
+
+.image {
+  height: 100%;
+  margin: 0;
 }
