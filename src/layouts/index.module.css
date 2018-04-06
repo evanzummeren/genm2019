@@ -2,9 +2,23 @@
   background: rgb(206,189,168);
   min-height: 100vh;
   min-width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .body {
   margin: 0 auto;
   padding: 0 1.0875rem 1.45rem;
+}
+
+.backgroundImg {
+  position: absolute;
+  left: -50vw;
+  top: -20vh;
+}
+
+.backgroundImgTwo {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
 }

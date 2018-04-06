@@ -9,6 +9,8 @@ import './typography.css'
 {/* Modular CSS */}
 import styles from "./index.module.css";
 
+import backgroundImg from "./dotgrid.svg";
+
 const TemplateWrapper = ({ children }) => (
   <main className={styles.main} >
     <Helmet
@@ -18,7 +20,8 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <img className={styles.backgroundImg}></img>
+    <img src={backgroundImg} className={styles.backgroundImg}></img>
+    <img src={backgroundImg} className={styles.backgroundImgTwo}></img>
     <div className={styles.body}>
       {children()}
     </div>
