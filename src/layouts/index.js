@@ -6,7 +6,13 @@ import Header from '../components/Header'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div
+    style={{
+      background: 'rgb(206,189,168)',
+      minHeight: '100vh',
+      minWidth: '100vw'
+    }}
+  >
     <Helmet
       title="Gatsby Default Starter"
       meta={[
