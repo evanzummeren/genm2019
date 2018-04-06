@@ -15,11 +15,11 @@ const IndexPage = () => (
   <div>
     <FrontpageHeader />
     <FrontpageLanding />
-    <FrontpageCta />
     <FrontpageSpeakers />
     <FrontpageCasestudies />
     <FrontpageDebat />
     <FrontpageLocation />
+    <FrontpageCta />
   </div>
 )
 
