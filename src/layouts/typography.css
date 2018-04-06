@@ -11,18 +11,11 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Fedra Serif A Book";
 	color: rgb(102,102,102);
+	font-family: "Fedra Serif A Book";
 }
 
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-	font-size: 1rem;
+p, li {
+	color: white;
+	font-family: "Fedra Mono Medium";
 }
