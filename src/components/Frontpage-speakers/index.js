@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 import styles from "./index.module.css";
 
@@ -9,7 +8,7 @@ const FrontpageSpeakers = () => (
   <section>
     <Speaker />
     <Speaker />
-    <Speaker />
+    <Speaker inverseImg />
   </section>
 )
 
