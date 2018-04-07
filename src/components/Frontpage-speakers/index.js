@@ -12,13 +12,13 @@ const SpeakerImg = () => (
 
 const Speaker = (props) => (
   <div className={styles.container}>
-    { props.speaker.inverseImg && <SpeakerImg />}
+    { props.speaker.node.frontmatter.inverseImg && <SpeakerImg />}
     <div className={styles.block}>
       <h1 className={styles.title}>{props.speaker.node.frontmatter.name}</h1>
       <h2 className={styles.subtitle}>{props.speaker.node.frontmatter.function}</h2>
       <div className={styles.text} dangerouslySetInnerHTML={{__html: props.speaker.node.html}}></div>
     </div>
-    { !props.speaker.inverseImg && <SpeakerImg />}
+    { !props.speaker.node.frontmatter.inverseImg && <SpeakerImg />}
   </div>
 )
 
