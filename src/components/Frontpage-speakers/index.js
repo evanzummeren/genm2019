@@ -10,7 +10,6 @@ const SpeakerImg = (props) => {
 }
 
 const Speaker = (props) => {
-  // console.log(props.speaker)
   return (<div className={styles.container}>
     { props.speaker.node.frontmatter.inverseImg && <SpeakerImg img={props.speaker.node.frontmatter.featuredImage}/>}
     <div className={styles.block}>
