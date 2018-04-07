@@ -12,11 +12,10 @@ import FrontpageDebat from "../components/Frontpage-debat";
 import FrontpageLocation from "../components/Frontpage-location";
 
 const IndexPage = ({data}) => {
-  console.log(props.data)
   return (<div>
       <FrontpageHeader />
       <FrontpageLanding />
-      <FrontpageSpeakers speakers={props.data.speakers.edges}/>
+      <FrontpageSpeakers speakers={data.speakers.edges}/>
       <FrontpageCasestudies />
       <FrontpageDebat />
       <FrontpageLocation />
@@ -28,24 +27,22 @@ export default IndexPage
 
 export const query = graphql`
   query speakers {
-    speakers: allMarkdownRemark (
-          filter: {id: {regex: "//home/speakers//"}}
-    ){
+    speakers: allMarkdownRemark(filter: {id: {regex: "//home/speakers//"}}) {
       edges {
         node {
           id
           frontmatter {
             name
             function
-            image {
-              childImageSharp {
-                responsiveSizes(maxWidth: 400) {
-                  src
-                  srcSet
-                  sizes
+            featuredImage {
+                childImageSharp {
+                  responsiveSizes(maxWidth: 400) {
+                    src
+                    srcSet
+                    sizes
+                  }
                 }
               }
-            }
             inverseImg
           }
           html
