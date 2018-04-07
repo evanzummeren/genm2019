@@ -12,10 +12,11 @@ import FrontpageDebat from "../components/Frontpage-debat";
 import FrontpageLocation from "../components/Frontpage-location";
 
 const IndexPage = ({data}) => {
+  console.log(props.data)
   return (<div>
       <FrontpageHeader />
       <FrontpageLanding />
-      <FrontpageSpeakers speakers={data.speakers.edges}/>
+      <FrontpageSpeakers speakers={props.data.speakers.edges}/>
       <FrontpageCasestudies />
       <FrontpageDebat />
       <FrontpageLocation />
@@ -36,7 +37,15 @@ export const query = graphql`
           frontmatter {
             name
             function
-            image
+            image {
+              childImageSharp {
+                responsiveSizes(maxWidth: 400) {
+                  src
+                  srcSet
+                  sizes
+                }
+              }
+            }
             inverseImg
           }
           html
