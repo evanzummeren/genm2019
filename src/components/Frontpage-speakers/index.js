@@ -1,7 +1,7 @@
 import React from 'react'
+import Img from "gatsby-image";
 
 import styles from './index.module.css';
-
 import keith from './keith.png';
 
 const SpeakerImg = () => (
@@ -23,7 +23,6 @@ const Speaker = (props) => (
 )
 
 const FrontpageSpeakers = (props) => {
-  console.log(props.speakers)
   return <section>
     { props.speakers.map((speaker, key) => {
       return <Speaker speaker={speaker} key={key}/>;
