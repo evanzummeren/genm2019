@@ -4,7 +4,6 @@ import Img from "gatsby-image";
 import styles from './index.module.css';
 
 const SpeakerImg = (props) => {
-  console.log(props.img)
   return (<div>
     <Img
       resolutions={props.img.childImageSharp.resolutions}
