@@ -1,14 +1,15 @@
 import React from 'react'
 
-import styles from "./index.module.css";
+import styles from './index.module.css';
 
-import Speaker from "./Speaker.js"
+import Speaker from './Speaker.js'
+import speakers from './speakers.yaml';
 
 const FrontpageSpeakers = () => (
   <section>
-    <Speaker />
-    <Speaker />
-    <Speaker inverseImg />
+    { speakers.map((speaker, key) => {
+      return <Speaker speaker={speaker} key={key}/>;
+    })}
   </section>
 )
 
