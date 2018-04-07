@@ -4,20 +4,24 @@ import Img from "gatsby-image";
 import styles from './index.module.css';
 
 const SpeakerImg = (props) => {
+  console.log(props.img)
   return (<div>
-    <img src={props.img.childImageSharp.responsiveSizes.src} className={styles.image}></img>
+    <Img
+      resolutions={props.img.childImageSharp.resolutions}
+    />
   </div>);
 }
 
 const Speaker = (props) => {
+  const speakerData = props.speaker.node;
   return (<div className={styles.container}>
-    { props.speaker.node.frontmatter.inverseImg && <SpeakerImg img={props.speaker.node.frontmatter.featuredImage}/>}
+    { props.speaker.node.frontmatter.inverseImg && <SpeakerImg img={speakerData.frontmatter.featuredImage}/>}
     <div className={styles.block}>
-      <h1 className={styles.title}>{props.speaker.node.frontmatter.name}</h1>
-      <h2 className={styles.subtitle}>{props.speaker.node.frontmatter.function}</h2>
-      <div className={styles.text} dangerouslySetInnerHTML={{__html: props.speaker.node.html}}></div>
+      <h1 className={styles.title}>{speakerData.frontmatter.name}</h1>
+      <h2 className={styles.subtitle}>{speakerData.frontmatter.function}</h2>
+      <div className={styles.text} dangerouslySetInnerHTML={{__html: speakerData.html}}></div>
     </div>
-    { !props.speaker.node.frontmatter.inverseImg && <SpeakerImg img={props.speaker.node.frontmatter.featuredImage}/>}
+    { !props.speaker.node.frontmatter.inverseImg && <SpeakerImg img={speakerData.frontmatter.featuredImage}/>}
   </div>);
 }
 
