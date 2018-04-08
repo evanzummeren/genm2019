@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 
 import FrontpageHeader from "../components/Frontpage-header";
 import FrontpageLanding from "../components/Frontpage-landing";
-import FrontpageCta from "../components/Frontpage-cta";
+import Dialog from "../components/dialog";
 import FrontpageSpeakers from "../components/Frontpage-speakers";
 import FrontpageCasestudies from "../components/Frontpage-casestudies";
 import FrontpageDebat from "../components/Frontpage-debat";
@@ -19,7 +19,7 @@ const IndexPage = ({data}) => {
       <FrontpageCasestudies />
       <FrontpageDebat />
       <FrontpageLocation />
-      <FrontpageCta />
+      <Dialog>Tot 15 mei vroegboekkorting. Regulier - E135. Freelancers - E82,50. Studenten - E20</Dialog>
     </div>);
 };
 

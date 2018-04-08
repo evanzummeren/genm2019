@@ -1,0 +1,14 @@
+.container {
+  background: rgba(102,102,102,0.5);
+  border-radius: 2rem;
+  position: fixed;
+  left: 5vw;
+  bottom: 5rem;
+  padding: 1rem;
+  width: 90vw;
+}
+
+.text {
+  color: white;
+  margin: 0;
+}
