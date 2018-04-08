@@ -14,7 +14,7 @@ import backgroundImg from "./dotgrid.svg";
 const TemplateWrapper = ({ children }) => (
   <main className={styles.main} >
     <Helmet
-      title="Gatsby Default Starter"
+      title="Expertisedag Nieuw Media 2018"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
