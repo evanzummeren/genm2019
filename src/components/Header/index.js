@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styles from "./index.module.css";
 import logo from "./logo.svg";
 
-const FrontpageHeader = () => (
+const Header = () => (
   <div className={styles.header}>
     <img src={logo} className={styles.logo}></img>
     <div className={styles.nav}>
@@ -16,4 +16,4 @@ const FrontpageHeader = () => (
   </div>
 )
 
-export default FrontpageHeader
+export default Header
