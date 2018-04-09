@@ -36,8 +36,8 @@ const IndexPage = ({data}) => {
 
       {/* Viewpoints */}
       <section>
-        { data.caseStudies.edges.map((caseStudy, key) => {
-          return <Card caseStudy={caseStudy} key={key}/>;
+        { data.viewpoints.edges.map((viewpoint, key) => {
+          return <Card caseStudy={viewpoint} key={key}/>;
         })}
       </section>
 
@@ -71,6 +71,26 @@ export const query = graphql`
       }
     }
     caseStudies: allMarkdownRemark(filter: {id: {regex: "//home/casestudies//"}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+            function
+            featuredImage {
+                childImageSharp {
+                  resolutions(width: 400) {
+                    ...GatsbyImageSharpResolutions
+                  }
+                }
+              }
+            inverseImg
+          }
+          html
+        }
+      }
+    }
+    viewpoints: allMarkdownRemark(filter: {id: {regex: "//home/viewpoints//"}}) {
       edges {
         node {
           id
