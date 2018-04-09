@@ -81,7 +81,7 @@ export const query = graphql`
             function
             featuredImage {
                 childImageSharp {
-                  resolutions(width: 400) {
+                  resolutions(width: 800) {
                     ...GatsbyImageSharpResolutions
                   }
                 }
@@ -101,7 +101,7 @@ export const query = graphql`
             function
             featuredImage {
                 childImageSharp {
-                  resolutions(width: 400) {
+                  resolutions(width: 800) {
                     ...GatsbyImageSharpResolutions
                   }
                 }
@@ -121,7 +121,7 @@ export const query = graphql`
             function
             featuredImage {
                 childImageSharp {
-                  resolutions(width: 400) {
+                  resolutions(width: 800) {
                     ...GatsbyImageSharpResolutions
                   }
                 }
