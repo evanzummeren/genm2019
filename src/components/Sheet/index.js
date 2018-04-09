@@ -11,7 +11,7 @@ const SpeakerImg = (props) => {
   </div>);
 }
 
-const Speaker = (props) => {
+const Sheet = (props) => {
   const speakerData = props.speaker.node;
   return (<div className={styles.container}>
     { props.speaker.node.frontmatter.inverseImg && <SpeakerImg img={speakerData.frontmatter.featuredImage}/>}
@@ -24,11 +24,4 @@ const Speaker = (props) => {
   </div>);
 }
 
-const FrontpageSpeakers = (props) => {
-  return <section>
-    { props.speakers.map((speaker, key) => {
-      return <Speaker speaker={speaker} key={key}/>;
-    })}
-  </section>}
-
-export default FrontpageSpeakers
+export default Sheet

@@ -6,11 +6,11 @@ import styles from "./index.module.css";
 // components
 import Dialog from "../components/Dialog";
 import Card from "../components/Card";
+import Sheet from "../components/Sheet";
 
 // blocks pretending to be components
 import FrontpageHeader from "../components/Frontpage-header";
 import FrontpageLanding from "../components/Frontpage-landing";
-import FrontpageSpeakers from "../components/Frontpage-speakers";
 import FrontpageDebat from "../components/Frontpage-debat";
 import FrontpageLocation from "../components/Frontpage-location";
 
@@ -19,9 +19,28 @@ const IndexPage = ({data}) => {
   return (<div>
       <FrontpageHeader />
       <FrontpageLanding />
-      <FrontpageSpeakers speakers={data.speakers.edges}/>
-      <Card />
-      <FrontpageDebat />
+
+      {/* Speakers */}
+      <section>
+        { data.speakers.edges.map((speaker, key) => {
+          return <Sheet speaker={speaker} key={key}/>;
+        })}
+      </section>
+
+      {/* CaseStudies */}
+      <section>
+        { data.caseStudies.edges.map((caseStudy, key) => {
+          return <Card caseStudy={caseStudy} key={key}/>;
+        })}
+      </section>
+
+      {/* Viewpoints */}
+      <section>
+        { data.caseStudies.edges.map((caseStudy, key) => {
+          return <Card caseStudy={caseStudy} key={key}/>;
+        })}
+      </section>
+
       <FrontpageLocation />
       <Dialog>Tot 15 mei vroegboekkorting. Regulier - E135. Freelancers - E82,50. Studenten - E20</Dialog>
     </div>);
