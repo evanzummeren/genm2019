@@ -1,5 +1,5 @@
 ---
-name: Uit LA: Maria Bustillos
+name: Uit LA :colon Maria Bustillos
 function: Oprichter Popula
 featuredImage: ./bustillos.png
 order: 2
