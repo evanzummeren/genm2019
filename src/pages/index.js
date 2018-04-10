@@ -53,14 +53,14 @@ const IndexPage = ({data}) => {
       {/* CaseStudies */}
       <section>
         { data.caseStudies.edges.map((caseStudy, key) => {
-          return <Card caseStudy={caseStudy} key={key}/>;
+          return <Card data={caseStudy} key={key}/>;
         })}
       </section>
 
       {/* Viewpoints */}
       <section>
         { data.viewpoints.edges.map((viewpoint, key) => {
-          return <Card caseStudy={viewpoint} key={key}/>;
+          return <Card data={viewpoint} key={key}/>;
         })}
       </section>
 
