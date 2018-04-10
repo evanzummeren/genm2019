@@ -6,6 +6,7 @@ import Dialog from "../components/Dialog";
 import Card from "../components/Card";
 import Sheet from "../components/Sheet";
 import Header from "../components/Header";
+import Map from "../components/Map";
 
 // Styles
 import styles from "./index.module.css";
@@ -59,6 +60,10 @@ const IndexPage = ({data}) => {
         { data.viewpoints.edges.map((viewpoint, key) => {
           return <Card data={viewpoint} key={key}/>;
         })}
+      </section>
+
+      <section>
+        <Map isMarkerShown location={{lat: 52.369438, lng: 4.89523}}/>
       </section>
 
       <Dialog>{generalData.frontmatter.dialog}</Dialog>
