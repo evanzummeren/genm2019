@@ -1,7 +1,11 @@
 ---
-name: Maria Bustillos
+name: Uit LA: Maria Bustillos
 function: Oprichter Popula
 featuredImage: ./bustillos.png
 order: 2
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Maria Bustillos is de hoofdredacteur van Popula, een journalistiek medium dat op het blockchain-platform Civil draait. Toen zij in 2013 voor The New Yorker over blockchain-technologie schreef, werd zij enthousiast over de mogelijkheden die deze nieuwe technologie de journalistiek kan bieden.
+
+Het digitale medialandschap staat volgens haar onder de toenemende druk van censuur en slinkende inkomsten. Bovendien is onze technologische infrastructuur fragiel: Een wijziging is geruisloos gemaakt, linkrot is overal zichtbaar en een nieuwe eigenaar kan ervoor kiezen om het digitale archief te verwijderen.
+
+Blockchain-technologie kan volgens Maria een antwoord geven op deze problemen. In haar keynote speech zal Maria uitleggen hoe het decentrale karakter van de blockchain voor een oncorrumpeerbaar archief kan zorgen. Ook zal Maria uitleggen hoe de blockchain lezersparticipatie bevordert en een alternatief verdienmodel mogelijk maakt. Maria schreef eerder onder meer voor The New York Times, The New Yorker, Harper’s en The Guardian.

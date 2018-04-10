@@ -8,4 +8,8 @@ details:
 dialog: "Tot 15 mei vroegboekkorting. Regulier - E135. Freelancers - E82,50. Studenten - E20"
 order: 1
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Waarheid en vertouwen stonden in 2017 centraal op de Expertisedag. Ook in 2018 is dit thema onverminderd urgent. Wat zijn de laatste ontwikkelingen op het gebied van het vinden, vertellen en verspreiden van (online) betrouwbaar nieuws.
+
+Wat kan technologie bijdragen om de afstand tussen het publiek en de journalistiek te verkleinen? En wat zal altijd mensenwerk blijven? We kijken dit jaar onder andere naar publieksparticipatie in het onderzoeksproces, blockchain-technologie, de laatste ontwikkelingen op het gebied van factchecking en de dialoog met de lezer. Ook werpen we onze kritische blik op de constructieve journalistiek als een mogelijke remedie.
+
+Zoals elk jaar brengt de expertisedag veel concrete tips voor journalisten die zich snel willen laten bijpraten: hoe de digitalisering aanwenden om beter nieuws te vinden, te checken en te verspreiden? De dag staat onder voorzitterschap van Bas Mesters, directeur van het Expertisecentrum Journalistiek.
