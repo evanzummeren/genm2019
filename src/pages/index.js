@@ -152,6 +152,7 @@ export const query = graphql`
           frontmatter {
             name
             function
+            quote
             featuredImage {
                 childImageSharp {
                   resolutions(width: 800) {

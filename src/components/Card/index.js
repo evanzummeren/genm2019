@@ -10,6 +10,7 @@ const Card = (props) => {
       <h1 className={styles.title}>{data.frontmatter.name}</h1>
       <h2 className={styles.subtitle}>{data.frontmatter.function}</h2>
       <div className={styles.text} dangerouslySetInnerHTML={{__html: data.html}}></div>
+      {data.frontmatter.quote && <h2>{data.frontmatter.quote}</h2>}
       {data.frontmatter.featuredImage && <Img resolutions={data.frontmatter.featuredImage.childImageSharp.resolutions} />}
     </div>
   </div>)
