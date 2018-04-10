@@ -1,6 +1,4 @@
-.container {
-}
-
 .title {
-    font-size: 4rem;
+  font-size: 4rem;
+  white-space: nowrap;
 }

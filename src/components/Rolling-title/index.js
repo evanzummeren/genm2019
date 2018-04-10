@@ -1,20 +1,10 @@
 import React from 'react'
 
-import Marquee from 'marquee-react-dwyer';
-
 import styles from "./index.module.css";
 
 const RollingTitle = (props) => {
-  return (<div className={styles.container}>
-    <Marquee
-        Size={"h1"}
-        NumberOfOptions={"1"}
-        Index0={"DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT"}
-        TimeToCross={"10000"}
-        TimeToChange={"2000"}
-        IsRandom={"true"}
-        Color={"white"}
-      />
+  return (<div >
+      <p className={styles.title}><span>DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT DEBAT </span></p>
   </div>)
 }
 

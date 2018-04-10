@@ -10,11 +10,6 @@
 	src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.svg#typotheque_webfonts_service") format("svg");
 }
 
-@keyframes marquee {
-    0%   { transform: translate(0, 0); animation-timing-function: ease-in;}
-    100% { transform: translate(-100%, 0); animation-timing-function: ease-out;}
-}
-
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	font-family: "Fedra Mono Medium";
