@@ -8,3 +8,11 @@
   color: white;
   margin: 0;
 }
+
+.alternative {
+  background: rgb(255, 253, 84);
+}
+
+.alternative .text {
+  color: black
+}
