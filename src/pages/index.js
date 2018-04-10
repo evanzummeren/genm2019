@@ -74,7 +74,9 @@ export default IndexPage
 
 export const query = graphql`
   query indexQuery {
-    general: allMarkdownRemark(filter: {id: {regex: "//home/general//"}}) {
+    general: allMarkdownRemark(
+      filter: {id: {regex: "//home/general//"}}
+    ) {
       edges {
         node {
           id
@@ -90,7 +92,10 @@ export const query = graphql`
         }
       }
     }
-    speakers: allMarkdownRemark(filter: {id: {regex: "//home/speakers//"}}) {
+    speakers: allMarkdownRemark(
+      filter: {id: {regex: "//home/speakers//"}},
+      sort: { order: ASC, fields: [frontmatter___order]}
+    ) {
       edges {
         node {
           id
@@ -110,7 +115,10 @@ export const query = graphql`
         }
       }
     }
-    caseStudies: allMarkdownRemark(filter: {id: {regex: "//home/casestudies//"}}) {
+    caseStudies: allMarkdownRemark(
+      filter: {id: {regex: "//home/casestudies//"}},
+      sort: { order: ASC, fields: [frontmatter___order]}
+    ) {
       edges {
         node {
           id
@@ -130,7 +138,10 @@ export const query = graphql`
         }
       }
     }
-    viewpoints: allMarkdownRemark(filter: {id: {regex: "//home/viewpoints//"}}) {
+    viewpoints: allMarkdownRemark(
+      filter: {id: {regex: "//home/viewpoints//"}},
+      sort: { order: ASC, fields: [frontmatter___order]}
+    ) {
       edges {
         node {
           id
