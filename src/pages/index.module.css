@@ -40,3 +40,7 @@
 .subtitle {
   color: rgb(102,102,102);
 }
+
+.container {
+  display: flex;
+}

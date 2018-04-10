@@ -15,32 +15,29 @@ import nose from "./nose.svg";
 
 const IndexPage = ({data}) => {
   console.log(data);
+  const generalData = data.general.edges[0].node;
   return (<div>
       <Header />
 
-      {/* Headerblock */}
+      {/* Landing */}
       <section>
         <div className={styles.header}>
           <img src={nose} className={styles.headerImg}></img>
           <div className={styles.headerRight}>
-            <h2 className={styles.subtitle}>19 juni 2018 - Oudemanhuispoort, Amsterdam</h2>
-            <h1 className={styles.title}>Journalistiek in het post-truth tijdperk</h1>
+            <h2 className={styles.subtitle}>{generalData.frontmatter.dateLoc}</h2>
+            <h1 className={styles.title}>{generalData.frontmatter.title}</h1>
             <div className={styles.ctaBlock}>
-              <p className={styles.ctaText}>Bestel tickets - €135 (tot 15 mei)</p>
+              <p className={styles.ctaText}>{generalData.frontmatter.cta1}</p>
             </div>
             <div className={styles.ctaSupportBlock}>
-              <p className={styles.ctaSupportText}>Eerste 15 freelancers - €82,50</p>
+              <p className={styles.ctaSupportText}>{generalData.frontmatter.cta2}</p>
             </div>
             <div className={styles.ctaSupportBlock}>
-              <p className={styles.ctaSupportText}>Studenten - €25</p>
+              <p className={styles.ctaSupportText}>{generalData.frontmatter.cta3}</p>
             </div>
           </div>
         </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
+        <div dangerouslySetInnerHTML={{ __html: generalData.html }}></div>
       </section>
 
       {/* Speakers */}
@@ -51,20 +48,20 @@ const IndexPage = ({data}) => {
       </section>
 
       {/* CaseStudies */}
-      <section>
+      <section className={styles.container}>
         { data.caseStudies.edges.map((caseStudy, key) => {
           return <Card data={caseStudy} key={key}/>;
         })}
       </section>
 
       {/* Viewpoints */}
-      <section>
+      <section className={styles.container}>
         { data.viewpoints.edges.map((viewpoint, key) => {
           return <Card data={viewpoint} key={key}/>;
         })}
       </section>
 
-      <Dialog>Tot 15 mei vroegboekkorting. Regulier - E135. Freelancers - E82,50. Studenten - E20</Dialog>
+      <Dialog>{generalData.frontmatter.dialog}</Dialog>
     </div>);
 };
 
@@ -72,6 +69,22 @@ export default IndexPage
 
 export const query = graphql`
   query indexQuery {
+    general: allMarkdownRemark(filter: {id: {regex: "//home/general//"}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            dateLoc
+            cta1
+            cta2
+            cta3
+            dialog
+          }
+          html
+        }
+      }
+    }
     speakers: allMarkdownRemark(filter: {id: {regex: "//home/speakers//"}}) {
       edges {
         node {
