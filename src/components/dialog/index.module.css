@@ -4,9 +4,11 @@
   position: fixed;
   left: 5vw;
   bottom: 5rem;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
   width: 90vw;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .text {
