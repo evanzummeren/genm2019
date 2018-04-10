@@ -1,5 +1,5 @@
 ---
-name: Uit LA :colon Maria Bustillos
+name: "Uit LA: Maria Bustillos"
 function: Oprichter Popula
 featuredImage: ./bustillos.png
 order: 2

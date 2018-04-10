@@ -1,5 +1,5 @@
 ---
-name: Uit New York :colon Keith Hammonds
+name: "Uit New York: Keith Hammonds"
 function: President Solutions Journalism Network (SJN)
 featuredImage: ./keith.png
 order: 1
