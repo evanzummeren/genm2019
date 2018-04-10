@@ -7,6 +7,8 @@ import Card from "../components/Card";
 import Sheet from "../components/Sheet";
 import Header from "../components/Header";
 import Map from "../components/Map";
+import RollingTitle from "../components/Rolling-title";
+import Button from "../components/Button";
 
 // Styles
 import styles from "./index.module.css";
@@ -27,15 +29,12 @@ const IndexPage = ({data}) => {
           <div className={styles.headerRight}>
             <h2 className={styles.subtitle}>{generalData.frontmatter.dateLoc}</h2>
             <h1 className={styles.title}>{generalData.frontmatter.title}</h1>
-            <div className={styles.ctaBlock}>
-              <p className={styles.ctaText}>{generalData.frontmatter.cta1}</p>
-            </div>
-            <div className={styles.ctaSupportBlock}>
-              <p className={styles.ctaSupportText}>{generalData.frontmatter.cta2}</p>
-            </div>
-            <div className={styles.ctaSupportBlock}>
-              <p className={styles.ctaSupportText}>{generalData.frontmatter.cta3}</p>
-            </div>
+            <Button text={generalData.frontmatter.button} color="purple"/>
+            { generalData.frontmatter.details.map((detail, key) => {
+              return (<div className={styles.detailBlock} key={key}>
+                <p className={styles.detailText}>{detail}</p>
+              </div>)
+            })}
           </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: generalData.html }}></div>
@@ -49,17 +48,23 @@ const IndexPage = ({data}) => {
       </section>
 
       {/* CaseStudies */}
-      <section className={styles.container}>
-        { data.caseStudies.edges.map((caseStudy, key) => {
-          return <Card data={caseStudy} key={key}/>;
-        })}
+      <section>
+        <RollingTitle title="Case studies"/>
+        <div className={styles.container}>
+          { data.caseStudies.edges.map((caseStudy, key) => {
+            return <Card data={caseStudy} key={key}/>;
+          })}
+        </div>
       </section>
 
       {/* Viewpoints */}
-      <section className={styles.container}>
-        { data.viewpoints.edges.map((viewpoint, key) => {
-          return <Card data={viewpoint} key={key}/>;
-        })}
+      <section>
+        <RollingTitle title="Debat"/>
+        <div className={styles.container}>
+          { data.viewpoints.edges.map((viewpoint, key) => {
+            return <Card data={viewpoint} key={key}/>;
+          })}
+        </div>
       </section>
 
       <section>
@@ -83,9 +88,8 @@ export const query = graphql`
           frontmatter {
             title
             dateLoc
-            cta1
-            cta2
-            cta3
+            button
+            details
             dialog
           }
           html

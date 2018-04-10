@@ -6,6 +6,7 @@
   bottom: 5rem;
   padding: 1rem;
   width: 90vw;
+  display: flex;
 }
 
 .text {

@@ -10,24 +10,13 @@
   padding: 2rem;
 }
 
-.ctaBlock {
-  background: rgb(94,53,140);
-  border-radius: 1rem;
-  padding: 1rem;
-}
-
-.ctaText {
-  color: white;
-  margin: 0;
-}
-
-.ctaSupportBlock {
+.detailBlock {
   background: white;
   margin: 1rem 0;
   padding: 1rem;
 }
 
-.ctaSupportText {
+.detailText {
   color: black;
   margin: 0;
 }
