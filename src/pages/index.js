@@ -7,7 +7,7 @@ import Card from "../components/Card";
 import Sheet from "../components/Sheet";
 import Header from "../components/Header";
 import Map from "../components/Map";
-import RollingTitle from "../components/Rolling-title";
+import Marquee from "../components/Marquee";
 import Button from "../components/Button";
 
 // Styles
@@ -49,7 +49,7 @@ const IndexPage = ({data}) => {
 
       {/* CaseStudies */}
       <section>
-        <RollingTitle title="Case studies"/>
+        <Marquee title="Case studies"/>
         <div className={styles.container}>
           { data.caseStudies.edges.map((caseStudy, key) => {
             return <Card data={caseStudy} key={key}/>;
@@ -59,7 +59,7 @@ const IndexPage = ({data}) => {
 
       {/* Viewpoints */}
       <section>
-        <RollingTitle title="Debat"/>
+        <Marquee title="Debat"/>
         <div className={styles.container}>
           { data.viewpoints.edges.map((viewpoint, key) => {
             return <Card data={viewpoint} key={key}/>;
@@ -113,7 +113,6 @@ export const query = graphql`
                   }
                 }
               }
-            inverseImg
           }
           html
         }
@@ -136,7 +135,6 @@ export const query = graphql`
                   }
                 }
               }
-            inverseImg
           }
           html
         }
@@ -160,7 +158,6 @@ export const query = graphql`
                   }
                 }
               }
-            inverseImg
           }
           html
         }

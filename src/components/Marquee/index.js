@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from "./index.module.css";
 
-const RollingTitle = (props) => {
+const Marquee = (props) => {
   return (<div >
       <p className={styles.title}>{Array.apply(null, { length: 10 }).map((value, key) => {
         return <span key={key}>{props.title} </span>
@@ -10,4 +10,4 @@ const RollingTitle = (props) => {
   </div>)
 }
 
-export default RollingTitle
+export default Marquee
