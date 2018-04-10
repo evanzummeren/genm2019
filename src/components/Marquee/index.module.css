@@ -1,4 +1,11 @@
+.container {
+  padding: 0 0 6rem 0;
+}
+
 .title {
+  position: relative;
+  right: 50%;
+  transform: rotate(-1deg);
   font-size: 4rem;
   white-space: nowrap;
 }

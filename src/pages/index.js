@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import classNames from 'classnames'
 
 // Components
 import Dialog from "../components/Dialog";
 import Card from "../components/Card";
 import Sheet from "../components/Sheet";
-import Header from "../components/Header";
 import Map from "../components/Map";
 import Marquee from "../components/Marquee";
 import Button from "../components/Button";
@@ -14,17 +14,30 @@ import Button from "../components/Button";
 import styles from "./index.module.css";
 
 // Images
+import logo from "./logo.svg";
 import nose from "./nose.svg";
 
 const IndexPage = ({data}) => {
   console.log(data);
   const generalData = data.general.edges[0].node;
-  return (<div>
-      <Header />
+  return (<main className={styles.main}>
+
+      {/* Page header */}
+      <section className={styles.block}>
+        <div className={styles.header}>
+          <img src={logo} className={styles.logo}></img>
+          <div className={styles.nav}>
+            <h3 className={styles.navItem}>Sprekers</h3>
+            <h3 className={styles.navItem}>Programma</h3>
+            <h3 className={styles.navItem}>Tickets</h3>
+            <h3 className={styles.navItem}>Over</h3>
+          </div>
+        </div>
+      </section>
 
       {/* Landing */}
-      <section>
-        <div className={styles.header}>
+      <section className={styles.block}>
+        <div className={styles.landing}>
           <img src={nose} className={styles.headerImg}></img>
           <div className={styles.headerRight}>
             <h2 className={styles.subtitle}>{generalData.frontmatter.dateLoc}</h2>
@@ -41,14 +54,14 @@ const IndexPage = ({data}) => {
       </section>
 
       {/* Speakers */}
-      <section>
+      <section className={styles.block}>
         { data.speakers.edges.map((speaker, key) => {
           return <Sheet speaker={speaker} key={key}/>;
         })}
       </section>
 
       {/* CaseStudies */}
-      <section>
+      <section className={styles.block}>
         <Marquee title="Case studies"/>
         <div className={styles.container}>
           { data.caseStudies.edges.map((caseStudy, key) => {
@@ -58,7 +71,7 @@ const IndexPage = ({data}) => {
       </section>
 
       {/* Viewpoints */}
-      <section>
+      <section className={styles.block}>
         <Marquee title="Debat"/>
         <div className={styles.container}>
           { data.viewpoints.edges.map((viewpoint, key) => {
@@ -67,12 +80,12 @@ const IndexPage = ({data}) => {
         </div>
       </section>
 
-      <section>
+      <section className={styles.block}>
         <Map isMarkerShown location={{lat: 52.369438, lng: 4.89523}}/>
       </section>
 
       <Dialog>{generalData.frontmatter.dialog}</Dialog>
-    </div>);
+    </main>);
 };
 
 export default IndexPage
@@ -108,7 +121,7 @@ export const query = graphql`
             function
             featuredImage {
                 childImageSharp {
-                  resolutions(width: 800) {
+                  resolutions(width: 300) {
                     ...GatsbyImageSharpResolutions
                   }
                 }
@@ -130,7 +143,7 @@ export const query = graphql`
             function
             featuredImage {
                 childImageSharp {
-                  resolutions(width: 800) {
+                  resolutions(width: 200) {
                     ...GatsbyImageSharpResolutions
                   }
                 }
@@ -153,7 +166,7 @@ export const query = graphql`
             quote
             featuredImage {
                 childImageSharp {
-                  resolutions(width: 800) {
+                  resolutions(width: 200) {
                     ...GatsbyImageSharpResolutions
                   }
                 }

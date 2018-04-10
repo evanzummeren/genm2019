@@ -3,7 +3,7 @@
 }
 
 .block {
-  padding: 1rem;
+  padding: 0 0 6rem 6rem;
 }
 
 .title {
@@ -16,7 +16,8 @@
 }
 
 .text {
-  width: 20rem;
+  column-count: 2;
+  width: 60rem;
 }
 
 .image {
