@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "Expertisedag Nieuw Media 2018",
+  "description": "Expertisedag Nieuw Media 2018",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Robert-Jan Korteschiel",
   "dependencies": {
     "classnames": "^2.2.5",
     "gatsby": "^1.9.241",

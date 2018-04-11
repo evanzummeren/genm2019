@@ -1,5 +1,11 @@
 /* Page layout */
-.page {
+.centerer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-column-gap: 1rem;
@@ -15,6 +21,13 @@
 
 .container {
   display: flex;
+}
+
+.subgrid {
+  grid-column: 1 / span 24;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-column-gap: 1rem;
 }
 
 /* Header */
@@ -37,19 +50,13 @@
 }
 
 /* Landing */
-/* .blockLanding {
-  grid-template-rows: repeat(2, 1fr);
-} */
 
 .headerImg {
-  grid-column-start: 2;
-  grid-column-end: 11;
+  grid-column: 2 / 11;
 }
 
 .headerRight {
-  grid-column-start: 11;
-  grid-column-end: 25;
-
+  grid-column: 11 / 25;
   display: flex;
   flex-direction: column;
   flex-grow: 0;
@@ -69,8 +76,7 @@
 }
 
 .landingText {
-  grid-column-start: 5;
-  grid-column-end: 19;
+  grid-column: 5 / 19;
 }
 
 .title {
@@ -82,14 +88,36 @@
   color: rgb(102,102,102);
 }
 
+/* Location and costs */
+
+.location {
+  background-color: rgb(244,244,244);
+}
+
 .map {
   grid-column: 1 / span 12;
 }
 
 .costs {
+  grid-column: 13 / span 12;
   background-color: rgb(244,244,244);
 }
 
-.affiliates {
+.footer {
+  width: 100vw;
   background-color: rgb(220,220,220);
 }
+
+.affiliates {
+  grid-column: 1 / span 12;
+  position: relative;
+  right: 100vw;
+  height: 20rem;
+  background-color: rgb(220,220,220);
+}
+
+.footerInfo {
+
+}
+
+/*  */

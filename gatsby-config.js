@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Expertisedag Nieuw Media 2018',
   },
   plugins: ['gatsby-plugin-react-helmet',
             {

@@ -6,6 +6,11 @@ details:
   - "Eerste 15 freelancers - €82,50"
   - "Studenten - €20"
 dialog: "Tot 15 mei vroegboekkorting. Regulier - E135. Freelancers - E82,50. Studenten - E20"
+navigation:
+  - Sprekers
+  - Programma
+  - Tickets
+  - Over
 order: 1
 ---
 Waarheid en vertouwen stonden in 2017 centraal op de Expertisedag. Ook in 2018 is dit thema onverminderd urgent. Wat zijn de laatste ontwikkelingen op het gebied van het vinden, vertellen en verspreiden van (online) betrouwbaar nieuws.
