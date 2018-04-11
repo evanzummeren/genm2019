@@ -65,16 +65,14 @@ const IndexPage = ({data}) => {
       </section>
 
       {/* Viewpoints */}
-      {/* <section className={styles.block}>
-        <Marquee title="Debat"/>
-        <div className={styles.container}>
-          { data.viewpoints.edges.map((viewpoint, key) => {
-            return <Card data={viewpoint} key={key}/>;
-          })}
-        </div>
+      <section className={styles.block}>
+        {/* <Marquee title="Debat"/> */}
+        { data.viewpoints.edges.map((viewpoint, key) => {
+          return <Card data={viewpoint} key={key}/>;
+        })}
       </section>
 
-      <section className={styles.block}>
+      {/* <section className={styles.block}>
         <Map isMarkerShown location={{lat: 52.369438, lng: 4.89523}}/>
       </section>
 
