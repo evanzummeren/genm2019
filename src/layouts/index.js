@@ -22,9 +22,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <img src={backgroundImg} className={styles.backgroundImg}></img>
     <img src={backgroundImg} className={styles.backgroundImgTwo}></img>
-    <div className={styles.body}>
-      {children()}
-    </div>
+    {children()}
   </main>
 )
 

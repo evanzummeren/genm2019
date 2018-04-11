@@ -1,14 +1,10 @@
-.main {
-  position: relative;
+body {
   background: rgb(209,189,165);
-  min-height: 100vh;
-  width: 100vw;
-  overflow: hidden;
 }
 
-.body {
-  margin: 0 auto;
-  padding: 0 1.0875rem 1.45rem;
+.main {
+  position: relative;
+  overflow: hidden;
 }
 
 .backgroundImg {

@@ -20,7 +20,7 @@ import nose from "./nose.svg";
 const IndexPage = ({data}) => {
   console.log(data);
   const generalData = data.general.edges[0].node;
-  return (<main className={styles.main}>
+  return (<div className={styles.page}>
 
       {/* Page header */}
       <section className={styles.block}>
@@ -85,7 +85,7 @@ const IndexPage = ({data}) => {
       </section>
 
       <Dialog>{generalData.frontmatter.dialog}</Dialog>
-    </main>);
+    </div>);
 };
 
 export default IndexPage
