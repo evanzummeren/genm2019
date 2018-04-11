@@ -4,8 +4,8 @@ title: Journalistiek in het post-truth tijdperk
 button: "Bestel tickets - €135 (tot 15 mei)"
 details:
   - "Eerste 15 freelancers - €82,50"
-  - "Studenten - €20"
-dialog: "Tot 15 mei vroegboekkorting. Regulier - E135. Freelancers - E82,50. Studenten - E20"
+  - "Studenten - €25"
+dialog: "Tot 15 mei vroegboekkorting. Regulier - €135,- Freelancers - €82,50. Studenten - €25,-"
 navigation:
   - Sprekers
   - Programma
