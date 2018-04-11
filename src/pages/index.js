@@ -57,17 +57,17 @@ const IndexPage = ({data}) => {
       </section>
 
       {/* CaseStudies */}
-      <section className={styles.block}>
+      {/* <section className={styles.block}>
         <Marquee title="Case studies"/>
         <div className={styles.container}>
           { data.caseStudies.edges.map((caseStudy, key) => {
             return <Card data={caseStudy} key={key}/>;
           })}
         </div>
-      </section>
+      </section> */}
 
       {/* Viewpoints */}
-      <section className={styles.block}>
+      {/* <section className={styles.block}>
         <Marquee title="Debat"/>
         <div className={styles.container}>
           { data.viewpoints.edges.map((viewpoint, key) => {
@@ -80,7 +80,7 @@ const IndexPage = ({data}) => {
         <Map isMarkerShown location={{lat: 52.369438, lng: 4.89523}}/>
       </section>
 
-      <Dialog>{generalData.frontmatter.dialog}</Dialog>
+      <Dialog>{generalData.frontmatter.dialog}</Dialog> */}
     </div>);
 };
 

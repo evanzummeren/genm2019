@@ -1,11 +1,5 @@
 /* Page layout */
 .page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.block {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-column-gap: 1rem;
@@ -15,14 +9,15 @@
   width: 90rem;
 }
 
+.block {
+  display: contents;
+}
+
 .container {
   display: flex;
 }
 
 /* Header */
-.blockHeader {
-  padding: 2rem 0 0 0;
-}
 
 .logo {
   grid-column-start: 1;
@@ -32,7 +27,8 @@
 
 .nav {
   display: flex;
-  grid-column-end: 25;
+  grid-column: 5 / span 20;
+  justify-self: end;
 }
 
 .navItem {
@@ -41,9 +37,9 @@
 }
 
 /* Landing */
-.blockLanding {
+/* .blockLanding {
   grid-template-rows: repeat(2, 1fr);
-}
+} */
 
 .headerImg {
   grid-column-start: 2;
