@@ -9,6 +9,9 @@
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-column-gap: 1rem;
+  grid-row-gap: 6rem;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
   width: 90rem;
 }
 
@@ -17,10 +20,8 @@
 }
 
 /* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  min-width: 100%;
+.blockHeader {
+  padding: 2rem 0 0 0;
 }
 
 .logo {
@@ -36,7 +37,7 @@
 
 .navItem {
   color: rgb(102,102,102);
-  padding: 1rem;
+  padding: 0 0 0 1rem;
 }
 
 /* Landing */

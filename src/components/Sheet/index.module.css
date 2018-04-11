@@ -1,25 +1,22 @@
 .container {
-  display: flex;
+  display: contents;
 }
 
-.block {
-  padding: 0 0 6rem 6rem;
+.imageWrapper {
+  grid-column: 2 / span 4;
+  width: 100%;
 }
 
-.title {
-  width: 20rem;
+.contentWrapper {
+  grid-column: 7 / span 16;
+  width: 100%;
+}
+
+.columns {
+  column-count: 2;
+  column-gap: 1rem;
 }
 
 .subtitle {
   color: rgb(255, 253, 84);
-}
-
-.text {
-  column-count: 2;
-  width: 60rem;
-}
-
-.image {
-  height: 100%;
-  margin: 0;
 }

@@ -20,10 +20,10 @@ import nose from "./nose.svg";
 const IndexPage = ({data}) => {
   console.log(data);
   const generalData = data.general.edges[0].node;
-  return (<div className={styles.page}>
-
+  return (
+    <div className={styles.page}>
       {/* Page header */}
-      <header className={styles.block}>
+      <header className={classNames(styles.block, styles.blockHeader)}>
         <img src={logo} className={styles.logo}></img>
         <div className={styles.nav}>
           <h3 className={styles.navItem}>Sprekers</h3>
@@ -35,17 +35,17 @@ const IndexPage = ({data}) => {
 
       {/* Landing */}
       <section className={classNames(styles.block, styles.blockLanding)}>
-          <img src={nose} className={styles.headerImg}></img>
-          <div className={styles.headerRight}>
-            <h2 className={styles.subtitle}>{generalData.frontmatter.dateLoc}</h2>
-            <h1 className={styles.title}>{generalData.frontmatter.title}</h1>
-            <Button text={generalData.frontmatter.button} color="purple"/>
-            { generalData.frontmatter.details.map((detail, key) => {
-              return (<div className={styles.detailBlock} key={key}>
-                <p className={styles.detailText}>{detail}</p>
-              </div>)
-            })}
-          </div>
+        <img src={nose} className={styles.headerImg}></img>
+        <div className={styles.headerRight}>
+          <h2 className={styles.subtitle}>{generalData.frontmatter.dateLoc}</h2>
+          <h1 className={styles.title}>{generalData.frontmatter.title}</h1>
+          <Button text={generalData.frontmatter.button} color="purple"/>
+          { generalData.frontmatter.details.map((detail, key) => {
+            return (<div className={styles.detailBlock} key={key}>
+              <p className={styles.detailText}>{detail}</p>
+            </div>)
+          })}
+        </div>
         <div className={styles.landingText} dangerouslySetInnerHTML={{ __html: generalData.html }}></div>
       </section>
 
@@ -116,12 +116,12 @@ export const query = graphql`
             name
             function
             featuredImage {
-                childImageSharp {
-                  resolutions(width: 300) {
-                    ...GatsbyImageSharpResolutions
-                  }
+              childImageSharp {
+                sizes(maxWidth: 800) {
+                  ...GatsbyImageSharpSizes
                 }
               }
+            }
           }
           html
         }
