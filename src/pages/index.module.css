@@ -81,3 +81,15 @@
 .subtitle {
   color: rgb(102,102,102);
 }
+
+.map {
+  grid-column: 1 / span 12;
+}
+
+.costs {
+  background-color: rgb(244,244,244);
+}
+
+.affiliates {
+  background-color: rgb(220,220,220);
+}

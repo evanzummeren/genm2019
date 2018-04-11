@@ -23,7 +23,7 @@ const IndexPage = ({data}) => {
   return (
     <div className={styles.page}>
       {/* Page header */}
-      <header className={classNames(styles.block, styles.blockHeader)}>
+      <header className={styles.block}>
         <img src={logo} className={styles.logo}></img>
         <div className={styles.nav}>
           <h3 className={styles.navItem}>Sprekers</h3>
@@ -34,7 +34,7 @@ const IndexPage = ({data}) => {
       </header>
 
       {/* Landing */}
-      <section className={classNames(styles.block, styles.blockLanding)}>
+      <section className={styles.block}>
         <img src={nose} className={styles.headerImg}></img>
         <div className={styles.headerRight}>
           <h2 className={styles.subtitle}>{generalData.frontmatter.dateLoc}</h2>
@@ -72,11 +72,17 @@ const IndexPage = ({data}) => {
         })}
       </section>
 
-      {/* <section className={styles.block}>
+      <section className={styles.map}>
         <Map isMarkerShown location={{lat: 52.369438, lng: 4.89523}}/>
+        <div className={styles.costs}>
+
+        </div>
+        <div className={styles.affiliates}>
+
+        </div>
       </section>
 
-      <Dialog>{generalData.frontmatter.dialog}</Dialog> */}
+      {/* <Dialog>{generalData.frontmatter.dialog}</Dialog> */}
     </div>);
 };
 
