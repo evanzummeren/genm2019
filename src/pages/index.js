@@ -91,7 +91,7 @@ const IndexPage = ({data}) => {
             some images
           </div>
           <div className={styles.footerInfo}>
-            some images
+            some text
           </div>
         </section>
 
