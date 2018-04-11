@@ -23,21 +23,18 @@ const IndexPage = ({data}) => {
   return (<div className={styles.page}>
 
       {/* Page header */}
-      <section className={styles.block}>
-        <div className={styles.header}>
-          <img src={logo} className={styles.logo}></img>
-          <div className={styles.nav}>
-            <h3 className={styles.navItem}>Sprekers</h3>
-            <h3 className={styles.navItem}>Programma</h3>
-            <h3 className={styles.navItem}>Tickets</h3>
-            <h3 className={styles.navItem}>Over</h3>
-          </div>
+      <header className={styles.block}>
+        <img src={logo} className={styles.logo}></img>
+        <div className={styles.nav}>
+          <h3 className={styles.navItem}>Sprekers</h3>
+          <h3 className={styles.navItem}>Programma</h3>
+          <h3 className={styles.navItem}>Tickets</h3>
+          <h3 className={styles.navItem}>Over</h3>
         </div>
-      </section>
+      </header>
 
       {/* Landing */}
-      <section className={styles.block}>
-        <div className={styles.landing}>
+      <section className={classNames(styles.block, styles.blockLanding)}>
           <img src={nose} className={styles.headerImg}></img>
           <div className={styles.headerRight}>
             <h2 className={styles.subtitle}>{generalData.frontmatter.dateLoc}</h2>
@@ -49,8 +46,7 @@ const IndexPage = ({data}) => {
               </div>)
             })}
           </div>
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: generalData.html }}></div>
+        <div className={styles.landingText} dangerouslySetInnerHTML={{ __html: generalData.html }}></div>
       </section>
 
       {/* Speakers */}
