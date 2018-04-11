@@ -17,20 +17,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 3rem
+	font-size: 5rem;
+	line-height: 6rem;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 3rem;
+	line-height: 3.6rem;
 }
 
 h3 {
-	font-size: 1rem;
+	font-size: 1.2rem;
+	line-height: 2.4rem;
+
 	color: rgb(255, 253, 84);
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 
 p, li {
+	font-size: 1rem;
+	line-height: 1.4rem;
+
 	color: white;
 	font-family: "Fedra Serif A Book";
 }

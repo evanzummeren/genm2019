@@ -7,13 +7,18 @@
   padding: 1rem;
 }
 
+.titleWrapper {
+  min-height: ;
+}
+
 .title {
   width: 20rem;
-  height: 6rem;
+  height: 7.2rem;
+  margin: 0;
 }
 
 .subtitle {
-  height: 4rem;
+  height: 2.4rem;
   color: rgb(255, 253, 84);
 }
 
