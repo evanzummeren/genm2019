@@ -58,7 +58,7 @@ const IndexPage = ({data}) => {
 
       {/* CaseStudies */}
       <section className={styles.block}>
-        {/* <Marquee title="Case studies"/> */}
+        <Marquee title="Case studies"/>
         { data.caseStudies.edges.map((caseStudy, key) => {
           return <Card data={caseStudy} key={key}/>;
         })}
@@ -66,7 +66,7 @@ const IndexPage = ({data}) => {
 
       {/* Viewpoints */}
       <section className={styles.block}>
-        {/* <Marquee title="Debat"/> */}
+        <Marquee title="Debat"/>
         { data.viewpoints.edges.map((viewpoint, key) => {
           return <Card data={viewpoint} key={key}/>;
         })}
