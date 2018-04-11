@@ -57,14 +57,12 @@ const IndexPage = ({data}) => {
       </section>
 
       {/* CaseStudies */}
-      {/* <section className={styles.block}>
-        <Marquee title="Case studies"/>
-        <div className={styles.container}>
-          { data.caseStudies.edges.map((caseStudy, key) => {
-            return <Card data={caseStudy} key={key}/>;
-          })}
-        </div>
-      </section> */}
+      <section className={styles.block}>
+        {/* <Marquee title="Case studies"/> */}
+        { data.caseStudies.edges.map((caseStudy, key) => {
+          return <Card data={caseStudy} key={key}/>;
+        })}
+      </section>
 
       {/* Viewpoints */}
       {/* <section className={styles.block}>

@@ -1,16 +1,19 @@
 .container {
-  display: flex;
+  display: contents;
 }
 
-.block {
+.card {
+  grid-column: auto / span 6;
   padding: 1rem;
 }
 
 .title {
   width: 20rem;
+  height: 6rem;
 }
 
 .subtitle {
+  height: 4rem;
   color: rgb(255, 253, 84);
 }
 
