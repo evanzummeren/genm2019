@@ -118,17 +118,31 @@
   background-color: rgb(244,244,244);
 }
 
+.costs p {
+  color: black;
+}
+
 .footer {
   width: 100vw;
+  height: 25rem;
   background-color: rgb(220,220,220);
 }
 
 .affiliates {
-  grid-column: 1 / span 12;
+  display: contents;
   height: 20rem;
+}
+
+.affiliateLogo {
+  padding: 4rem 0;
+  align-self: center;
+  grid-column: 1 / span 5;
+}
+
+.affiliateLogo:last-of-type {
+  grid-column: span 5 / 12;
 }
 
 .footerInfo {
   grid-column: 13 / span 12;
-
 }

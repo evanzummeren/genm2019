@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
+import Img from "gatsby-image";
 
 // Components
 import Dialog from "../components/Dialog";
@@ -20,7 +21,7 @@ import nose from "./nose.svg";
 const IndexPage = ({data}) => {
   console.log(data);
   const headerData = data.general.edges[0].node;
-  const footerData = data.general.edges[0].node;
+  const footerData = data.general.edges[1].node;
   return (
     <div className={styles.centerer}>
       <div className={styles.grid}>
@@ -76,10 +77,10 @@ const IndexPage = ({data}) => {
         {/* Location and costs */}
         <section className={classNames(styles.subgrid, styles.location)}>
           <div className={styles.map}>
-            <Map isMarkerShown location={{lat: 52.369438, lng: 4.89523}}/>
+            <Map isMarkerShown zoom={parseFloat(footerData.frontmatter.locationZoom)} location={{lat: parseFloat(footerData.frontmatter.location[0]), lng: Number(footerData.frontmatter.location[1])}}/>
           </div>
           <div className={styles.costs}>
-            Lots of costs
+            <div dangerouslySetInnerHTML={{ __html: footerData.html }}></div>
           </div>
         </section>
       </div>
@@ -88,10 +89,14 @@ const IndexPage = ({data}) => {
       <div className={classNames(styles.centerer, styles.footer)}>
         <section className={styles.grid}>
           <div className={styles.affiliates}>
-            some images
+            { footerData.frontmatter.logos.map((logo, key) => {
+              return (<div className={styles.affiliateLogo} key={key}>
+                <Img sizes={logo.childImageSharp.sizes} />
+              </div>);
+            })}
           </div>
           <div className={styles.footerInfo}>
-            some text
+            <p>{footerData.frontmatter.footerInfo}</p>
           </div>
         </section>
 
@@ -126,7 +131,7 @@ export const query = graphql`
                 }
               }
             }
-            footerText
+            footerInfo
             location
             locationZoom
           }

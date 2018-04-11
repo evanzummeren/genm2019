@@ -7,9 +7,7 @@ const Sheet = (props) => {
   const speakerData = props.speaker.node;
   return (<div className={styles.container}>
     <div className={styles.imageWrapper}>
-      <Img
-        sizes={speakerData.frontmatter.featuredImage.childImageSharp.sizes}
-      />
+      <Img sizes={speakerData.frontmatter.featuredImage.childImageSharp.sizes} />
     </div>
     <div className={styles.contentWrapper}>
       <h2 className={styles.title}>{speakerData.frontmatter.name}</h2>
