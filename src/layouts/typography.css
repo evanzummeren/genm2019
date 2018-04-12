@@ -10,6 +10,41 @@
 	src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.svg#typotheque_webfonts_service") format("svg");
 }
 
+/* [15:40, 4/11/2018] Erik van Zummeren: Hoofdkopij is 20px
+[15:40, 4/11/2018] Erik van Zummeren: header h1 45px
+[15:40, 4/11/2018] Erik van Zummeren: Sprekers h2 20px
+[15:41, 4/11/2018] Erik van Zummeren: Tekst onder sprekers 14px
+[15:41, 4/11/2018] Erik van Zummeren: Subkop onder sprekers ook 20px
+[15:41, 4/11/2018] Erik van Zummeren: lichtkrant is 30px
+[15:41, 4/11/2018] +31 6 14441410: lineheights?
+[15:42, 4/11/2018] Erik van Zummeren: Kopij 33xpx
+[15:42, 4/11/2018] Erik van Zummeren: Sprekers 23
+[15:43, 4/11/2018] +31 6 14441410: en de koppen?
+[15:43, 4/11/2018] +31 6 14441410: (alle typografie definities moeten zowel lineheight als fontsize hebben anders verkloot je het vertikale ritme)
+[15:49, 4/11/2018] Erik van Zummeren: lichtkrant koppen?
+[15:49, 4/11/2018] +31 6 14441410: Die staan nou net buiten de documentflow ^^
+[15:49, 4/11/2018] +31 6 14441410: Hoewel ik daarmee ook het ritme verkloot idd.
+[15:50, 4/11/2018] Erik van Zummeren: gele titelkoppen 14px
+[15:50, 4/11/2018] +31 6 14441410: Of,nee, die zitten wel in de flow, maar ze overflowen slechts
+[15:50, 4/11/2018] Erik van Zummeren: text footer 16px
+[15:50, 4/11/2018] Erik van Zummeren: lineheight
+[15:50, 4/11/2018] Erik van Zummeren: uhh font-size bedoel ik 16px
+[15:51, 4/11/2018] Erik van Zummeren: en 26 lineheight
+[15:51, 4/11/2018] +31 6 14441410: Heb je 3 kopij groottes?
+[15:51, 4/11/2018] Erik van Zummeren: debat titel
+[15:51, 4/11/2018] Erik van Zummeren: 30px font size en 44 lineheight
+
+
+hoofd: 16/26
+title: 45/??
+h1: 30/??
+h2: 20/
+
+
+*/
+
+
+
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	font-family: "Fedra Mono Medium";
