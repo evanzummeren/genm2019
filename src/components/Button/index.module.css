@@ -1,14 +1,23 @@
+@font-face {
+	font-family: "Fedra Mono Medium";
+	src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.eot");
+	src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.svg#typotheque_webfonts_service") format("svg");
+}
+
 .container {
-  display: block;
+  display: inline-block;
   background: rgb(94,53,140);
-  border-radius: 1rem;
-  padding: 1rem;
+  border-radius: 3rem;
+  padding: 1rem 2rem 1rem 2rem;
   text-decoration: none;
 }
 
 .text {
   color: white;
   margin: 0;
+  font-family: "Fedra Mono Medium";
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 .alternative {

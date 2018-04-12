@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 
 const dialog = (props) => (
   <section className={styles.container}>
-    <p className={styles.text}>{props.children}</p>
+    <span className={styles.text}>{props.children}</span>
     <Button text="Bestellen" alternative="true" />
   </section>
 )

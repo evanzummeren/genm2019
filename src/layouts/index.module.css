@@ -9,16 +9,21 @@ body {
 .main {
   position: relative;
   overflow: hidden;
+  padding-top: 20px;
 }
 
 .backgroundImg {
   position: absolute;
-  left: -50vw;
-  top: -20vh;
+  width: 70%;
+  left: -37vw;
+  top: -50vh;
+  z-index: -1;
 }
 
 .backgroundImgTwo {
   position: absolute;
+  width: 70%;  
   left: 50vw;
   top: 50vh;
+  z-index: -1;
 }

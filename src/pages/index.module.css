@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Fedra Mono Medium";
+  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.eot");
+  src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.svg#typotheque_webfonts_service") format("svg");
+}
+
 /* Page layout */
 .centerer {
   align-items: center;
@@ -55,7 +61,7 @@
 }
 
 .headerRight {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   flex-grow: 0;
   grid-column: 11 / 25;
@@ -64,18 +70,25 @@
 
 .detailBlock {
   background: white;
-  display: block;
-  margin: 1rem 0;
-  padding: 1rem;
+  display: table;
+  transform: rotate(-1deg);
+  margin: .6rem 0 .5rem .5rem;
+  padding: .5rem 1.5rem .5rem 1.5rem;
 }
 
 .detailText {
   color: black;
   margin: 0;
+  font-family: "Fedra Mono Medium";
 }
 
 .landingText {
-  grid-column: 5 / 19;
+  grid-column: 4 / 20;
+}
+
+.landingText p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
 
 .title {
