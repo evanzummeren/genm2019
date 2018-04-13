@@ -1,6 +1,6 @@
 .container {
+  width: 100%;
   padding: 0 0 6rem 0;
-  grid-column: 1 / span 24;
 }
 
 .title {

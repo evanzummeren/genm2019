@@ -24,6 +24,10 @@
   grid-column: auto / span 6;
 }
 
+.grid24 {
+  grid-column: 1 / span 24;
+}
+
 .container {
   display: flex;
 }

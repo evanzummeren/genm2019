@@ -60,7 +60,9 @@ const IndexPage = ({data}) => {
 
         {/* CaseStudies */}
         <section className={styles.grid}>
-          <Marquee title="Case studies"/>
+          <div className={styles.grid24}>
+            <Marquee title="Case studies"/>
+          </div>
           { data.caseStudies.edges.map((caseStudy, key) => {
             return (<div className={styles.grid6} key={key}>
               <Card data={caseStudy} key={key}/>
@@ -70,7 +72,9 @@ const IndexPage = ({data}) => {
 
         {/* Viewpoints */}
         <section className={styles.grid}>
-          <Marquee title="Debat"/>
+          <div className={styles.grid24}>
+            <Marquee title="Debat"/>
+          </div>
           { data.viewpoints.edges.map((viewpoint, key) => {
             return (<div className={styles.grid6} key={key}>
               <Card data={viewpoint} key={key}/>;
