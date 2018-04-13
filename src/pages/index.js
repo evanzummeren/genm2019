@@ -186,7 +186,7 @@ export const query = graphql`
             blur
             featuredImage {
                 childImageSharp {
-                  resolutions(width: 200) {
+                  resolutions(width: 110) {
                     ...GatsbyImageSharpResolutions
                   }
                 }
@@ -210,7 +210,7 @@ export const query = graphql`
             quote
             featuredImage {
                 childImageSharp {
-                  resolutions(width: 200) {
+                  resolutions(width: 110) {
                     ...GatsbyImageSharpResolutions
                   }
                 }

@@ -11,14 +11,11 @@
   color: rgb(255, 253, 84);
 }
 
-.image {
-  height: 100%;
-  margin: 0;
+.text {
 }
 
 .profilePic {
-  width: 110px !important;
-  height: 110px !important;
+  display: inline;
   float: right;
 }
 
