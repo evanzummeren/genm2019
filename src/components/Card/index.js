@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from "gatsby-image";
+import classNames from 'classnames'
 
 import styles from "./index.module.css";
 
@@ -7,11 +8,8 @@ import imgSmouter from "../../content/home/viewpoints/smouter.png";
 
 const Card = (props) => {
   const data = props.data.node;
-  console.log(data);
-  let blurred = "";
-  if (props.data.node.frontmatter.blur === true) { blurred = styles.blur }
   return (
-  <div className={styles.card+ ' ' + blurred}>
+  <div className={classNames(styles.card, data.frontmatter.blur && styles.blur)}>
     <div className={styles.titleWrapper}>
       <h2 className={styles.title}>{data.frontmatter.name}</h2>
       <h3 className={styles.subtitle}>{data.frontmatter.function}</h3>
