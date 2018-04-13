@@ -60,9 +60,13 @@ const IndexPage = ({data}) => {
 
         {/* CaseStudies */}
         <section className={styles.grid}>
+<<<<<<< HEAD
           <div className={styles.grid24}>
             <Marquee title="Case studies"/>
           </div>
+=======
+          <Marquee title="Case studies"/>
+>>>>>>> remove all display: contents
           { data.caseStudies.edges.map((caseStudy, key) => {
             return (<div className={styles.grid6} key={key}>
               <Card data={caseStudy} key={key}/>
@@ -72,9 +76,13 @@ const IndexPage = ({data}) => {
 
         {/* Viewpoints */}
         <section className={styles.grid}>
+<<<<<<< HEAD
           <div className={styles.grid24}>
             <Marquee title="Debat"/>
           </div>
+=======
+          <Marquee title="Debat"/>
+>>>>>>> remove all display: contents
           { data.viewpoints.edges.map((viewpoint, key) => {
             return (<div className={styles.grid6} key={key}>
               <Card data={viewpoint} key={key}/>;
@@ -96,7 +104,12 @@ const IndexPage = ({data}) => {
         </section>
 
       {/* Footer  */}
+<<<<<<< HEAD
         <section className={classNames(styles.grid, styles.footer)}>
+=======
+      <div className={classNames(styles.centerer, styles.footer)}>
+        <section className={styles.subgrid}>
+>>>>>>> remove all display: contents
           <div className={styles.affiliates}>
             { footerData.frontmatter.logos.map((logo, key) => {
               return (<div className={styles.affiliateLogo} key={key}>
