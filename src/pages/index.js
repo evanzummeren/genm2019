@@ -88,14 +88,15 @@ const IndexPage = ({data}) => {
             <Map isMarkerShown zoom={parseFloat(footerData.frontmatter.locationZoom)} location={{lat: parseFloat(footerData.frontmatter.location[0]), lng: Number(footerData.frontmatter.location[1])}}/>
           </div>
           <div className={styles.costs}>
+            <div className={styles.grid12}>
+              <Marquee title="Locatie & Kosten &"/>
+            </div>
             <div dangerouslySetInnerHTML={{ __html: footerData.html }}></div>
           </div>
         </section>
-      </div>
 
       {/* Footer  */}
-      <div className={classNames(styles.centerer, styles.footer)}>
-        <section className={styles.subgrid}>
+        <section className={classNames(styles.grid, styles.footer)}>
           <div className={styles.affiliates}>
             { footerData.frontmatter.logos.map((logo, key) => {
               return (<div className={styles.affiliateLogo} key={key}>
@@ -107,9 +108,12 @@ const IndexPage = ({data}) => {
             <p>{footerData.frontmatter.footerInfo}</p>
           </div>
         </section>
+      </div>
 
+      <div className={classNames(styles.centerer)}>
         <Dialog>{headerData.frontmatter.dialog}</Dialog>
       </div>
+
     </div>);
 };
 

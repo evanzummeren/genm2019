@@ -32,13 +32,6 @@
   display: flex;
 }
 
-.subgrid {
-  display: grid;
-  grid-column: 1 / span 24;
-  grid-column-gap: 1rem;
-  grid-template-columns: repeat(24, 1fr);
-}
-
 /* Header */
 
 .logo {
@@ -108,12 +101,14 @@
 .map {
   grid-column: 1 / span 12;
   height: 45rem;
+  z-index: 1;
 }
 
 
 .location {
   background-color: rgb(244,244,244);
   position: relative;
+  padding: 0 0 0 0;
 }
 
 .location::after {
@@ -124,6 +119,7 @@
   left: 100%;
   position: absolute;
   width: 100vw;
+  z-index: -1;
 }
 
 /* Footer */
@@ -138,18 +134,32 @@
 }
 
 .footer {
-  background-color: rgb(220,220,220);
   height: 25rem;
-  width: 100vw;
+  background-color: rgb(244,244,244);
 }
 
 .affiliates {
-  height: 20rem;
+  position: relative;
+  background-color: rgb(220,220,220);
+  height: 25rem;
+  grid-column: 1 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1rem;
+}
+
+.affiliates::before {
+  background-color: rgb(220,220,220);
+  content: "";
+  display: block;
+  height: 25rem;
+  right: 100%;
+  position: absolute;
+  width: 100vw;
 }
 
 .affiliateLogo {
-  align-self: center;
-  grid-column: 1 / span 5;
+  grid-column: 1/ span 5;
   padding: 4rem 0;
 }
 
@@ -158,5 +168,18 @@
 }
 
 .footerInfo {
+  position: relative;
+  background-color: rgb(244,244,244);
   grid-column: 13 / span 12;
+}
+
+.footerInfo::after {
+  background-color: rgb(244,244,244);
+  content: "";
+  display: block;
+  height: 25rem;
+  top: 0;
+  left: 100%;
+  position: absolute;
+  width: 100vw;
 }
