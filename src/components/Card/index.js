@@ -3,6 +3,8 @@ import Img from "gatsby-image";
 
 import styles from "./index.module.css";
 
+import imgSmouter from "../../content/home/viewpoints/smouter.png";
+
 const Card = (props) => {
   const data = props.data.node;
   console.log(data);
@@ -14,11 +16,13 @@ const Card = (props) => {
       <h2 className={styles.title}>{data.frontmatter.name}</h2>
       <h3 className={styles.subtitle}>{data.frontmatter.function}</h3>
     </div>
-    <div className={styles.text} dangerouslySetInnerHTML={{__html: data.html}} />
-    {data.frontmatter.featuredImage && (<div className={styles.profilePic}>
-      <Img resolutions={data.frontmatter.featuredImage.childImageSharp.resolutions} />
-    </div>)}
-    {data.frontmatter.quote && <h2>{data.frontmatter.quote}</h2>}
+    <div>
+      {data.frontmatter.featuredImage && (<div className={styles.profilePic}>
+        <Img className={styles.profilePic} resolutions={data.frontmatter.featuredImage.childImageSharp.resolutions} />
+      </div>)}
+      <div className={styles.text} dangerouslySetInnerHTML={{__html: data.html}} />
+      {data.frontmatter.quote && <h2>{data.frontmatter.quote}</h2>}
+    </div>
   </div>)
 };
 

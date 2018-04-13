@@ -3,7 +3,6 @@
 }
 
 .title {
-  width: 20rem;
   margin: 0;
 }
 
@@ -11,12 +10,13 @@
   color: rgb(255, 253, 84);
 }
 
-.text {
+.profilePic {
+  display: inline-block;
+  float: right;
 }
 
-.profilePic {
+.text {
   display: inline;
-  float: right;
 }
 
 .blur {

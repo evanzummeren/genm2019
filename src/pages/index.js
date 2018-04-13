@@ -77,7 +77,7 @@ const IndexPage = ({data}) => {
           </div>
           { data.viewpoints.edges.map((viewpoint, key) => {
             return (<div className={styles.grid6} key={key}>
-              <Card data={viewpoint} key={key}/>;
+              <Card data={viewpoint} key={key}/>
             </div>);
           })}
         </section>
