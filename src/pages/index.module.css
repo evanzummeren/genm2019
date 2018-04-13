@@ -41,6 +41,7 @@
 
 .nav {
   display: flex;
+  padding-top: 1.5rem;
   grid-column: 5 / span 20;
   justify-self: end;
 }
@@ -48,6 +49,7 @@
 .navItem {
   color: rgb(102,102,102);
   padding: 0 0 0 1rem;
+  letter-spacing: 1px;
 }
 
 /* Landing */
