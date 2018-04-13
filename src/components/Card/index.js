@@ -5,8 +5,11 @@ import styles from "./index.module.css";
 
 const Card = (props) => {
   const data = props.data.node;
+  console.log(data);
+  let blurred = "";
+  if (props.data.node.frontmatter.blur === true) { blurred = styles.blur }
   return (
-  <div className={styles.card}>
+  <div className={styles.card+ ' ' + blurred}>
     <div className={styles.titleWrapper}>
       <h2 className={styles.title}>{data.frontmatter.name}</h2>
       <h3 className={styles.subtitle}>{data.frontmatter.function}</h3>

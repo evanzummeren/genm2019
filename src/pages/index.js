@@ -183,6 +183,7 @@ export const query = graphql`
           frontmatter {
             name
             function
+            blur
             featuredImage {
                 childImageSharp {
                   resolutions(width: 200) {
@@ -205,6 +206,7 @@ export const query = graphql`
           frontmatter {
             name
             function
+            blur
             quote
             featuredImage {
                 childImageSharp {
