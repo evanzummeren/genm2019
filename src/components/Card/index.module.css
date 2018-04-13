@@ -1,13 +1,5 @@
-.container {
-  display: contents;
-}
-
 .card {
-  grid-column: auto / span 6;
-}
-
-.titleWrapper {
-  min-height: ;
+  width: 100%;
 }
 
 .title {

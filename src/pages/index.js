@@ -24,9 +24,9 @@ const IndexPage = ({data}) => {
   const footerData = data.general.edges[1].node;
   return (
     <div className={styles.centerer}>
-      <div className={styles.grid}>
+      <div className={styles.page}>
         {/* Page header */}
-        <header className={styles.block}>
+        <header className={styles.grid}>
           <img src={logo} className={styles.logo}></img>
           <div className={styles.nav}>
             { headerData.frontmatter.navigation.map((navItem, key) => (
@@ -36,7 +36,7 @@ const IndexPage = ({data}) => {
         </header>
 
         {/* Landing */}
-        <section className={styles.block}>
+        <section className={styles.grid}>
           <img src={nose} className={styles.headerImg}></img>
           <div className={styles.headerRight}>
             <h2 className={styles.subtitle}>{headerData.frontmatter.dateLoc}</h2>
@@ -54,28 +54,32 @@ const IndexPage = ({data}) => {
         {/* Speakers */}
         <section className={styles.block}>
           { data.speakers.edges.map((speaker, key) => {
-            return <Sheet speaker={speaker} key={key}/>;
+            return (<Sheet speaker={speaker} key={key}/>);
           })}
         </section>
 
         {/* CaseStudies */}
-        <section className={styles.block}>
+        <section className={styles.grid}>
           <Marquee title="Case studies"/>
           { data.caseStudies.edges.map((caseStudy, key) => {
-            return <Card data={caseStudy} key={key}/>;
+            return (<div className={styles.grid6} key={key}>
+              <Card data={caseStudy} key={key}/>
+            </div>);
           })}
         </section>
 
         {/* Viewpoints */}
-        <section className={styles.block}>
+        <section className={styles.grid}>
           <Marquee title="Debat"/>
           { data.viewpoints.edges.map((viewpoint, key) => {
-            return <Card data={viewpoint} key={key}/>;
+            return (<div className={styles.grid6} key={key}>
+              <Card data={viewpoint} key={key}/>;
+            </div>);
           })}
         </section>
 
         {/* Location and costs */}
-        <section className={classNames(styles.subgrid, styles.location)}>
+        <section className={classNames(styles.grid, styles.location)}>
           <div className={styles.map}>
             <Map isMarkerShown zoom={parseFloat(footerData.frontmatter.locationZoom)} location={{lat: parseFloat(footerData.frontmatter.location[0]), lng: Number(footerData.frontmatter.location[1])}}/>
           </div>
@@ -87,7 +91,7 @@ const IndexPage = ({data}) => {
 
       {/* Footer  */}
       <div className={classNames(styles.centerer, styles.footer)}>
-        <section className={styles.grid}>
+        <section className={styles.subgrid}>
           <div className={styles.affiliates}>
             { footerData.frontmatter.logos.map((logo, key) => {
               return (<div className={styles.affiliateLogo} key={key}>
