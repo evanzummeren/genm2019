@@ -6,8 +6,15 @@
 }
 
 .page {
-  width: 100rem;
+  width: 80rem;
 }
+
+/* $small-range: (0em, 40em); /* 0, 640px /
+$medium-range: (40.063em, 64em); / 641px, 1024px /
+$large-range: (64.063em, 90em); / 1025px, 1440px /
+$xlarge-range: (90.063em, 120em); / 1441px, 1920px /
+$xxlarge-range: (120.063em); / 1921px */
+
 
 .grid {
   display: grid;
@@ -17,7 +24,7 @@
 
   grid-auto-flow: row;
   grid-auto-rows: auto;
-  grid-row-gap: 6rem;
+  grid-row-gap: 4rem;
 }
 
 .grid6 {
@@ -85,8 +92,8 @@
 }
 
 .landingText p {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .title {

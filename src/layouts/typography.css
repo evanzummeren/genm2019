@@ -10,13 +10,9 @@
   src: url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.eot?#iefix") format("embedded-opentype"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff2") format("woff2"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.woff") format("woff"), url("https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-031221-010286-000064-be8bfee213f84bde3a73ed8266427105.svg#typotheque_webfonts_service") format("svg");
 }
 
-/*
-
-+.landingText p {
-+  font-size: 1.8rem;
-+  line-height: 2.8rem;
- }
-*/
+html {
+  font-size: 16px;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	color: white;
@@ -26,17 +22,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 4rem;
-	line-height: 4.5rem;
+	font-size: 2.5rem;
+	line-height: 3.5rem;
 }
 
 h2 {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	line-height: 1.6rem;
 }
 
 h3 {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	line-height: 2.1rem;
 
 	color: rgb(255, 253, 84);
@@ -44,8 +40,8 @@ h3 {
 }
 
 p, li {
-	font-size: 1.25rem;
-	line-height: 1.95rem;
+	font-size: 1rem;
+	line-height: 1.4rem;
 
 	color: white;
 	font-weight: 100;
@@ -64,8 +60,8 @@ a:hover {
 
 q {
 	font-family: "Fedra Serif A Book";
-	font-size: 2.5rem;
-	line-height: 3.5rem;
+	font-size: 2rem;
+	line-height: 3rem;
 	font-weight: 100;
 	color: white;
 }

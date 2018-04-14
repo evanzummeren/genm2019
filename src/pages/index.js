@@ -12,8 +12,12 @@ import Marquee from "../components/Marquee"
 import Button from "../components/Button"
 
 // Styles
-import styles from "./index.module.css"
-import styles from "./responsive.module.css"
+import stylesNormal from "./index.module.css"
+import stylesResponsive from "./responsive.module.css"
+const styles = {
+  ...stylesNormal,
+  ...stylesResponsive
+}
 
 // Images
 import logo from "./logo.svg"
