@@ -30,7 +30,7 @@ const IndexPage = ({data}) => {
           <img src={logo} className={styles.logo}></img>
           <div className={styles.nav}>
             { headerData.frontmatter.navigation.map((navItem, key) => (
-                <h3 className={styles.navItem} key={key}>{navItem}</h3>)
+                <a href={"#" + navItem}><h3 className={styles.navItem} key={key}>{navItem}</h3></a>)
             )}
           </div>
         </header>
@@ -52,14 +52,19 @@ const IndexPage = ({data}) => {
         </section>
 
         {/* Speakers */}
-        <section className={styles.block}>
+        <section className={styles.grid} id={headerData.frontmatter.navigation[0]}>
+          <div className={styles.grid24}>
+            <Marquee title="Sprekers"/>
+          </div>
           { data.speakers.edges.map((speaker, key) => {
-            return (<Sheet speaker={speaker} key={key}/>);
+            return (<div className={styles.grid24}>
+              <Sheet speaker={speaker} key={key}/>
+            </div>);
           })}
         </section>
 
         {/* CaseStudies */}
-        <section className={styles.grid}>
+        <section className={styles.grid} id={headerData.frontmatter.navigation[1]}>
           <div className={styles.grid24}>
             <Marquee title="Case studies"/>
           </div>
@@ -71,7 +76,7 @@ const IndexPage = ({data}) => {
         </section>
 
         {/* Viewpoints */}
-        <section className={styles.grid}>
+        <section className={styles.grid} id={headerData.frontmatter.navigation[2]}>
           <div className={styles.grid24}>
             <Marquee title="Debat"/>
           </div>
@@ -83,7 +88,7 @@ const IndexPage = ({data}) => {
         </section>
 
         {/* Location and costs */}
-        <section className={classNames(styles.grid, styles.location)}>
+        <section className={classNames(styles.grid, styles.location)} id={headerData.frontmatter.navigation[3]}>
           <div className={styles.map}>
             <Map isMarkerShown zoom={parseFloat(footerData.frontmatter.locationZoom)} location={{lat: parseFloat(footerData.frontmatter.location[0]), lng: Number(footerData.frontmatter.location[1])}}/>
           </div>
