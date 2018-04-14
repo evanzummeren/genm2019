@@ -13,6 +13,7 @@ import Button from "../components/Button"
 
 // Styles
 import styles from "./index.module.css"
+import styles from "./responsive.module.css"
 
 // Images
 import logo from "./logo.svg"
