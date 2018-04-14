@@ -139,7 +139,7 @@ export const query = graphql`
             logos {
               childImageSharp {
                 sizes(maxWidth: 800) {
-                  ...GatsbyImageSharpSizes
+                  ...GatsbyImageSharpSizes_tracedSVG
                 }
               }
             }

@@ -19,7 +19,7 @@ const Card = (props) => {
         <Img className={styles.profilePic} resolutions={data.frontmatter.featuredImage.childImageSharp.resolutions} />
       </div>)}
       <div className={styles.text} dangerouslySetInnerHTML={{__html: data.html}} />
-      {data.frontmatter.quote && <h2>{data.frontmatter.quote}</h2>}
+      {data.frontmatter.quote && <h2>"{data.frontmatter.quote}"</h2>}
     </div>
   </div>)
 };
