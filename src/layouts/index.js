@@ -20,8 +20,6 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <img src={backgroundImg} className={styles.backgroundImg}></img>
-    <img src={backgroundImg} className={styles.backgroundImgTwo}></img>
     {children()}
   </main>
 )
