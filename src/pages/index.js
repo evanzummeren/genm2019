@@ -89,7 +89,7 @@ const IndexPage = ({data}) => {
           </div>
           <div className={styles.costs}>
             <div className={styles.grid12}>
-              <Marquee title="Locatie & Kosten &"/>
+              <Marquee title="Locatie & Kosten &" secundary={true} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: footerData.html }}></div>
           </div>
@@ -207,6 +207,7 @@ export const query = graphql`
             name
             function
             blur
+            leader
             quote
             featuredImage {
                 childImageSharp {
