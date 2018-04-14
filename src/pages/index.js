@@ -1,22 +1,22 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import classNames from 'classnames'
-import Img from "gatsby-image";
+import Img from "gatsby-image"
+import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll"
 
 // Components
-import Dialog from "../components/Dialog";
-import Card from "../components/Card";
-import Sheet from "../components/Sheet";
-import Map from "../components/Map";
-import Marquee from "../components/Marquee";
-import Button from "../components/Button";
+import Dialog from "../components/Dialog"
+import Card from "../components/Card"
+import Sheet from "../components/Sheet"
+import Map from "../components/Map"
+import Marquee from "../components/Marquee"
+import Button from "../components/Button"
 
 // Styles
-import styles from "./index.module.css";
+import styles from "./index.module.css"
 
 // Images
-import logo from "./logo.svg";
-import nose from "./nose.svg";
+import logo from "./logo.svg"
+import nose from "./nose.svg"
 
 const IndexPage = ({data}) => {
   console.log(data);
@@ -30,7 +30,12 @@ const IndexPage = ({data}) => {
           <img src={logo} className={styles.logo}></img>
           <div className={styles.nav}>
             { headerData.frontmatter.navigation.map((navItem, key) => (
-                <a href={"#" + navItem}><h3 className={styles.navItem} key={key}>{navItem}</h3></a>)
+              <Link
+                key={key}
+                to={navItem}
+                smooth={true}>
+                <h3 className={styles.navItem}>{navItem}</h3>
+              </Link>)
             )}
           </div>
         </header>
@@ -52,19 +57,19 @@ const IndexPage = ({data}) => {
         </section>
 
         {/* Speakers */}
-        <section className={styles.grid} id={headerData.frontmatter.navigation[0]}>
+        <section className={styles.grid} name={headerData.frontmatter.navigation[0]}>
           <div className={styles.grid24}>
             <Marquee title="Sprekers"/>
           </div>
           { data.speakers.edges.map((speaker, key) => {
-            return (<div className={styles.grid24}>
-              <Sheet speaker={speaker} key={key}/>
+            return (<div className={styles.grid24} key={key}>
+              <Sheet speaker={speaker}/>
             </div>);
           })}
         </section>
 
         {/* CaseStudies */}
-        <section className={styles.grid} id={headerData.frontmatter.navigation[1]}>
+        <section className={styles.grid} name={headerData.frontmatter.navigation[1]}>
           <div className={styles.grid24}>
             <Marquee title="Case studies"/>
           </div>
@@ -76,7 +81,7 @@ const IndexPage = ({data}) => {
         </section>
 
         {/* Viewpoints */}
-        <section className={styles.grid} id={headerData.frontmatter.navigation[2]}>
+        <section className={styles.grid} name={headerData.frontmatter.navigation[2]}>
           <div className={styles.grid24}>
             <Marquee title="Debat"/>
           </div>
@@ -88,7 +93,7 @@ const IndexPage = ({data}) => {
         </section>
 
         {/* Location and costs */}
-        <section className={classNames(styles.grid, styles.location)} id={headerData.frontmatter.navigation[3]}>
+        <section className={classNames(styles.grid, styles.location)} name={headerData.frontmatter.navigation[3]}>
           <div className={styles.map}>
             <Map isMarkerShown zoom={parseFloat(footerData.frontmatter.locationZoom)} location={{lat: parseFloat(footerData.frontmatter.location[0]), lng: Number(footerData.frontmatter.location[1])}}/>
           </div>
