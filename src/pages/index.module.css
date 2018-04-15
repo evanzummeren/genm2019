@@ -160,6 +160,12 @@
   padding: 0 0 0rem 0;
 }
 
+@media screen and (min-width: 0em) and (max-width: 64em) {
+  .location {
+    padding: 0 0 6rem 0;
+  }
+}
+
 .location::before {
   background-color: rgb(244,244,244);
   content: "";
