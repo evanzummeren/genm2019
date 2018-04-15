@@ -16,6 +16,12 @@
   background: rgba(102,102,102,0.7);
 }
 
+@media screen and (min-width: 0em) and (max-width: 64em) {
+  .container {
+    display: none;
+  }
+}
+
 .text {
   margin: 0;
 }

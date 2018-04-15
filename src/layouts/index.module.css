@@ -8,3 +8,11 @@ body {
   background-image: url(./dotgrid.svg);
   background-repeat: no-repeat;
 }
+
+@media screen and (min-width: 0em) and (max-width: 64em) {
+  .main {
+    background-image: url(./dotgrid.svg);
+    background-size: 200%;
+    background-position: right;
+  }
+}

@@ -10,13 +10,6 @@
   max-width: 80rem;
 }
 
-/* $small-range: (0em, 40em); /* 0, 640px /
-$medium-range: (40.063em, 64em); / 641px, 1024px /
-$large-range: (64.063em, 90em); / 1025px, 1440px /
-$xlarge-range: (90.063em, 120em); / 1441px, 1920px /
-$xxlarge-range: (120.063em); / 1921px */
-
-
 .grid {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
@@ -81,6 +74,12 @@ $xxlarge-range: (120.063em); / 1921px */
   justify-self: end;
 }
 
+@media screen and (min-width: 0em) and (max-width: 40em) {
+  .nav {
+    display: none;
+  }
+}
+
 .navItem {
   color: rgb(102,102,102);
   padding: 0 0 0 1rem;
@@ -113,6 +112,7 @@ $xxlarge-range: (120.063em); / 1921px */
   }
 }
 
+/* Don't like this typographic disturbance. */
 .title {
   color: rgb(255, 253, 84);
   font-size: 4rem;
@@ -157,10 +157,10 @@ $xxlarge-range: (120.063em); / 1921px */
 .location {
   background-color: rgb(244,244,244);
   position: relative;
-  padding: 0 0 0 0;
+  padding: 0 0 0rem 0;
 }
 
-.location::after {
+.location::before {
   background-color: rgb(244,244,244);
   content: "";
   display: block;
@@ -168,7 +168,6 @@ $xxlarge-range: (120.063em); / 1921px */
   left: 100%;
   position: absolute;
   width: 100vw;
-  z-index: -1;
 }
 
 .map {
@@ -215,6 +214,12 @@ $xxlarge-range: (120.063em); / 1921px */
   height: 25rem;
   background-color: rgb(244,244,244);
 }
+@media screen and (min-width: 0em) and (max-width: 64em) {
+  .footer {
+    padding: 0 0rem 6rem 0rem;
+  }
+}
+
 
 .affiliates {
   position: relative;
@@ -229,6 +234,7 @@ $xxlarge-range: (120.063em); / 1921px */
 @media screen and (min-width: 0em) and (max-width: 64em) {
   .affiliates {
     grid-column: 1 / span 25;
+    padding: 0 2rem;
   }
 }
 
@@ -247,8 +253,18 @@ $xxlarge-range: (120.063em); / 1921px */
   padding: 4rem 0;
 }
 
+
 .affiliateLogo:last-of-type {
   grid-column: span 5 / 12;
+}
+
+@media screen and (min-width: 0em) and (max-width: 40em) {
+  .affiliateLogo {
+    grid-column: 1 / span 12;
+  }
+  .affiliateLogo:last-of-type {
+    grid-column: span 12 / 13;
+  }
 }
 
 .footerInfo {
