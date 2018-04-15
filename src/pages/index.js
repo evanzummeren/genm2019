@@ -31,8 +31,13 @@ const IndexPage = ({data}) => {
     <div className={styles.centerer}>
       <div className={styles.page}>
         {/* Page header */}
-        <header className={styles.grid}>
-          <img src={logo} className={styles.logo}></img>
+        <header className={classNames(styles.grid, styles.header)}>
+          <div className={styles.logo}>
+            <h1 className={styles.logoText}>Grote</h1>
+            <h1 className={styles.logoText}>Expertisedag</h1>
+            <h1 className={styles.logoText}>Nieuwe Media</h1>
+            <h1 className={styles.logoText}>2018</h1>
+          </div>
           <div className={styles.nav}>
             { headerData.frontmatter.navigation.map((navItem, key) => (
               <Link
