@@ -136,6 +136,7 @@
   color: black;
   margin: 0;
   font-family: "Fedra Mono Medium";
+  white-space: nowrap;
 }
 
 .landingText {
