@@ -105,7 +105,7 @@ const IndexPage = ({data}) => {
         {/* Location and costs */}
         <section className={classNames(styles.grid, styles.location)} name={headerData.frontmatter.navigation[3]}>
           <div className={styles.map}>
-            <Map isMarkerShown zoom={parseFloat(footerData.frontmatter.locationZoom)} location={{lat: parseFloat(footerData.frontmatter.location[0]), lng: Number(footerData.frontmatter.location[1])}}/>
+            <Map isMarkerShown apiKey={footerData.frontmatter.locationApiKey} zoom={parseFloat(footerData.frontmatter.locationZoom)} location={{lat: parseFloat(footerData.frontmatter.location[0]), lng: Number(footerData.frontmatter.location[1])}}/>
           </div>
           <div className={styles.costs}>
             <div className={styles.grid12}>
@@ -118,6 +118,13 @@ const IndexPage = ({data}) => {
       {/* Footer  */}
         <section className={classNames(styles.grid, styles.footer)}>
           <div className={styles.affiliates}>
+            <h3>Organisatie</h3>
+            { footerData.frontmatter.logos.map((logo, key) => {
+              return (<div className={styles.affiliateLogo} key={key}>
+                <Img sizes={logo.childImageSharp.sizes} />
+              </div>);
+            })}
+            <h3>Ondersteund door</h3>
             { footerData.frontmatter.logos.map((logo, key) => {
               return (<div className={styles.affiliateLogo} key={key}>
                 <Img sizes={logo.childImageSharp.sizes} />

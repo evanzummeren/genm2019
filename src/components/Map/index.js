@@ -6,9 +6,9 @@ import styles from "./index.module.css";
 
 const MapComponent = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HLMSxTtA35NktnyrJHAv9N_gSJfHSjM&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `45rem` }} />,
+    containerElement: <div style={{ height: `40rem` }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,

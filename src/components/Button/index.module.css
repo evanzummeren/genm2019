@@ -6,13 +6,22 @@
   text-decoration: none;
 }
 
+.container:hover {
+  background: rgba(130, 62, 207);
+  text-decoration: none;
+}
+
 .text {
   color: white;
   margin: 0;
 }
 
 .alternative {
-  background: rgb(255, 253, 84);
+  background: rgb(255, 255, 0);
+}
+
+.alternative:hover {
+  background: rgba(255, 255, 0);
 }
 
 .alternative .text {

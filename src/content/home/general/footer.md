@@ -3,7 +3,6 @@ marqueeTitle: Kosten & Locatie
 logos:
   - "./logo-uva.png"
   - "./logo-democratie.png"
-apiKey: "AIzaSyD8HLMSxTtA35NktnyrJHAv9N_gSJfHSjM"
 location:
   - "52.369438"
   - "4.89523"
