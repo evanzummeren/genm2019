@@ -119,13 +119,13 @@ const IndexPage = ({data}) => {
         <section className={classNames(styles.grid, styles.footer)}>
           <div className={styles.affiliates}>
             <h3 className={styles.affiliatesHeader}>Organisatie</h3>
-            { footerData.frontmatter.logos.map((logo, key) => {
+            { footerData.frontmatter.logosOrganisatie.map((logo, key) => {
               return (<div className={styles.affiliateLogo} key={key}>
                 <Img sizes={logo.childImageSharp.sizes} />
               </div>);
             })}
             <h3 className={styles.affiliatesHeader}>Ondersteund door</h3>
-            { footerData.frontmatter.logos.map((logo, key) => {
+            { footerData.frontmatter.logosOndersteuning.map((logo, key) => {
               return (<div className={styles.affiliateLogo} key={key}>
                 <Img sizes={logo.childImageSharp.sizes} />
               </div>);
@@ -163,7 +163,14 @@ export const query = graphql`
             navigation
             dialog
             marqueeTitle
-            logos {
+            logosOrganisatie {
+              childImageSharp {
+                sizes(maxWidth: 800) {
+                  ...GatsbyImageSharpSizes_tracedSVG
+                }
+              }
+            }
+            logosOndersteuning {
               childImageSharp {
                 sizes(maxWidth: 800) {
                   ...GatsbyImageSharpSizes_tracedSVG

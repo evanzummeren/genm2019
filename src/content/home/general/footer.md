@@ -1,6 +1,8 @@
 ---
 marqueeTitle: Kosten & Locatie
-logos:
+logosOrganisatie:
+  - "./logo-expertisecentrum.png"
+logosOndersteuning:
   - "./logo-uva.png"
   - "./logo-democratie.png"
 location:

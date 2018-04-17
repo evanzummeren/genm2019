@@ -218,7 +218,7 @@
 
 
 .footer {
-  height: 25rem;
+  height: 35rem;
   background-color: rgb(244,244,244);
 }
 @media screen and (min-width: 0em) and (max-width: 64em) {
@@ -231,7 +231,7 @@
 .affiliates {
   position: relative;
   background-color: rgb(220,220,220);
-  height: 25rem;
+  height: 35rem;
   grid-column: 1 / span 12;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -250,7 +250,7 @@
   background-color: rgb(220,220,220);
   content: "";
   display: block;
-  height: 25rem;
+  height: 35rem;
   right: 100%;
   position: absolute;
   width: 100vw;
@@ -264,6 +264,7 @@
 
 .affiliateLogo {
   grid-column: auto / span 5;
+  align-self: center;
 }
 
 @media screen and (min-width: 0em) and (max-width: 40em) {
@@ -289,7 +290,7 @@
   background-color: rgb(244,244,244);
   content: "";
   display: block;
-  height: 25rem;
+  height: 35rem;
   top: 0;
   left: 100%;
   position: absolute;
