@@ -8,9 +8,9 @@ details:
 dialog: "Tot 15 mei vroegboekkorting. Regulier - €135,- Freelancers - €82,50. Studenten - €25,-"
 navigation:
   - Sprekers
-  - Case Studies
+  - Casestudies
   - Debat
-  - Tickets en Locatie
+  - Tickets&Locatie
 order: 1
 ---
 Waarheid en vertouwen stonden in 2017 centraal op de Expertisedag. Ook in 2018 is dit thema onverminderd urgent. Wat zijn de laatste ontwikkelingen op het gebied van het vinden, vertellen en verspreiden van (online) betrouwbaar nieuws.
