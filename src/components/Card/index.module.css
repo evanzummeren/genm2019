@@ -17,6 +17,7 @@
 .profilePic {
   display: inline-block;
   float: right;
+  filter: grayscale(100);
 }
 
 .text {
