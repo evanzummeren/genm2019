@@ -1,7 +1,7 @@
 ---
 dateLoc: "19 juni 2018 - Oudemanhuispoort, Amsterdam"
 title: Journalistiek in het post-truth tijdperk
-button: "Bestel tickets - €135 (tot 15 mei)"
+button: "Bestel tickets - €135 i.p.v. €165 (tot 15 mei)"
 details:
   - "Eerste 15 freelancers - €82,50"
   - "Studenten - €25"

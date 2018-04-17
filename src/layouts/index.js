@@ -16,7 +16,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Expertisedag Nieuwe Media 2018"
       meta={[
-        { name: 'description', content: 'Sample' },
+        { name: 'description', content: 'Met trots presenteert het Expertisecentrum Journalistiek op dinsdag 19 juni 2018 voor de achtste achtereenvolgende keer: De Grote Expertisedag Nieuwe Media #8' },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
