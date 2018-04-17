@@ -25,5 +25,6 @@
 }
 
 .blur {
-	filter: blur(4px);
+	filter: blur(3px);
+  opacity: 0.5;
 }
