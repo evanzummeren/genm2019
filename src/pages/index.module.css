@@ -115,8 +115,8 @@
 /* Don't like this typographic disturbance. */
 .title {
   color: rgb(255, 253, 84);
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 3.157rem;
+  line-height: 4.2rem;
 }
 
 .subtitle {
@@ -149,7 +149,7 @@
 }
 
 .landingText p {
-  font-size: 1.5rem;
+  font-size: 1.333rem;
   line-height: 2rem;
 }
 
@@ -236,6 +236,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 2rem;
+  align-content: start;
 }
 
 @media screen and (min-width: 0em) and (max-width: 64em) {
@@ -255,22 +256,19 @@
   width: 100vw;
 }
 
-.affiliateLogo {
-  grid-column: 1/ span 5;
-  padding: 2.8rem 0;
+.affiliatesHeader {
+  grid-column: 1 / span 12;
+  margin: 2.8rem 0 1.4rem;
+  color: rgb(118,118,118);
 }
 
-
-.affiliateLogo:last-of-type {
-  grid-column: span 5 / 12;
+.affiliateLogo {
+  grid-column: auto / span 5;
 }
 
 @media screen and (min-width: 0em) and (max-width: 40em) {
   .affiliateLogo {
     grid-column: 1 / span 12;
-  }
-  .affiliateLogo:last-of-type {
-    grid-column: span 12 / 13;
   }
 }
 
