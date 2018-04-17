@@ -4,12 +4,12 @@ import Img from "gatsby-image"
 import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll"
 
 // Components
-import Dialog from "../components/Dialog/index.js"
-import Card from "../components/Card/index.js"
-import Sheet from "../components/Sheet/index.js"
-import Map from "../components/Map/index.js"
-import Marquee from "../components/Marquee/index.js"
-import Button from "../components/Button/index.js"
+import Dialog from "../components/Dialog"
+import Card from "../components/Card"
+import Sheet from "../components/Sheet"
+import Map from "../components/Map"
+import Marquee from "../components/Marquee"
+import Button from "../components/Button"
 
 // Styles
 import stylesNormal from "./index.module.css"
