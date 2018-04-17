@@ -267,9 +267,13 @@
   align-self: center;
 }
 
+.affiliateLogo:nth-of-type(3n) {
+  grid-column: 7 / span 5;
+}
+
 @media screen and (min-width: 0em) and (max-width: 40em) {
   .affiliateLogo {
-    grid-column: 1 / span 12;
+    /* grid-column: 1 / span 12; */
   }
 }
 
