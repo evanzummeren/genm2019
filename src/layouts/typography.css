@@ -28,7 +28,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
 	color: white;
-	font-family: "Fedra Mono Medium";
+	font-family: "Fedra Mono Medium", sans-serif;
 	font-weight: 100;
 	margin-bottom: 1rem;
 }
@@ -58,7 +58,7 @@ p, li {
 
 	color: white;
 	font-weight: 100;
-	font-family: "Fedra Serif A Book";
+	font-family: "Fedra Serif A Book", sans-serif;
 }
 
 a {
@@ -72,7 +72,7 @@ a:hover {
 }
 
 q {
-	font-family: "Fedra Serif A Book";
+	font-family: "Fedra Serif A Book", sans-serif;
 	font-size: 2rem;
 	line-height: 3rem;
 	font-weight: 100;
