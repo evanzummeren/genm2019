@@ -1,7 +1,7 @@
 ---
 name: "Uit New York: Keith Hammonds"
 function: President Solutions Journalism Network (SJN)
-featuredImage: ./keith.png
+featuredImage: ./keith.jpg
 order: 1
 ---
 Keith Hammonds is president van het Solutions Journalism Network (SJN). Volgens het SJN bestaat er een grote noodzaak om de journalistiek te repareren. Onze huidige nieuwsvoorziening versterkt bij de lezers het gevoel van wrok, economisch fatalisme, cynisme en de angst voor culturele vervreemding.
