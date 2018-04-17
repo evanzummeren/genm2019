@@ -30,7 +30,7 @@ const IndexPage = ({data}) => {
   return (
     <div className={styles.centerer}>
       <div className={styles.page}>
-        {/* Page header */}
+        {/* Page header  */}
         <header className={classNames(styles.grid, styles.header)}>
           <div className={styles.logo}>
             <h1 className={styles.logoText}>Grote</h1>
