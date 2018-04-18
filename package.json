@@ -26,7 +26,7 @@
   },
   "browserslist": [
     "> 1%",
-    "IE >= 8",
+    "IE >= 7",
     "last 2 versions"
   ],
   "keywords": [
