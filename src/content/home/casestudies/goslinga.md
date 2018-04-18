@@ -5,4 +5,4 @@ featuredImage: ./vermanen.png
 blur: false
 order: 3
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Jerry Vermanen werkt als data- en onderzoeksjournalist bij de KRO-NCRV. Daarvoor werkte hij als fulltime datajournalist bij NU.nl. Vermanen is de bedenker en projectleider van RegioHack, een datajournalistiek project door de regionale dagbladen de Stentor en TC Tubantia. Samen met Ludo Hekman...

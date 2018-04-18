@@ -13,6 +13,8 @@ navigation:
   - "Tickets\u2009&\u2009Locatie"
 order: 1
 ---
+Medialessen van (inter)nationale pioniers voor het digitale nu. 
+
 Waarheid en vertouwen stonden in 2017 centraal op de Expertisedag. Ook in 2018 is dit thema onverminderd urgent. Wat zijn de laatste ontwikkelingen op het gebied van het vinden, vertellen en verspreiden van (online) betrouwbaar nieuws.
 
 Wat kan technologie bijdragen om de afstand tussen het publiek en de journalistiek te verkleinen? En wat zal altijd mensenwerk blijven? We kijken dit jaar onder andere naar publieksparticipatie in het onderzoeksproces, blockchain-technologie, de laatste ontwikkelingen op het gebied van factchecking en de dialoog met de lezer. Ook werpen we onze kritische blik op de constructieve journalistiek als een mogelijke remedie.
