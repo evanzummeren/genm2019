@@ -15,16 +15,17 @@ const generateCalendar = (events) => {
 
   // Events setup and push
   events.map((eventData, key)=>{
+    console.log(eventData)
     let event
     const description = new Property({
       name: 'DESCRIPTION',
       parameters: { VALUE: 'TEXT' },
-      value: eventData.node.frontmatter.title
+      value: eventData.node.html
     })
     const summery = new Property({
       name: 'SUMMARY',
       parameters: { VALUE: 'TEXT' },
-      value: "title"
+      value: eventData.node.frontmatter.title
     })
     const createTimeProperty = new Property({
       name: 'DTSTAMP',
@@ -62,7 +63,7 @@ const generateCalendar = (events) => {
     event = event.pushProperty(uid);
     calendar = calendar.pushComponent(event)
   })
-
+  console.log(calendar.toString());
   // Conversion to file
   return 'data:text/plain;charset=utf-8,' + encodeURIComponent(calendar.toString());
 }

@@ -12,7 +12,7 @@ const ListItem = (props) => {
   return (
   <div className={classNames(styles.list, data.frontmatter.blur && styles.blur)}>
     <h3>{moment(data.frontmatter.startTime).format('H.mm')} - {moment(data.frontmatter.endTime).format('H.mm')} UUR</h3>
-    <div className={styles.text} dangerouslySetInnerHTML={{__html: data.html}} />
+    <div className={styles.text} dangerouslySetInnerHTML={{__html: data.frontmatter.description}} />
   </div>)
 }
 

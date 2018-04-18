@@ -299,6 +299,8 @@ export const query = graphql`
             startTime
             endTime
             title
+            description
+            location
           }
           html
         }
