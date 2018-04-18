@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import bowser from 'bowser';
 
 {/* Global CSS */}
 import './index.css'
@@ -20,6 +21,7 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    {bowser.msie && <div className={styles.browserCatch}><h1>Deze website ondersteund internet explorer niet. U wordt aangeraden uw browser te updaten</h1></div> }
     {children()}
   </main>
 )

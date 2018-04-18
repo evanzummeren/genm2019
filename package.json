@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Robert-Jan Korteschiel",
   "dependencies": {
+    "bowser": "^1.9.3",
     "classnames": "^2.2.5",
     "gatsby": "^1.9.241",
     "gatsby-image": "^1.0.43",
