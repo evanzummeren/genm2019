@@ -298,6 +298,7 @@ export const query = graphql`
           frontmatter {
             startTime
             endTime
+            title
           }
           html
         }
