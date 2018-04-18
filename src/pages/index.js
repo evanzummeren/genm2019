@@ -119,14 +119,15 @@ const IndexPage = ({data}) => {
           <div className={classNames(styles.grid12, styles.twitter)}>
             <Timeline
               dataSource={{
-              sourceType: 'widget',
-              widgetId: '986523764660883456'
+                sourceType: 'widget',
+                widgetId: '986523764660883456'
               }}
               options={{
-                username: 'TwitterDev',
                 height: '600',
                 chrome: 'noheader nofooter noscrollbar transparent',
-                borderColor: '#d7bda5'
+                borderColor: '#d7bda5',
+                linkColor: '#5E358C',
+                dnt: 'true' // Don't collect any data from our site
               }}
             />
           </div>
