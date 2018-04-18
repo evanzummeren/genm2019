@@ -68,7 +68,6 @@
 
 .nav {
   display: flex;
-  padding-top: 1.5rem;
   grid-column: span 24 / 25;
   grid-row: 1;
   justify-self: end;
