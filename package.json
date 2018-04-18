@@ -17,6 +17,7 @@
     "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.0",
     "react-scroll": "^1.7.8",
+    "react-twitter-widgets": "^1.7.1",
     "recompose": "^0.26.0"
   },
   "keywords": [

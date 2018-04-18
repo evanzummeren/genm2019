@@ -43,6 +43,10 @@
   }
 }
 
+.grid12 {
+  grid-column: auto / span 12;
+}
+
 .grid24 {
   grid-column: 1 / span 24;
 }
@@ -153,6 +157,13 @@
   line-height: 2rem;
 }
 
+/* Twitter */
+
+.twitter {
+  background-color: rgb(244,244,244);
+}
+
+
 /* Location and costs */
 
 .location {
@@ -206,17 +217,16 @@
   }
 }
 
-.costs p, .footerInfo p{
-  color: #808080;
+.costs p {
+  color: rgb(118,118,118);;
 }
 
-.headingLocation {
-  color: #d1bda5 !important;
-}
+
+
+
+
 
 /* Footer */
-
-
 .footer {
   height: 35rem;
   background-color: rgb(244,244,244);
@@ -283,6 +293,10 @@
   padding: 2.8rem 0 0 0;
   background-color: rgb(244,244,244);
   grid-column: 13 / span 12;
+}
+
+.footerInfo p {
+  color: rgb(118,118,118);;
 }
 
 @media screen and (min-width: 0em) and (max-width: 64em) {

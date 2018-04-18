@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Img from "gatsby-image"
 import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll"
+import { Timeline, Hashtag } from 'react-twitter-widgets'
 
 // Components
 import Dialog from "../components/Dialog"
@@ -102,15 +103,42 @@ const IndexPage = ({data}) => {
           })}
         </section>
 
+        <section className={styles.grid} name={headerData.frontmatter.navigation[2]}>
+          <div className={styles.grid24}>
+            <Marquee title="Agenda"/>
+          </div>
+          <div className={styles.grid12}>
+            timeline
+          {/* { data.viewpoints.edges.map((viewpoint, key) => {
+            return (<div className={styles.grid6} key={key}>
+              <Card data={viewpoint} key={key}/>
+            </div>);
+          })}*/}
+
+          </div>
+          <div className={classNames(styles.grid12, styles.twitter)}>
+            <Timeline
+              dataSource={{
+              sourceType: 'widget',
+              widgetId: '986523764660883456'
+              }}
+              options={{
+                username: 'TwitterDev',
+                height: '600',
+                chrome: 'noheader nofooter noscrollbar transparent',
+                borderColor: '#d7bda5'
+              }}
+            />
+          </div>
+        </section>
+
         {/* Location and costs */}
         <section className={classNames(styles.grid, styles.location)} name={headerData.frontmatter.navigation[3]}>
           <div className={styles.map}>
             <Map isMarkerShown apiKey={footerData.frontmatter.locationApiKey} zoom={parseFloat(footerData.frontmatter.locationZoom)} location={{lat: parseFloat(footerData.frontmatter.location[0]), lng: Number(footerData.frontmatter.location[1])}}/>
           </div>
           <div className={styles.costs}>
-            <div className={styles.grid12}>
-              <Marquee title="Locatie & Kosten &" secundary={true} />
-            </div>
+            <Marquee title="Locatie & Kosten &" secundary={true} />
             <div dangerouslySetInnerHTML={{ __html: footerData.html }}></div>
           </div>
         </section>
