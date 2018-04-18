@@ -136,7 +136,6 @@ const IndexPage = ({data}) => {
         </section>
 
         {/* Agenda en Twitter */}
-
         <section className={styles.grid} name={headerData.frontmatter.navigation[2]}>
           <div className={styles.grid24}>
             <Marquee title="Agenda"/>
