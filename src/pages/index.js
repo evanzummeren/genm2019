@@ -137,6 +137,7 @@ const IndexPage = ({data}) => {
           </div>
         </section>
 
+
         {/* Location and costs */}
         <section className={classNames(styles.grid, styles.location)} name={headerData.frontmatter.navigation[3]}>
           <div className={styles.map}>
