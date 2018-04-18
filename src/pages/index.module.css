@@ -51,10 +51,6 @@
   grid-column: 1 / span 24;
 }
 
-.container {
-  display: flex;
-}
-
 /* Header */
 
 .header {
@@ -163,6 +159,10 @@
   background-color: rgb(244,244,244);
 }
 
+
+.twitter iframe {
+  display: block !important;
+}
 
 /* Location and costs */
 
