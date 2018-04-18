@@ -10,8 +10,6 @@ import './typography.css'
 {/* Modular CSS */}
 import styles from "./index.module.css";
 
-import backgroundImg from "./dotgrid.svg";
-
 const TemplateWrapper = ({ children }) => {
   console.log(bowser);
   return (<main className={styles.main} >
