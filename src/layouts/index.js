@@ -12,8 +12,9 @@ import styles from "./index.module.css";
 
 import backgroundImg from "./dotgrid.svg";
 
-const TemplateWrapper = ({ children }) => (
-  <main className={styles.main} >
+const TemplateWrapper = ({ children }) => {
+  console.log(bowser);
+  return (<main className={styles.main} >
     <Helmet
       title="Expertisedag Nieuwe Media 2018"
       meta={[
@@ -25,7 +26,7 @@ const TemplateWrapper = ({ children }) => (
     {bowser.msie && <div className={styles.browserCatch}><h1>Deze website ondersteund internet explorer niet. U wordt aangeraden uw browser te updaten</h1></div> }
     {children()}
   </main>
-)
+)}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
