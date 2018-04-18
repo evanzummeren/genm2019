@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children }) => {
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    Browser is {bowser.msie && Internet explorer}
+    Browser is {bowser.msie && "Internet explorer"}
     {bowser.msie && <div className={styles.browserCatch}><h1>Deze website ondersteund internet explorer niet. U wordt aangeraden uw browser te updaten</h1></div> }
     {children()}
   </main>

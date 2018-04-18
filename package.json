@@ -23,6 +23,11 @@
     "react-twitter-widgets": "^1.7.1",
     "recompose": "^0.26.0"
   },
+ "browserslist": [
+   "> 1%",
+   "IE >= 9",
+   "last 2 versions"
+  ],
   "keywords": [
     "gatsby"
   ],
