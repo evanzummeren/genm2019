@@ -9,6 +9,7 @@
     "gatsby": "^1.9.241",
     "gatsby-image": "^1.0.43",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-core-js": "^1.0.2",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-sharp": "^1.6.41",
     "gatsby-plugin-typography": "^1.7.18",
@@ -23,10 +24,10 @@
     "react-twitter-widgets": "^1.7.1",
     "recompose": "^0.26.0"
   },
- "browserslist": [
-   "> 1%",
-   "IE >= 9",
-   "last 2 versions"
+  "browserslist": [
+    "> 1%",
+    "IE >= 8",
+    "last 2 versions"
   ],
   "keywords": [
     "gatsby"
