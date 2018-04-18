@@ -5,7 +5,7 @@ import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy,
 import { Timeline, Hashtag } from 'react-twitter-widgets'
 
 // Custom scripts
-import generateCalendar from "./ical.js"
+import generateCalendar from "../components/ical.js"
 
 // Components
 import Dialog from "../components/Dialog"
@@ -300,7 +300,8 @@ export const query = graphql`
             endTime
             title
             description
-            location
+            room
+            url
           }
           html
         }

@@ -1,6 +1,7 @@
 import { Component, Property } from 'immutable-ics'
 
 const generateCalendar = (events) => {
+  console.log(events)
   // Calendar setup
   let calendar
   const versionProperty = new Property({ name: 'VERSION', value: 2 })
@@ -15,17 +16,26 @@ const generateCalendar = (events) => {
 
   // Events setup and push
   events.map((eventData, key)=>{
-    console.log(eventData)
     let event
     const description = new Property({
       name: 'DESCRIPTION',
       parameters: { VALUE: 'TEXT' },
-      value: eventData.node.html
+      value: eventData.node.frontmatter.description
     })
     const summery = new Property({
       name: 'SUMMARY',
       parameters: { VALUE: 'TEXT' },
       value: eventData.node.frontmatter.title
+    })
+    const location = new Property({
+      name: 'LOCATION',
+      parameters: { VALUE: 'TEXT' },
+      value: eventData.node.frontmatter.room
+    })
+    const url = new Property({
+      name: 'URL',
+      parameters: { VALUE: 'TEXT' },
+      value: eventData.node.frontmatter.url
     })
     const createTimeProperty = new Property({
       name: 'DTSTAMP',
@@ -57,6 +67,8 @@ const generateCalendar = (events) => {
     event = new Component({ name: 'VEVENT' })
     event = event.pushProperty(description);
     event = event.pushProperty(summery);
+    event = event.pushProperty(location);
+    event = event.pushProperty(url);
     event = event.pushProperty(createTimeProperty);
     event = event.pushProperty(startTimeProperty);
     event = event.pushProperty(endTimeProperty);
