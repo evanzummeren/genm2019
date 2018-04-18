@@ -4,6 +4,9 @@ import Img from "gatsby-image"
 import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll"
 import { Timeline, Hashtag } from 'react-twitter-widgets'
 
+// Custom scripts
+import generateCalendar from "./ical.js"
+
 // Components
 import Dialog from "../components/Dialog"
 import Card from "../components/Card"
@@ -25,39 +28,7 @@ const styles = {
 import logo from "./logo.svg"
 import nose from "./nose.svg"
 
-import { Component, Property } from 'immutable-ics'
-const generateCalendar = (events) => {
-  // Calendar setup
-  let calendar
-  const versionProperty = new Property({ name: 'VERSION', value: 2 })
-  calendar = new Component({ name: 'VCALENDAR' })
-  calendar = calendar.pushProperty(versionProperty)
-
-  // Events setup and push
-  events.map((eventData, key)=>{
-    let event
-    const startTimeProperty = new Property({
-      name: 'DTSTART',
-      parameters: { VALUE: 'DATETIME' },
-      value: new Date(eventData.node.frontmatter.startTime)
-    })
-    const endTimeProperty = new Property({
-      name: 'DTEND',
-      parameters: { VALUE: 'DATETIME' },
-      value: new Date(eventData.node.frontmatter.endTime)
-    })
-    event = new Component({ name: 'VEVENT' })
-    event = event.pushProperty(startTimeProperty, endTimeProperty)
-    calendar = calendar.pushComponent(event)
-  })
-
-  // Conversion to file
-  return 'data:text/plain;charset=utf-8,' + encodeURIComponent(calendar.toString());
-}
-
 const IndexPage = ({data}) => {
-  console.log(data);
-  console.log(generateCalendar(data.agenda.edges));
   const headerData = data.general.edges[0].node;
   const footerData = data.general.edges[1].node;
   return (

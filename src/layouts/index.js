@@ -11,7 +11,6 @@ import './typography.css'
 import styles from "./index.module.css";
 
 const TemplateWrapper = ({ children }) => {
-  console.log(bowser);
   return (<main className={styles.main} >
     <Helmet
       title="Expertisedag Nieuwe Media 2018"
