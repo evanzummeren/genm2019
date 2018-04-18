@@ -11,6 +11,7 @@ import Sheet from "../components/Sheet"
 import Map from "../components/Map"
 import Marquee from "../components/Marquee"
 import Button from "../components/Button"
+import ListItem from "../components/ListItem"
 
 // Styles
 import stylesNormal from "./index.module.css"
@@ -24,8 +25,36 @@ const styles = {
 import logo from "./logo.svg"
 import nose from "./nose.svg"
 
+
+import { Component, Property } from 'immutable-ics'
+const generateCalendar = (events) => {
+  console.log(events)
+
+  // Calendar basics
+  let calendar
+  const versionProperty = new Property({ name: 'VERSION', value: 2 })
+  calendar = new Component({ name: 'VCALENDAR' })
+  calendar = calendar.pushProperty(versionProperty)
+
+  // Events
+  events.map((eventData, key)=>{
+    let event
+    const dtstartProperty = new Property({
+      name: 'DTSTART',
+      parameters: { VALUE: 'DATETIME' },
+      value: new Date(eventData.node.frontmatter.time)
+    })
+    event = new Component({ name: 'VEVENT' })
+    event = event.pushProperty(dtstartProperty)
+    calendar = calendar.pushComponent(event)
+  })
+
+  return 'data:text/plain;charset=utf-8,' + encodeURIComponent(calendar.toString());
+}
+
 const IndexPage = ({data}) => {
   console.log(data);
+  console.log(generateCalendar(data.agenda.edges));
   const headerData = data.general.edges[0].node;
   const footerData = data.general.edges[1].node;
   return (
@@ -57,7 +86,7 @@ const IndexPage = ({data}) => {
           <div className={styles.headerRight}>
             <h2 className={styles.subtitle}>{headerData.frontmatter.dateLoc}</h2>
             <h1 className={styles.title}>{headerData.frontmatter.title}</h1>
-            <Button text={headerData.frontmatter.button} color="purple"/>
+            <Button text={headerData.frontmatter.button} color="purple" link="http://www.expertisecentrumjournalistiek.nl/agenda/19-juni-2018-de-grote-expertisedag-nieuwe-media/"/>
             { headerData.frontmatter.details.map((detail, key) => {
               return (<div className={styles.detailBlock} key={key}>
                 <p className={styles.detailText}>{detail}</p>
@@ -103,18 +132,19 @@ const IndexPage = ({data}) => {
           })}
         </section>
 
+        {/* Agenda en Twitter */}
+
         <section className={styles.grid} name={headerData.frontmatter.navigation[2]}>
           <div className={styles.grid24}>
             <Marquee title="Agenda"/>
           </div>
           <div className={styles.grid12}>
-            timeline
-          {/* { data.viewpoints.edges.map((viewpoint, key) => {
-            return (<div className={styles.grid6} key={key}>
-              <Card data={viewpoint} key={key}/>
-            </div>);
-          })}*/}
-
+            { data.agenda.edges.map((event, key) => {
+              return (
+                <ListItem data={event} key={key}/>
+              );
+            })}
+            <Button text="Export als iCal" alternative="true" link={generateCalendar(data.agenda.edges)} download={'calendar-genm18.ics'}/>
           </div>
           <div className={classNames(styles.grid12, styles.twitter)}>
             <Timeline
@@ -127,7 +157,8 @@ const IndexPage = ({data}) => {
                 chrome: 'noheader nofooter noscrollbar transparent',
                 borderColor: '#d7bda5',
                 linkColor: '#5E358C',
-                dnt: 'true' // Don't collect any data from our site
+                dnt: 'true', // Don't collect or use any data from our site.
+                omitScript: 1 // Really, well, don't do anything. Disables updates.
               }}
             />
           </div>
@@ -279,6 +310,21 @@ export const query = graphql`
                   }
                 }
               }
+          }
+          html
+        }
+      }
+    }
+    agenda: allMarkdownRemark(
+      filter: {id: {regex: "//home/agenda//"}},
+      sort: { order: ASC, fields: [frontmatter___order]}
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            startTime
+            endTime
           }
           html
         }
