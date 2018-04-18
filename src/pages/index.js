@@ -148,6 +148,7 @@ const IndexPage = ({data}) => {
           </div>
         </section>
 
+
       {/* Footer  */}
         <section className={classNames(styles.grid, styles.footer)}>
           <div className={styles.affiliates}>
