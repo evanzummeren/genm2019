@@ -51,6 +51,10 @@
   color: rgb(118, 118, 118);
 }
 
+.footerInfo a {
+  color: rgb(118, 118, 118);
+}
+
 .footerInfo::after {
   background-color: rgb(244, 244, 244);
   content: "";

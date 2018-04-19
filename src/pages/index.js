@@ -38,7 +38,9 @@ import nose from "./landingpage/nose.svg"
 
 const IndexPage = ({data}) => {
   const headerData = data.general.edges[0].node;
-  const footerData = data.general.edges[1].node;
+  const locCostData = data.general.edges[1].node;
+  const footerData = data.general.edges[2].node;
+  console.log(locCostData);
   return (
     <div className={styles.screen}>
       <div className={styles.page}>
@@ -145,11 +147,18 @@ const IndexPage = ({data}) => {
         {/* Location and costs */}
         <section className={classNames(styles.grid, styles.location)} name={headerData.frontmatter.navigation[3]}>
           <div className={styles.map}>
-            <Map isMarkerShown apiKey={footerData.frontmatter.locationApiKey} zoom={parseFloat(footerData.frontmatter.locationZoom)} location={{lat: parseFloat(footerData.frontmatter.location[0]), lng: Number(footerData.frontmatter.location[1])}}/>
+            <Map
+              isMarkerShown
+              apiKey={locCostData.frontmatter.locationApiKey}
+              zoom={parseFloat(locCostData.frontmatter.locationZoom)}
+              location={{
+                lat: parseFloat(locCostData.frontmatter.location[0]),
+                lng: Number(locCostData.frontmatter.location[1])}}
+            />
           </div>
           <div className={styles.costs}>
             <Marquee title="Locatie & Kosten &" secundary={true} />
-            <div dangerouslySetInnerHTML={{ __html: footerData.html }}></div>
+            <div dangerouslySetInnerHTML={{ __html: locCostData.html }}></div>
           </div>
         </section>
 
@@ -170,9 +179,7 @@ const IndexPage = ({data}) => {
               </div>);
             })}
           </div>
-          <div className={styles.footerInfo}>
-            <p>{footerData.frontmatter.footerInfo}</p>
-          </div>
+          <div className={styles.footerInfo} dangerouslySetInnerHTML={{__html: footerData.html}} />
         </section>
       </div>
 
@@ -216,7 +223,6 @@ export const query = graphql`
                 }
               }
             }
-            footerInfo
             location
             locationZoom
           }
