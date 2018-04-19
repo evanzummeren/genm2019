@@ -61,8 +61,10 @@ p, li {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: underline;
 	cursor: pointer;
+	color: white;
+
 }
 
 a:hover {

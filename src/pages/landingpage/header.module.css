@@ -20,9 +20,16 @@
 }
 
 .navItem {
-  color: rgb(102, 102, 102);
-  padding: 0 0 0 1rem;
+  font-family: "Fedra Mono Medium", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: 1.4rem;
   letter-spacing: 1px;
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 0 0 1rem;
 }
 
 @media screen and (min-width: 1em) and (max-width: 40em) {

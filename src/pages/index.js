@@ -48,10 +48,11 @@ const IndexPage = ({data}) => {
           <div className={styles.nav}>
             { headerData.frontmatter.navigation.map((navItem, key) => (
               <Link
+                className={styles.navItem}
                 key={key}
                 to={navItem}
                 smooth={true}>
-                <h3 className={styles.navItem}>{navItem}</h3>
+                {navItem}
               </Link>)
             )}
           </div>
