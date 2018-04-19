@@ -164,7 +164,7 @@ const IndexPage = ({data}) => {
 
       {/* Footer  */}
         <section className={classNames(styles.grid, styles.footer)}>
-          <div className={styles.affiliates}>
+          <div className={classNames(styles.grid12, styles.affiliates)}>
             <h3 className={styles.affiliatesHeader}>Organisatie</h3>
             { footerData.frontmatter.logosOrganisatie.map((logo, key) => {
               return (<div className={styles.affiliateLogo} key={key}>
@@ -178,7 +178,7 @@ const IndexPage = ({data}) => {
               </div>);
             })}
           </div>
-          <div className={styles.footerInfo} dangerouslySetInnerHTML={{__html: footerData.html}} />
+          <div className={classNames(styles.grid12, styles.footerInfo)} dangerouslySetInnerHTML={{__html: footerData.html}} />
         </section>
       </div>
 
