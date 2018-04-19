@@ -1,0 +1,88 @@
+.footer {
+  height: 35rem;
+  background-color: rgb(244,244,244);
+}
+@media screen and (min-width: 0em) and (max-width: 64em) {
+  .footer {
+    padding: 0 0rem 6rem 0rem;
+  }
+}
+
+
+.affiliates {
+  position: relative;
+  background-color: rgb(220,220,220);
+  height: 35rem;
+  grid-column: 1 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 2rem;
+  align-content: start;
+}
+
+@media screen and (min-width: 0em) and (max-width: 64em) {
+  .affiliates {
+    grid-column: 1 / span 25;
+    padding: 0 2rem;
+  }
+}
+
+.affiliates::before {
+  background-color: rgb(220,220,220);
+  content: "";
+  display: block;
+  height: 35rem;
+  right: 100%;
+  position: absolute;
+  width: 100vw;
+}
+
+.affiliatesHeader {
+  grid-column: 1 / span 12;
+  margin: 2.8rem 0 0rem;
+  color: rgb(118,118,118);
+}
+
+.affiliateLogo {
+  padding: 1.4rem 0 0 0 0;
+  grid-column: auto / span 5;
+  align-self: center;
+}
+
+.affiliateLogo:nth-of-type(3n) {
+  grid-column: 7 / span 5;
+}
+
+@media screen and (min-width: 0em) and (max-width: 40em) {
+  .affiliateLogo {
+    /* grid-column: 1 / span 12; */
+  }
+}
+
+.footerInfo {
+  position: relative;
+  padding: 2.8rem 0 0 0;
+  background-color: rgb(244,244,244);
+  grid-column: 13 / span 12;
+}
+
+.footerInfo p {
+  color: rgb(118,118,118);;
+}
+
+@media screen and (min-width: 0em) and (max-width: 64em) {
+  .footerInfo {
+    grid-column: 1 / span 25;
+  }
+}
+
+.footerInfo::after {
+  background-color: rgb(244,244,244);
+  content: "";
+  display: block;
+  height: 35rem;
+  top: 0;
+  left: 100%;
+  position: absolute;
+  width: 100vw;
+}

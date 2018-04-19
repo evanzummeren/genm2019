@@ -17,16 +17,24 @@ import Button from "../components/Button"
 import ListItem from "../components/ListItem"
 
 // Styles
-import stylesNormal from "./index.module.css"
-import stylesResponsive from "./responsive.module.css"
+import stylesGrid from "./landingpage/grid.module.css"
+import stylesHeader from "./landingpage/header.module.css"
+import stylesLanding from "./landingpage/landing.module.css"
+import stylesProgramma from "./landingpage/programma.module.css"
+import stylesLocationcost from "./landingpage/locationcost.module.css"
+import stylesFooter from "./landingpage/footer.module.css"
 const styles = {
-  ...stylesNormal,
-  ...stylesResponsive
+  ...stylesGrid,
+  ...stylesHeader,
+  ...stylesLanding,
+  ...stylesProgramma,
+  ...stylesLocationcost,
+  ...stylesFooter
 }
 
 // Images
-import logo from "./logo.svg"
-import nose from "./nose.svg"
+import logo from "./landingpage/logo.svg"
+import nose from "./landingpage/nose.svg"
 
 const IndexPage = ({data}) => {
   const headerData = data.general.edges[0].node;

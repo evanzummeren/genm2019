@@ -1,0 +1,33 @@
+/* Header */
+
+.header {
+  padding: 2rem;
+}
+
+.logo {
+  grid-column: 1 / 24;
+  grid-row: 1;
+}
+
+.logoText {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  grid-column: span 24 / 25;
+  grid-row: 1;
+  justify-self: end;
+}
+
+@media screen and (min-width: 0em) and (max-width: 40em) {
+  .nav {
+    display: none;
+  }
+}
+
+.navItem {
+  color: rgb(102,102,102);
+  padding: 0 0 0 1rem;
+  letter-spacing: 1px;
+}
