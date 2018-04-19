@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import Img from "gatsby-image"
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll"
+import { Link } from "react-scroll"
 import { Timeline, Hashtag } from 'react-twitter-widgets'
 
 // Custom scripts
@@ -183,7 +183,7 @@ const IndexPage = ({data}) => {
       </div>
 
       <div className={classNames(styles.centerer)}>
-        <Dialog>{headerData.frontmatter.dialog}</Dialog>
+        <Dialog button="Bestellen" text={headerData.frontmatter.dialog} buttonLink="http://www.expertisecentrumjournalistiek.nl/agenda/19-juni-2018-de-grote-expertisedag-nieuwe-media/"/>
       </div>
 
     </div>);
