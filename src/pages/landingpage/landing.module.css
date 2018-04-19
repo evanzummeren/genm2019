@@ -71,9 +71,9 @@
   display: inline-block;
   vertical-align: top;
   text-align: left;
+  padding: 1rem 2rem;
 
   max-width: 60rem;
-  padding: 1rem 2rem;
 }
 
 @supports (display:grid) {
@@ -82,6 +82,7 @@
     vertical-align: unset;
     text-align: unset;
     max-width: unset;
+    padding: 1rem 0rem;
 
     grid-column: 4 / 20;
   }
