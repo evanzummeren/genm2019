@@ -1,0 +1,32 @@
+.header {
+  padding: 2rem;
+}
+
+.logo {
+  grid-column: 1 / 24;
+  grid-row: 1;
+  height: 10rem;
+}
+
+.logoText {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  grid-column: span 24 / 25;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.navItem {
+  color: rgb(102, 102, 102);
+  padding: 0 0 0 1rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1em) and (max-width: 40em) {
+  .nav {
+    display: none;
+  }
+}
