@@ -40,7 +40,7 @@
   text-align: left;
 }
 
-@supports (display:grid) {
+/* @supports (display:grid) {
   .page {
     text-align: unset;
   }
@@ -102,4 +102,4 @@
       grid-column: auto / span 12;
     }
   }
-}
+} */

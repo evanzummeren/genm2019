@@ -17,7 +17,7 @@
   align-items: flex-start;
 }
 
-@supports (display:grid) {
+/* @supports (display:grid) {
   .headerImg {
     display: block;
     max-width: 100%;
@@ -37,13 +37,14 @@
 
     grid-column: 12 / 25;
   }
-}
+} */
 
 /* Don't like this typographic disturbance. */
 .title {
   color: rgb(255, 255, 0);
   font-size: 2.369rem;
   line-height: 3.5rem;
+  max-width: 50rem;
 }
 
 .subtitle {
@@ -75,7 +76,7 @@
   padding: 1rem 2rem;
 }
 
-@supports (display:grid) {
+/* @supports (display:grid) {
   .landingText {
     display: block;
     vertical-align: unset;
@@ -84,7 +85,7 @@
 
     grid-column: 4 / 20;
   }
-}
+} */
 
 .landingText p {
   font-size: 1.333rem;

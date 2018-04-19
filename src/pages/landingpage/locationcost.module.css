@@ -30,7 +30,7 @@
   color: rgb(118, 118, 118);
 }
 
-@supports (display:grid) {
+/* @supports (display:grid) {
   .location {
     padding: 0 2rem 0 2rem;
   }
@@ -42,7 +42,7 @@
   .costs {
     padding: 0;
   }
-}
+} */
 
 
 @media screen and (min-width: 1em) and (max-width: 64em) {
