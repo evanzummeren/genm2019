@@ -40,7 +40,7 @@ const IndexPage = ({data}) => {
   const headerData = data.general.edges[0].node;
   const footerData = data.general.edges[1].node;
   return (
-    <div className={styles.centerer}>
+    <div className={styles.screen}>
       <div className={styles.page}>
         {/* Page header  */}
         <header className={classNames(styles.grid, styles.header)}>

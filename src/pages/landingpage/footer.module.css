@@ -1,11 +1,11 @@
 .footer {
   height: 35rem;
-  background-color: rgb(244,244,244);
+  background-color: rgb(244, 244, 244);
 }
 
 .affiliates {
   align-content: start;
-  background-color: rgb(220,220,220);
+  background-color: rgb(220, 220, 220);
   display: grid;
   grid-column: 1 / span 12;
   grid-column-gap: 2rem;
@@ -15,7 +15,7 @@
 }
 
 .affiliates::before {
-  background-color: rgb(220,220,220);
+  background-color: rgb(220, 220, 220);
   content: "";
   display: block;
   height: 35rem;
@@ -25,7 +25,7 @@
 }
 
 .affiliatesHeader {
-  color: rgb(118,118,118);
+  color: rgb(118, 118, 118);
   grid-column: 1 / span 12;
   margin: 2.8rem 0 0;
 }
@@ -41,18 +41,18 @@
 }
 
 .footerInfo {
-  background-color: rgb(244,244,244);
+  background-color: rgb(244, 244, 244);
   grid-column: 13 / span 12;
   padding: 2.8rem 0 0 0;
   position: relative;
 }
 
 .footerInfo p {
-  color: rgb(118,118,118);;
+  color: rgb(118, 118, 118);
 }
 
 .footerInfo::after {
-  background-color: rgb(244,244,244);
+  background-color: rgb(244, 244, 244);
   content: "";
   display: block;
   height: 35rem;
@@ -62,8 +62,7 @@
   width: 100vw;
 }
 
-/* Medium screens */
-@media screen and (min-width: 0em) and (max-width: 64em) {
+@media screen and (min-width: 1em) and (max-width: 64em) {
   .affiliates {
     grid-column: 1 / span 25;
     padding: 0 2rem;
