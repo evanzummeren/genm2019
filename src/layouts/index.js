@@ -32,7 +32,7 @@ const TemplateWrapper = ({ children }) => {
     {/* {bowser.msie && <div className={styles.browserCatch}><h1>Deze website ondersteunt Internet Explorer niet. U wordt aangeraden uw browser te updaten. Of klik <a href="http://www.expertisecentrumjournalistiek.nl/grote-expertisedag-nieuwe-media-2018/">hier</a> om het programma op de website van het Expertisecentrum Journalistiek te bekijken.</h1></div> }
     {!bowser.msie && children()} */}
 
-    {!bowser.msie && <div className={styles.browserCatchSubtle}><h1>Deze website ondersteund IE11 niet optimaal. U wordt aangeraden uw browser te updaten. </h1></div> }
+    {bowser.msie && <Dialog text="Deze website ondersteunt Internet Explorer niet optimaal. U wordt aangeraden uw browser te updaten." position="top"/> }
 
     {children()}
   </main>
