@@ -17,6 +17,12 @@ const TemplateWrapper = ({ children }) => {
       meta={[
         { name: 'description', content: 'Met trots presenteert het Expertisecentrum Journalistiek op dinsdag 19 juni 2018 voor de achtste achtereenvolgende keer: De Grote Expertisedag Nieuwe Media #8' },
         { name: 'keywords', content: 'sample, something' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:site', content: '' },
+        { name: 'twitter:creator', content: '' },
+        { name: 'twitter:title', content: '' },
+        { name: 'twitter:description', content: '' },
+        { name: 'twitter:image', content: 'imageobject' },
       ]}
     />
     {bowser.msie && <div className={styles.browserCatch}><h1>Deze website ondersteunt Internet Explorer niet. U wordt aangeraden uw browser te updaten. Of klik <a href="http://www.expertisecentrumjournalistiek.nl/grote-expertisedag-nieuwe-media-2018/">hier</a> om het programma op de website van het Expertisecentrum Journalistiek te bekijken.</h1></div> }
