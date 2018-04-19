@@ -1,6 +1,6 @@
 ---
 name: Bas Mesters
-quote: 
+quote: S
 leader: true
 order: 1
 ---
