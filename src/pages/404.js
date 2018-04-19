@@ -31,11 +31,13 @@ const NotFoundPage = () => {
           style={{
             flexGrow: 1,
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
             paddingBottom: '10rem'
           }}
         >
+          <h1>404 - NOT FOUND</h1>
           <h1>Deze pagina bestaat helaas niet, klik <Link to="">hier</Link></h1>
         </div>
       </div>
