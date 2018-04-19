@@ -5,6 +5,7 @@
 .logo {
   grid-column: 1 / 24;
   grid-row: 1;
+  height: 10rem;
 }
 
 .logoText {

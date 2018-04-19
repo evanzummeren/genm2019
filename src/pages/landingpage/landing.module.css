@@ -13,23 +13,23 @@
 /* Don't like this typographic disturbance. */
 .title {
   color: rgb(255, 255, 0);
-  font-size: 3.157rem;
-  line-height: 4.2rem;
+  font-size: 2.369rem;
+  line-height: 3.5rem;
 }
 
 .subtitle {
   color: rgb(102, 102, 102);
 }
 
-.detailBlock {
+.crumb {
   display: inline-block;
   background: white;
   transform: rotate(-1deg);
-  margin: 0.6rem 0 0 0.5rem;
-  padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+  margin: 0.7rem 0 0 0.7rem;
+  padding: 0.3rem 0.7rem 0.3rem 0.7rem;
 }
 
-.detailText {
+.crumbText {
   transform: rotate(1deg);
   color: black;
   margin: 0;
