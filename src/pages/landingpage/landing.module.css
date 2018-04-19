@@ -1,13 +1,41 @@
 .headerImg {
-  grid-column: 2 / 11;
+  padding: 0 0 0 5rem;
+
+  max-width: 30rem;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1rem 2rem;
+  text-align: left;
 }
 
 .headerRight {
-  grid-column: 11 / 25;
-  padding: 2.4rem 0 4.8rem 0;
-  display: flex;
+  max-width: 40rem;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+
+  padding: 2.4rem 2rem 4.8rem 2rem;
+  display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+
+@supports (display:grid) {
+  .headerImg {
+    display: block;
+    padding: 0;
+    max-width: 100%;
+    grid-column: 2 / 11;
+  }
+
+  .headerRight {
+    max-width: unset;
+    grid-column: 12 / 25;
+    padding: 2.4rem 0 4.8rem 0;
+    display: flex;
+    text-align: unset;
+  }
 }
 
 /* Don't like this typographic disturbance. */
@@ -38,7 +66,19 @@
 }
 
 .landingText {
-  grid-column: 4 / 20;
+  max-width: 60rem;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+@supports (display:grid) {
+  .landingText {
+    display: block;
+    grid-column: 4 / 20;
+    text-align: unset;
+  }
 }
 
 .landingText p {

@@ -145,7 +145,7 @@ const IndexPage = ({data}) => {
 
         {/* Location and costs */}
         <section className={classNames(styles.grid, styles.location)} name={headerData.frontmatter.navigation[3]}>
-          <div className={styles.map}>
+          <div className={classNames(styles.grid12, styles.map)}>
             <Map
               isMarkerShown
               apiKey={locCostData.frontmatter.locationApiKey}
@@ -155,7 +155,7 @@ const IndexPage = ({data}) => {
                 lng: Number(locCostData.frontmatter.location[1])}}
             />
           </div>
-          <div className={styles.costs}>
+          <div className={classNames(styles.grid12, styles.costs)}>
             <Marquee title="Locatie & Kosten &" secundary={true} />
             <div dangerouslySetInnerHTML={{ __html: locCostData.html }}></div>
           </div>
