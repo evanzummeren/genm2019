@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import Img from "gatsby-image"
 import { Link } from "react-scroll"
 import { Timeline, Hashtag } from 'react-twitter-widgets'
+import bowser from 'bowser';
 
 // Custom scripts
 import generateCalendar from "../components/ical.js"
@@ -33,7 +34,8 @@ const styles = {
 }
 
 // Images
-import logo from "./landingpage/logo.svg"
+import logoSVG from "./landingpage/logo.svg"
+import logoPNG from "./landingpage/logo.png"
 import nose from "./landingpage/nose.svg"
 
 const IndexPage = ({data}) => {
@@ -45,7 +47,10 @@ const IndexPage = ({data}) => {
       <div className={styles.page}>
         {/* Page header  */}
         <header className={classNames(styles.grid, styles.header)}>
-          <img className={styles.logo} src={logo}/>
+          {bowser.msie ?
+            <img className={styles.logo} src={logoPNG}/> :
+            <img className={styles.logo} src={logoSVG}/>
+          }
           <div className={styles.nav}>
             { headerData.frontmatter.navigation.map((navItem, key) => (
               <Link
