@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Img from "gatsby-image"
 import { Link } from "react-scroll"
-import { Timeline, Hashtag } from 'react-twitter-widgets'
+// import { Timeline, Hashtag } from 'react-twitter-widgets'
 import bowser from 'bowser';
 
 // Custom scripts
