@@ -5,6 +5,7 @@ import { Link } from "react-scroll"
 const ScrollLink = Link;
 import GatsbyLink from "gatsby-link"
 import bowser from 'bowser';
+// import { Timeline } from 'react-twitter-widgets'
 
 // Custom scripts
 import generateCalendar from "../components/ical.js"
