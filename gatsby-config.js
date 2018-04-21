@@ -5,10 +5,22 @@ module.exports = {
   plugins: ['gatsby-plugin-react-helmet',
             {
               resolve: `gatsby-source-filesystem`,
-                options: {
-                  name: `src`,
-                  path: `${__dirname}/src/content`,
-                },
+              options: {
+                name: `src`,
+                path: `${__dirname}/src/content`,
+              }
+            },
+            {
+              resolve: `gatsby-plugin-manifest`,
+              options: {
+                name: "Expertisedag Nieuw Media 2018",
+                short_name: "GENM18",
+                start_url: "/",
+                background_color: "#d7bda5",
+                theme_color: "#5e358c",
+                display: "minimal-ui",
+                icon: "src/images/favicon.png", // This path is relative to the root of the site.
+              }
             },
             'gatsby-transformer-remark',
             `gatsby-transformer-sharp`,
