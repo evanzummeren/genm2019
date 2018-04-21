@@ -105,7 +105,7 @@ const IndexPage = ({data}) => {
         </section>
 
         {/* Viewpoints */}
-        <section className={styles.grid} name={headerData.frontmatter.navigation[2]}>
+        <section className={classNames(styles.grid, styles.gridPaddingLarge)} name={headerData.frontmatter.navigation[2]}>
           <div className={styles.grid24}>
             <Marquee title="Debat"/>
           </div>
