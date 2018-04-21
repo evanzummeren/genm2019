@@ -67,3 +67,29 @@ q {
 	font-weight: 100;
 	color: white;
 }
+
+@media screen and (min-width: 0em) and (max-width: 40em) {
+	html {
+		font-size: 13px;
+	}
+
+	h1, q {
+		font-size: 1.44rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	h3 {
+		font-size: 1rem;
+	}
+
+	p, li {
+		font-size: 1rem;
+	}
+
+	q {
+		font-size: 1.44rem;
+	}
+}
