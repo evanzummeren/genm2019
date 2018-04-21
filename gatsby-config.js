@@ -49,7 +49,20 @@ module.exports = {
                 respectDNT: true
               },
             },
-            'gatsby-transformer-remark',
+            {
+              resolve: `gatsby-transformer-remark`,
+              options: {
+                plugins: [
+                {
+                  resolve: "gatsby-remark-external-links",
+                  options: {
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                  }
+                }
+                ]
+              }
+            },
             `gatsby-transformer-sharp`,
             `gatsby-plugin-sharp`,
             `gatsby-plugin-netlify` // make sure to put last in the array
