@@ -59,16 +59,6 @@ export default function Template({data}) {
   )
 };
 
-
-// <header
-//   className={classNames(styles.grid, styles.header)}
-//   style={{
-//     flexGrow: 0
-//   }}>
-//   <img className={styles.logo} src={logo}/>
-// </header>
-
-
 export const pageQuery = graphql`
   query MyOwnBlogThingy($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
