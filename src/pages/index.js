@@ -188,7 +188,15 @@ const IndexPage = ({data}) => {
               </div>);
             })}
           </div>
-          <div className={classNames(styles.grid12, styles.footerInfo)} dangerouslySetInnerHTML={{__html: footerData.html}} />
+          <div className={classNames(styles.grid12, styles.footerInfo)}>
+            <div dangerouslySetInnerHTML={{__html: footerData.html}} />
+            <div>
+              <p>
+                <GatsbyLink to="/blog/privacy/">Privacy Statement</GatsbyLink> -
+                <a href="javascript:gaOptout();">Deactiveer Google Analytics</a>
+              </p>
+            </div>
+          </div>
         </section>
       </div>
 
