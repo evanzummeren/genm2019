@@ -1,8 +1,10 @@
 import React from 'react'
 import classNames from 'classnames'
 import Link from "gatsby-link"
+import bowser from "bowser"
 
-import logo from "./landingpage/logo.svg"
+import logoSVG from "../images/logo.svg"
+import logoPNG from "../images/logo.png"
 
 import stylesGrid from "./landingpage/grid.module.css"
 import stylesHeader from "./landingpage/header.module.css"
@@ -25,7 +27,10 @@ const NotFoundPage = () => {
           style={{
             flexGrow: 0
           }}>
-          <img className={styles.logo} src={logo}/>
+          {bowser.msie ?
+            <img className={styles.logo} src={logoPNG}/> :
+            <img className={styles.logo} src={logoSVG}/>
+          }
         </header>
         <div
           style={{

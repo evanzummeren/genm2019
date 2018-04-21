@@ -1,8 +1,10 @@
 import React from 'react'
 import classNames from 'classnames'
 import Link from "gatsby-link"
+import bowser from "bowser"
 
-// import logo from "./landingpage/logo.svg"
+import logoSVG from "../images/logo.svg"
+import logoPNG from "../images/logo.png"
 
 import stylesGrid from "../pages/landingpage/grid.module.css"
 import stylesHeader from "../pages/landingpage/header.module.css"
@@ -22,6 +24,16 @@ export default function Template({data}) {
           display: 'flex',
           flexDirection: 'column'
         }}>
+        <header
+          className={classNames(styles.grid, styles.header)}
+          style={{
+            flexGrow: 0
+          }}>
+          {bowser.msie ?
+            <img className={styles.logo} src={logoPNG}/> :
+            <img className={styles.logo} src={logoSVG}/>
+          }
+        </header>
         <div
           style={{
             flexGrow: 1,

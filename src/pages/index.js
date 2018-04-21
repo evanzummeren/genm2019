@@ -34,8 +34,8 @@ const styles = {
 }
 
 // Images
-import logoSVG from "./landingpage/logo.svg"
-import logoPNG from "./landingpage/logo.png"
+import logoSVG from "../images/logo.svg"
+import logoPNG from "../images/logo.png"
 import nose from "./landingpage/nose.svg"
 
 const IndexPage = ({data}) => {
@@ -49,7 +49,7 @@ const IndexPage = ({data}) => {
         <header className={classNames(styles.grid, styles.header)}>
           {bowser.msie ?
             <img className={styles.logo} src={logoPNG}/> :
-            <img className={styles.logo} src={logoPNG}/>
+            <img className={styles.logo} src={logoSVG}/>
           }
           <div className={styles.nav}>
             { headerData.frontmatter.navigation.map((navItem, key) => (
