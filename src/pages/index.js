@@ -59,8 +59,8 @@ const IndexPage = ({data}) => {
                 to={navItem}
                 smooth={true}>
                 {navItem}
-              </Link>)
-            )}
+              </Link>
+            ))}
           </div>
         </header>
 
