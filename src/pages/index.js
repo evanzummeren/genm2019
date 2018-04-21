@@ -2,7 +2,8 @@ import React from 'react'
 import classNames from 'classnames'
 import Img from "gatsby-image"
 import { Link } from "react-scroll"
-// import { Timeline, Hashtag } from 'react-twitter-widgets'
+const ScrollLink = Link;
+import GatsbyLink from "gatsby-link"
 import bowser from 'bowser';
 
 // Custom scripts
@@ -47,19 +48,23 @@ const IndexPage = ({data}) => {
       <div className={styles.page}>
         {/* Page header  */}
         <header className={classNames(styles.grid, styles.header)}>
-          {bowser.msie ?
-            <img className={styles.logo} src={logoPNG}/> :
-            <img className={styles.logo} src={logoSVG}/>
-          }
+          <GatsbyLink
+            to="/"
+            >
+            {bowser.msie ?
+              <img className={styles.logo} src={logoPNG}/> :
+              <img className={styles.logo} src={logoSVG}/>}
+          </GatsbyLink>
           <div className={styles.nav}>
             { headerData.frontmatter.navigation.map((navItem, key) => (
-              <Link
+              <ScrollLink
                 className={styles.navItem}
                 key={key}
                 to={navItem}
-                smooth={true}>
+                smooth={true}
+              >
                 {navItem}
-              </Link>
+              </ScrollLink>
             ))}
           </div>
         </header>

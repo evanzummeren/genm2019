@@ -27,10 +27,13 @@ const NotFoundPage = () => {
           style={{
             flexGrow: 0
           }}>
-          {bowser.msie ?
-            <img className={styles.logo} src={logoPNG}/> :
-            <img className={styles.logo} src={logoSVG}/>
-          }
+          <Link
+            to="/"
+            >
+            {bowser.msie ?
+              <img className={styles.logo} src={logoPNG}/> :
+              <img className={styles.logo} src={logoSVG}/>}
+          </Link>
         </header>
         <div
           style={{
