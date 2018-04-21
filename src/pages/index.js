@@ -49,7 +49,7 @@ const IndexPage = ({data}) => {
         <header className={classNames(styles.grid, styles.header)}>
           {bowser.msie ?
             <img className={styles.logo} src={logoPNG}/> :
-            <img className={styles.logo} src={logoSVG}/>
+            <img className={styles.logo} src={logoPNG}/>
           }
           <div className={styles.nav}>
             { headerData.frontmatter.navigation.map((navItem, key) => (
