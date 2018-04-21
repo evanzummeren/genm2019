@@ -1,5 +1,5 @@
 backend:
-  name: git
+  name: github
   repo: cultuur-gif/expertisedag-gatsby
   branch: content
 
