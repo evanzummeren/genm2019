@@ -11,6 +11,24 @@ module.exports = {
               }
             },
             {
+              resolve: `gatsby-plugin-favicon`,
+              options: {
+                logo: "./src/favicon.png",
+                injectHTML: true,
+                icons: {
+                  android: true,
+                  appleIcon: true,
+                  appleStartup: true,
+                  coast: false,
+                  favicons: true,
+                  firefox: true,
+                  twitter: false,
+                  yandex: true,
+                  windows: true
+                }
+              }
+            },
+            {
               resolve: `gatsby-plugin-manifest`,
               options: {
                 name: "Expertisedag Nieuw Media 2018",
@@ -22,6 +40,7 @@ module.exports = {
                 icon: "src/images/favicon.png", // This path is relative to the root of the site.
               }
             },
+
             'gatsby-transformer-remark',
             `gatsby-transformer-sharp`,
             `gatsby-plugin-sharp`,
