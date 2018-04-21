@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
+  name: git
   repo: cultuur-gif/expertisedag-gatsby
-  branch: master
+  branch: content
 
 media_folder: static/assets
 
