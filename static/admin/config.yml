@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: cultuur-gif/expertisedag-gatsby
+
+media_folder: static/assets
+
+collections:
+  - name: blog
+    label: Blog
+    folder: src/content/blogposts
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: authors, label: Authors, widget: list }

@@ -63,6 +63,7 @@ module.exports = {
                 ]
               }
             },
+            `gatsby-plugin-netlify-cms`,
             `gatsby-transformer-sharp`,
             `gatsby-plugin-sharp`,
             `gatsby-plugin-netlify` // make sure to put last in the array
