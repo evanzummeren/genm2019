@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Expertisedag Nieuw Media 2018',
+    title: 'Expertisedag Nieuwe Media 2018',
   },
   plugins: ['gatsby-plugin-react-helmet',
             {
@@ -31,7 +31,7 @@ module.exports = {
             {
               resolve: `gatsby-plugin-manifest`,
               options: {
-                name: "Expertisedag Nieuw Media 2018",
+                name: "Expertisedag Nieuwe Media 2018",
                 short_name: "GENM18",
                 start_url: "/",
                 background_color: "#d7bda5",

@@ -14,18 +14,6 @@ html {
   font-size: 14px;
 }
 
-@media screen and (min-width: 40em) and (max-width: 64em) {
-	html {
-		font-size: 13px;
-	}
-}
-
-@media screen and (min-width: 0em) and (max-width: 40em) {
-	html {
-		font-size: 12px;
-	}
-}
-
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	font-family: "Fedra Mono Medium", sans-serif;
