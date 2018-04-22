@@ -91,7 +91,7 @@ const IndexPage = ({data}) => {
           <div className={styles.grid24}>
             <Marquee title="Sprekers"/>
           </div>
-          { data.speakers.edges.map((speaker, key) => {
+          { data.persons.edges.map((speaker, key) => {
             return (<div className={styles.grid24} key={key}>
               <Sheet speaker={speaker}/>
             </div>);
@@ -248,8 +248,8 @@ export const query = graphql`
         }
       }
     }
-    speakers: allMarkdownRemark(
-      filter: {id: {regex: "//home/speakers//"}},
+    persons: allMarkdownRemark(
+      filter: {id: {regex: "//home/persons//"}},
       sort: { order: ASC, fields: [frontmatter___order]}
     ) {
       edges {

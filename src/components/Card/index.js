@@ -11,11 +11,11 @@ const Card = (props) => {
   const data = props.data.node;
   return (
   <div id={slugify(data.frontmatter.name)} className={classNames(styles.card, data.frontmatter.blur && styles.blur)}>
-    {!data.frontmatter.leader && (<div className={styles.titleWrapper}>
+    {!data.frontmatter.special && (<div className={styles.titleWrapper}>
       <h2 className={styles.title}>{data.frontmatter.name}</h2>
       <h3 className={styles.subtitle}>{data.frontmatter.function}</h3>
     </div>)}
-    {data.frontmatter.leader && (<div className={styles.titleWrapper}>
+    {data.frontmatter.special && (<div className={styles.titleWrapper}>
         <h3 className={styles.subtitle}>Stelling</h3>
         <h2 className={styles.title}>Gespreksleider:</h2>
         <h2 className={styles.title}>{data.frontmatter.name}</h2>

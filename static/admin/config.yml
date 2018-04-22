@@ -28,32 +28,15 @@ collections:
       - { name: order, label: Order, widget: number }
       - { name: url, label: Attachment or URL }
       - { name: body, label: Text, widget: markdown }
-  - name: speakers
-    label: Speakers
-    folder: src/content/home/speakers
+  - name: person
+    label: Viewpoints
+    folder: src/content/home/persons
     create: true
     fields:
       - { name: name, label: Name, default: John Doe }
       - { name: function, label: Function}
       - { name: featuredImage, label: Image, widget: image}
+      - { name: blur, label: Blur, widget: boolean}
+      - { name: special, label: Special Card, widget: boolean}
+      - { name: list, label: Type, widget: select, default: speaker, options: [speaker, casestudy, viewpoint] }
       - { name: body, label: Text, widget: markdown}
-  - name: casestudies
-    label: Case Studies
-    folder: src/content/home/casestudies
-    create: true
-    fields:
-      - { name: name, label: Name, default: John Doe }
-      - { name: function, label: Function}
-      - { name: featuredImage, widget: image}
-      - { name: blur, widget: boolean}
-      - { name: body, widget: markdown}
-  - name: viewpoints
-    label: Viewpoints
-    folder: src/content/home/viewpoints
-    create: true
-    fields:
-      - { name: name, label: Name, default: John Doe }
-      - { name: function, label: Function}
-      - { name: featuredImage, widget: image}
-      - { name: blur, widget: boolean}
-      - { name: body, widget: markdown}
