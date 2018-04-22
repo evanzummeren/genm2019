@@ -29,7 +29,7 @@ collections:
       - { name: url, label: Attachment or URL }
       - { name: body, label: Text, widget: markdown }
   - name: person
-    label: Viewpoints
+    label: Persons
     folder: src/content/home/persons
     create: true
     fields:
