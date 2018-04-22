@@ -23,15 +23,13 @@ Hieronder kan u lezen op welke wijze wij uw gegevens verwerken, waar wij deze (l
 
 #### Netlify
 
-Wij nemen webhosting af van Netlify. MijnDomein verwerkt persoonsgegevens namens ons en gebruikt uw gegevens niet voor eigen doeleinden. Wel kan deze partij metagegevens verzamelen over het gebruik van de diensten. Dit zijn geen persoonsgegevens. Netlify heeft passende technische en organisatorische maatregelen genomen om verlies en ongeoorloofd gebruik van uw persoonsgegevens te voorkomen. Netlify is op grond van de overeenkomst tot geheimhouding verplicht.
+Wij nemen webhosting af van Netlify. Netlify verwerkt persoonsgegevens namens ons en gebruikt uw gegevens niet voor eigen doeleinden. Wel kan deze partij metagegevens verzamelen over het gebruik van de diensten. Dit zijn geen persoonsgegevens. Netlify heeft passende technische en organisatorische maatregelen genomen om verlies en ongeoorloofd gebruik van uw persoonsgegevens te voorkomen. Netlify is op grond van de overeenkomst tot geheimhouding verplicht.
 
 ### Payment processors
 
 #### Mollie
 
-Voor het afhandelen van een (deel van) de betalingen in onze webwinkel maken wij gebruik van het platform van Mollie. Mollie verwerkt uw naam, adres en woonplaatsgegevens en uw betaalgegevens zoals uw bankrekening- of creditcardnummer. Mollie heeft passende technische en organisatorische maatregelen genomen om uw persoonsgegevens te beschermen. Mollie behoudt zich het recht voor uw gegevens te gebruiken om de dienstverlening verder te verbeteren en in het kader daarvan (geanonimiseerde) gegevens met derden te delen. Alle hierboven genoemde waarborgen met betrekking tot de bescherming van uw persoonsgegevens zijn eveneens
-van toepassing op de onderdelen van Mollie’s dienstverlening waarvoor zij derden inschakelen. Mollie bewaart uw
-gegevens niet langer dan op grond van de wettelijke termijnen is toegestaan.
+Voor het afhandelen van een (deel van) de betalingen in onze webwinkel maken wij gebruik van het platform van Mollie. Mollie verwerkt uw naam, adres en woonplaatsgegevens en uw betaalgegevens zoals uw bankrekening- of creditcardnummer. Mollie heeft passende technische en organisatorische maatregelen genomen om uw persoonsgegevens te beschermen. Mollie behoudt zich het recht voor uw gegevens te gebruiken om de dienstverlening verder te verbeteren en in het kader daarvan (geanonimiseerde) gegevens met derden te delen. Alle hierboven genoemde waarborgen met betrekking tot de bescherming van uw persoonsgegevens zijn eveneens van toepassing op de onderdelen van Mollie’s dienstverlening waarvoor zij derden inschakelen. Mollie bewaart uw gegevens niet langer dan op grond van de wettelijke termijnen is toegestaan.
 
 ### Doel van de gegevensverwerking
 
@@ -96,11 +94,6 @@ Wij behouden te allen tijde het recht ons privacybeleid te wijzigen. Op deze pag
 ### Contactgegevens
 
 Stichting Expertisecentrum voor Journalistiek 
-
-
 Turfdraagsterpad 9
-
-
 1012 XT Amsterdam
-
 [info@expertisecenturmjournalistiek.nl](mailto:info@expertisecentrumjournalistiek.nl)
