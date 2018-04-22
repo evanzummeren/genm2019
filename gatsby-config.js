@@ -63,7 +63,12 @@ module.exports = {
                 ]
               }
             },
-            `gatsby-plugin-netlify-cms`,
+            {
+              resolve: `gatsby-plugin-netlify-cms`,
+              options: {
+                modulePath: `${__dirname}/src/cms/cms.js`,
+              },
+            },
             `gatsby-transformer-sharp`,
             `gatsby-plugin-sharp`,
             `gatsby-plugin-netlify` // make sure to put last in the array
