@@ -7,7 +7,7 @@ media_folder: static/assets
 
 collections:
   - name: blog
-    label: Blog
+    label: Blogposts
     folder: src/content/blogposts
     create: true
     fields:
@@ -15,4 +15,45 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: authors, label: Authors, widget: list }
-      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: body, label: Text, widget: markdown }
+  - name: event
+    label: Events
+    folder: src/content/home/agenda
+    create: true
+    fields:
+      - { name: startTime, label: Starting Time, widget: datetime, required: true }
+      - { name: endTime, label: Ending Time, widget: datetime, required: true }
+      - { name: title, label: Title, required: true, default: Event }
+      - { name: room, label: Location }
+      - { name: order, label: Order, widget: number }
+      - { name: url, label: Attachment or URL }
+      - { name: body, label: Text, widget: markdown }
+  - name: speakers
+    label: Speakers
+    folder: src/content/home/speakers
+    create: true
+    fields:
+      - { name: name, label: Name, default: John Doe }
+      - { name: function, label: Function}
+      - { name: featuredImage, label: Image, widget: image}
+      - { name: body, label: Text, widget: markdown}
+  - name: casestudies
+    label: Case Studies
+    folder: src/content/home/casestudies
+    create: true
+    fields:
+      - { name: name, label: Name, default: John Doe }
+      - { name: function, label: Function}
+      - { name: featuredImage, widget: image}
+      - { name: blur, widget: boolean}
+      - { name: body, widget: markdown}
+  - name: viewpoints
+    label: Viewpoints
+    folder: src/content/home/viewpoints
+    create: true
+    fields:
+      - { name: name, label: Name, default: John Doe }
+      - { name: function, label: Function}
+      - { name: featuredImage, widget: image}
+      - { name: blur, widget: boolean}
+      - { name: body, widget: markdown}
