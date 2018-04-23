@@ -39,7 +39,7 @@ Wij gebruiken uw gegevens uitsluitend ten behoeve van onze dienstverlening. Dat 
 
 #### Automatisch verzamelde gegevens
 
-Gegevens die automatisch worden verzameld door onze website worden verwerkt met het doel onze dienstverlening verder te verbeteren. Deze gegevens (bijvoorbeeld uw IP-adres, webbrowser en besturingssysteem) zijn geen persoonsgegevens. Medewerking aan fiscaal en strafrechtelijk onderzoek In voorkomende gevallen kan Stichting Expertisecentrum voor journalistiek op grond van een wettelijke verplichting worden gehouden tot het delen van uw gegevens in verband met fiscaal of strafrechtelijk onderzoek van overheidswege. In een dergelijk geval zijn wij gedwongen uw gegevens te delen, maar wij zullen ons binnen de mogelijkheden die de wet ons biedt daartegen verzetten.
+Gegevens die automatisch worden verzameld door onze website worden verwerkt met het doel onze dienstverlening verder te verbeteren. Deze gegevens (bijvoorbeeld uw webbrowser en besturingssysteem) zijn geen persoonsgegevens. Medewerking aan fiscaal en strafrechtelijk onderzoek In voorkomende gevallen kan Stichting Expertisecentrum voor journalistiek op grond van een wettelijke verplichting worden gehouden tot het delen van uw gegevens in verband met fiscaal of strafrechtelijk onderzoek van overheidswege. In een dergelijk geval zijn wij gedwongen uw gegevens te delen, maar wij zullen ons binnen de mogelijkheden die de wet ons biedt daartegen verzetten.
 
 #### Bewaartermijnen
 
@@ -77,17 +77,17 @@ U heeft bovendien het recht om niet aan geautomatiseerde individuele besluitvorm
 
 ### Cookies
 
+#### Cookies van derde partijen
+
+In het geval dat software van derde partijen gebruik maken van cookies is dit vermeld in deze privacyverklaring.
+
 #### Google Analytics
 
-Via onze website worden cookies geplaatst van het Amerikaanse bedrijf Google, als deel van de “Analytics”-dienst. Wij gebruiken deze dienst om bij te houden en rapportages te krijgen over hoe bezoekers de website gebruiken. 
+Via onze website worden cookies geplaatst van het Amerikaanse bedrijf Google, als deel van de “Analytics”-dienst. Wij gebruiken deze dienst om bij te houden en rapportages te krijgen over hoe bezoekers de website gebruiken.
 
 Deze verwerker is mogelijk verplicht op grond van geldende wet- en regelgeving inzage te geven in deze gegevens. Wij hebben Google niet toegestaan de verkregen analytics-informatie te gebruiken voor andere Google diensten. Bovendien is Google Analytics geconfigureerd om uw IP adres te anonimiseren.
 
 Mocht u echter alsnog deze analytics functionaliteit uit willen zetten dan kun u [hier](javascript:gaOptout();) klikken. Deze link zal een cookie plaatsen in uw browser waarbij Google Analytics voor deze site wordt uitgezet en zolang deze cookie bestaat zal Google Analytics niet actief worden.
-
-#### Cookies van derde partijen
-
-In het geval dat software van derde partijen gebruik maken van cookies is dit vermeld in deze privacyverklaring.
 
 ### Wijzigingen in het privacybeleid
 
@@ -95,7 +95,7 @@ Wij behouden te allen tijde het recht ons privacybeleid te wijzigen. Op deze pag
 
 ### Contactgegevens
 
-Stichting Expertisecentrum voor Journalistiek 
+Stichting Expertisecentrum voor Journalistiek
 Turfdraagsterpad 9
 1012 XT Amsterdam
 [info@expertisecenturmjournalistiek.nl](mailto:info@expertisecentrumjournalistiek.nl)
