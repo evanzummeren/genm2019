@@ -85,9 +85,13 @@ In het geval dat software van derde partijen gebruik maken van cookies is dit ve
 
 Via onze website worden cookies geplaatst van het Amerikaanse bedrijf Google, als deel van de “Analytics”-dienst. Wij gebruiken deze dienst om bij te houden en rapportages te krijgen over hoe bezoekers de website gebruiken.
 
-Deze verwerker is mogelijk verplicht op grond van geldende wet- en regelgeving inzage te geven in deze gegevens. Wij hebben Google niet toegestaan de verkregen analytics-informatie te gebruiken voor andere Google diensten. Bovendien is Google Analytics geconfigureerd om uw IP adres te anonimiseren.
+Wij hebben Google niet toegestaan de verkregen informatie te gebruiken voor andere Google diensten. Bovendien is Google Analytics geconfigureerd om uw IP adres te anonimiseren. Hierdoor slaat Google geen gegevens op waarmee bezoekers herleid kunnen worden. 
 
-Mocht u echter alsnog deze analytics functionaliteit uit willen zetten dan kun u [hier](javascript:gaOptout();) klikken. Deze link zal een cookie plaatsen in uw browser waarbij Google Analytics voor deze site wordt uitgezet en zolang deze cookie bestaat zal Google Analytics niet actief worden.
+Mocht u Google Analytics uit willen zetten dan kun u [hier](javascript:gaOptout();) klikken. Deze link zal een functionele cookie in uw browser plaatsen waarbij Google Analytics voor deze site wordt uitgezet, zolang de cookie bestaat. Wij houden hier echter geen logboeken van bij, dus zodra u uw cookies wist zal Google analytics weer in anonieme modus activeren. 
+
+#### Netlify Identity Cookies
+
+Deze cookies zijn bedoeld voor de authenticatie van administratoren van deze site. Deze functionele cookies zijn irrelevant voor normale gebruikers. 
 
 ### Wijzigingen in het privacybeleid
 
@@ -96,6 +100,12 @@ Wij behouden te allen tijde het recht ons privacybeleid te wijzigen. Op deze pag
 ### Contactgegevens
 
 Stichting Expertisecentrum voor Journalistiek
+
+
 Turfdraagsterpad 9
+
+
 1012 XT Amsterdam
+
+
 [info@expertisecenturmjournalistiek.nl](mailto:info@expertisecentrumjournalistiek.nl)
