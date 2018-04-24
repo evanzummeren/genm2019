@@ -193,7 +193,7 @@ const IndexPage = ({data}) => {
             <div dangerouslySetInnerHTML={{__html: footerData.html}} />
             <div>
               <p>
-                {/* <GatsbyLink to="/blog/privacy/">Privacy Statement</GatsbyLink> - */}
+                <GatsbyLink to="/blog/privacy/">Privacy Statement</GatsbyLink> -
                 <a href="javascript:gaOptout();">Deactiveer Google Analytics</a>
               </p>
             </div>

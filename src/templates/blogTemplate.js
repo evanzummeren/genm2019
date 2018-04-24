@@ -46,13 +46,24 @@ export default function Template({data}) {
             alignItems: 'center',
             padding: '2.4rem 2.4rem 9.6rem'
           }}
-        >
-          <h1 style={{margin: 0}}>{frontmatter.title}</h1>
-          <h3>{frontmatter.date}</h3>
-          <div
-            style={{maxWidth: '50rem'}}
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+        > <div
+            style={{
+              margin: 0,
+              maxWidth: '50rem'
+            }}
+          >
+            <h1
+              >{frontmatter.title}</h1>
+            <h3
+              style={{
+                maxWidth: '50rem'
+              }}
+            >{frontmatter.date}</h3>
+            <div
+              style={{maxWidth: '50rem'}}
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </div>
         </div>
       </div>
     </div>
