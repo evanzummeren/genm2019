@@ -35,8 +35,8 @@ collections:
     fields:
       - { name: name, label: Name, default: John Doe }
       - { name: function, label: Function}
-      - { name: smallImage, label: Image, widget: custompathimage, customMediaPath: "../../../images/", rawMediaPath: "https://raw.githubusercontent.com/cultuur-gif/expertisedag-gatsby/content/src/images/"}
-      - { name: largeImage, label: Image, widget: custompathimage, customMediaPath: "../../../images/", rawMediaPath: "https://raw.githubusercontent.com/cultuur-gif/expertisedag-gatsby/content/src/images/"}
+      - { name: smallImage, label: Image, widget: custompathimage, customMediaPath: "../../../images/", rawMediaPath: "https://raw.githubusercontent.com/cultuur-gif/expertisedag-gatsby/content/src/images/persons/"}
+      - { name: largeImage, label: Image, widget: custompathimage, customMediaPath: "../../../images/", rawMediaPath: "https://raw.githubusercontent.com/cultuur-gif/expertisedag-gatsby/content/src/images/persons/"}
       - { name: blur, label: Blurred?, widget: boolean}
       - { name: personType, label: Person Type, widget: select, default: speaker, options: [speaker, casestudy, debate], required: true }
       - { name: body, label: Text, widget: markdown}
