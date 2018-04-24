@@ -5,5 +5,6 @@ import netlifyIdentity from 'netlify-identity-widget'
 import { CustomPathImageControl, CustomPathImagePreview } from "./customPathImage.js";
 
 netlifyIdentity.init();
+netlifyIdentity.on("login", user => window.location.reload(false));
 
 CMS.registerWidget("custompathimage", CustomPathImageControl, CustomPathImagePreview);

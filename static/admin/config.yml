@@ -9,13 +9,13 @@ publish_mode: editorial_workflow
 
 display_url: https://content.genm18.com
 
-editor:
-   preview: false
-
 collections:
   - name: blog
     label: Blogpost
     folder: src/content/blogposts
+    disable_preview: true
+    editor:
+      preview: false
     create: true
     fields:
       - { name: path, label: Path }
@@ -26,6 +26,8 @@ collections:
   - name: event
     label: Event
     folder: src/content/home/agenda
+    editor:
+      preview: false
     create: true
     fields:
       - { name: startTime, label: Starting Time, widget: datetime, required: true }
@@ -38,6 +40,8 @@ collections:
   - name: person
     label: Person
     folder: src/content/home/persons
+    editor:
+      preview: false
     create: true
     fields:
       - { name: name, label: Name, default: John Doe }
