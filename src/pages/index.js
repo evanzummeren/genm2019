@@ -41,7 +41,6 @@ import logoPNG from "../images/logo.png"
 import nose from "./landingpage/nose.svg"
 
 const IndexPage = ({data}) => {
-  console.log(data)
   const headerData = data.general.edges[0].node;
   const locCostData = data.general.edges[1].node;
   const footerData = data.general.edges[2].node;

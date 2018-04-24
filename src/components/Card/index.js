@@ -8,7 +8,6 @@ import styles from "./index.module.css";
 const Card = (props) => {
   const frontmatter = props.data.node.frontmatter;
   const html = props.data.node.html;
-  console.log(frontmatter)
   return (
   <div id={slugify(frontmatter.name)} className={classNames(styles.card, frontmatter.blur && styles.blur)}>
     {!frontmatter.special && (<div className={styles.titleWrapper}>
