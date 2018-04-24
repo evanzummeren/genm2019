@@ -3,7 +3,14 @@ backend:
   repo: cultuur-gif/expertisedag-gatsby
   branch: content
 
-media_folder: static/assets
+media_folder: src/images
+
+publish_mode: editorial_workflow
+
+display_url: https://content.genm18.com
+
+editor:
+   preview: false
 
 collections:
   - name: blog
