@@ -1,7 +1,7 @@
 ---
 name: "Uit LA: Maria Bustillos"
 function: Oprichter Popula
-largeImage: ../../../images/persons/bustillos.jpeg
+largeImage: ../../../images/bustillos.jpeg
 order: 2
 personType: speaker
 ---

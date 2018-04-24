@@ -1,7 +1,7 @@
 ---
 name: "Uit New York: Keith Hammonds"
 function: President Solutions Journalism Network (SJN)
-largeImage: ../../../images/persons/keith.jpg
+largeImage: ../../../images/keith.jpg
 order: 1
 personType: speaker
 ---

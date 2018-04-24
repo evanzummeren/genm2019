@@ -1,7 +1,7 @@
 ---
 name: Karel Smouter
 function: Docent Windesheim
-smallImage: ../../../images/persons/smouter.png
+smallImage: ../../../images/smouter.png
 blur: false
 order: 2
 personType: debate

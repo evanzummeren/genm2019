@@ -1,7 +1,7 @@
 ---
 name: Jerry Vermanen
 function: Datajournalist KRO-NCRV
-smallImage: ../../../images/persons/vermanen.png
+smallImage: ../../../images/vermanen.png
 blur: false
 order: 3
 personType: casestudy

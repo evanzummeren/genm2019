@@ -1,7 +1,7 @@
 ---
 name: Henk van der Aa
 function: Eindredacteur Brandpunt+
-smallImage: ../../../images/persons/vanderaa.png
+smallImage: ../../../images/vanderaa.png
 blur: false
 order: 3
 personType: debate

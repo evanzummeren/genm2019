@@ -1,7 +1,7 @@
 ---
 name: "Farida Vis"
 function: Directeur Visual Social Media Lab (VSML)
-largeImage: ../../../images/persons/vis.jpg
+largeImage: ../../../images/vis.jpg
 order: 4
 personType: speaker
 ---

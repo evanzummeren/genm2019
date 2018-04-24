@@ -1,7 +1,7 @@
 ---
 name: "Matthew Mulligan"
 function: Factchecker Storyful
-largeImage: ../../../images/persons/mulligan.jpeg
+largeImage: ../../../images/mulligan.jpeg
 order: 3
 personType: speaker
 ---

@@ -1,7 +1,7 @@
 ---
 name: Ludo Hekman
 function: Lighthouse Reports
-smallImage: ../../../images/persons/hekman.png
+smallImage: ../../../images/hekman.png
 blur: false
 order: 2
 personType: casestudy
