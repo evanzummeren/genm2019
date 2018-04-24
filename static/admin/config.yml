@@ -7,7 +7,7 @@ media_folder: static/assets
 
 collections:
   - name: blog
-    label: Blogposts
+    label: Blogpost
     folder: src/content/blogposts
     create: true
     fields:
@@ -17,7 +17,7 @@ collections:
       - { name: authors, label: Authors, widget: list }
       - { name: body, label: Text, widget: markdown }
   - name: event
-    label: Events
+    label: Event
     folder: src/content/home/agenda
     create: true
     fields:
@@ -29,7 +29,7 @@ collections:
       - { name: url, label: Attachment or URL }
       - { name: body, label: Text, widget: markdown }
   - name: person
-    label: Persons
+    label: Person
     folder: src/content/home/persons
     create: true
     fields:

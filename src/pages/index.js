@@ -92,9 +92,9 @@ const IndexPage = ({data}) => {
           <div className={styles.grid24}>
             <Marquee title="Sprekers"/>
           </div>
-          { data.persons.edges.map((speaker, key) => {
-            return (<div className={styles.grid24} key={key}>
-              <Sheet speaker={speaker}/>
+          { data.persons.edges.map((person, key) => {
+            return (person.node.frontmatter.personType == "speaker") && (<div className={styles.grid24} key={key}>
+              <Sheet data={person}/>
             </div>);
           })}
         </section>
@@ -104,9 +104,9 @@ const IndexPage = ({data}) => {
           <div className={styles.grid24}>
             <Marquee title="Case studies"/>
           </div>
-          { data.caseStudies.edges.map((caseStudy, key) => {
-            return (<div className={styles.grid6} key={key}>
-              <Card data={caseStudy} key={key}/>
+          { data.persons.edges.map((person, key) => {
+            return (person.node.frontmatter.personType == "casestudy") && (<div className={styles.grid6} key={key}>
+              <Card data={person} key={key}/>
             </div>);
           })}
         </section>
@@ -116,9 +116,9 @@ const IndexPage = ({data}) => {
           <div className={styles.grid24}>
             <Marquee title="Debat"/>
           </div>
-          { data.viewpoints.edges.map((viewpoint, key) => {
-            return (<div className={styles.grid6} key={key}>
-              <Card data={viewpoint} key={key}/>
+          { data.persons.edges.map((person, key) => {
+            return (person.node.frontmatter.personType == "debate") && (<div className={styles.grid6} key={key}>
+              <Card data={person} key={key}/>
             </div>);
           })}
         </section>
@@ -214,7 +214,7 @@ export default IndexPage
 export const query = graphql`
   query indexQuery {
     general: allMarkdownRemark(
-      filter: {id: {regex: "//home/general//"}},
+      filter: {id: {regex: "//content/home/general//"}},
       sort: { order: ASC, fields: [frontmatter___order]}
     ) {
       edges {
@@ -250,52 +250,7 @@ export const query = graphql`
       }
     }
     persons: allMarkdownRemark(
-      filter: {id: {regex: "//home/persons//"}},
-      sort: { order: ASC, fields: [frontmatter___order]}
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            name
-            function
-            featuredImage {
-              childImageSharp {
-                sizes(maxWidth: 800) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
-            }
-          }
-          html
-        }
-      }
-    }
-    caseStudies: allMarkdownRemark(
-      filter: {id: {regex: "//home/casestudies//"}},
-      sort: { order: ASC, fields: [frontmatter___order]}
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            name
-            function
-            blur
-            featuredImage {
-                childImageSharp {
-                  resolutions(width: 110) {
-                    ...GatsbyImageSharpResolutions
-                  }
-                }
-              }
-          }
-          html
-        }
-      }
-    }
-    viewpoints: allMarkdownRemark(
-      filter: {id: {regex: "//home/viewpoints//"}},
+      filter: {id: {regex: "//content/home/persons//"}},
       sort: { order: ASC, fields: [frontmatter___order]}
     ) {
       edges {
@@ -307,20 +262,28 @@ export const query = graphql`
             blur
             special
             quote
-            featuredImage {
-                childImageSharp {
-                  resolutions(width: 110) {
-                    ...GatsbyImageSharpResolutions
-                  }
+            personType
+            largeImage {
+              childImageSharp {
+                sizes(maxWidth: 800) {
+                  ...GatsbyImageSharpSizes
                 }
               }
+            }
+            smallImage {
+              childImageSharp {
+                resolutions(width: 110) {
+                  ...GatsbyImageSharpResolutions
+                }
+              }
+            }
           }
           html
         }
       }
     }
     agenda: allMarkdownRemark(
-      filter: {id: {regex: "//home/agenda//"}},
+      filter: {id: {regex: "//content/home/agenda//"}},
       sort: { order: ASC, fields: [frontmatter___order]}
     ) {
       edges {
