@@ -36,9 +36,9 @@ const styles = {
 }
 
 // Images
-import logoSVG from "../images/logo.svg"
-import logoPNG from "../images/logo.png"
-import nose from "./landingpage/nose.svg"
+import logoSVG from "../../images/logo.svg"
+import logoPNG from "../../images/logo.png"
+import nose from "../../images/nose.svg"
 
 const IndexPage = ({data}) => {
   const headerData = data.general.edges[0].node;

@@ -3,7 +3,7 @@ backend:
   repo: cultuur-gif/expertisedag-gatsby
   branch: content
 
-media_folder: src/images
+media_folder: images
 
 publish_mode: editorial_workflow
 
