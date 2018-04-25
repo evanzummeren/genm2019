@@ -51,3 +51,54 @@ collections:
       - { name: blur, label: Blurred?, widget: boolean}
       - { name: personType, label: Person Type, widget: select, default: speaker, options: [speaker, casestudy, debate], required: true }
       - { name: body, label: Text, widget: markdown}
+  - name: pages
+    label: Pages
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: landingHeader
+        label: Landing Page - Header
+        file: src/content/home/general/landing.md
+        fields:
+            - { name: dateLoc, label: Date and Location, widget: string}
+            - { name: title, label: Title, widget: string }
+            - { name: button, label: Button Text, widget: string }
+            - { name: details, label: Detail Crumbs, widget: list }
+            - { name: navigation, label: Landing Page Navigation, widget: list }
+            - { name: body, label: Emphasis Text, widget: markdown}
+      - name: landingBlock
+        label: Landing Page - Location and Cost
+        file: src/content/home/general/locationCost.md
+        fields:
+            - { name: marqueeTitle, label: Marquee Title, widget: string}
+            - { name: location, label: Location Coordinates, widget: list}
+            - name: locationZoom,
+              label: Location Zoomlevel
+              fields:
+                - { name: lat, label: Latitude, widget: number}
+                - { name: long, label: Longtitude, widget: number}
+            - { name: body, label: Cost Text, widget: markdown}
+  - name: global
+    label: Global
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: meta
+        label: Metadata
+        file: src/content/home/general/meta.md
+        fields:
+            - { name: title, label: Site Title, widget: string}
+            - { name: description, label: Site Description, widget: string }
+            - { name: author, label: Site Author, widget: string }
+            - { name: socialMediaImage, label: Social Media Image, widget: custompathimage, customMediaPath: "../../../images/", rawMediaPath: "https://raw.githubusercontent.com/cultuur-gif/expertisedag-gatsby/content/src/images/" }
+            - { name: metaTags, label: SEO tags, widget: list }
+            - { name: twitterHandle, label: Twitter Handle, widget: string }
+      - name: footer
+        label: Footer
+        file: src/content/home/general/footer.md
+        fields:
+            - { name: logosOrganisatie, label: Social Media Image, widget: custompathimage, customMediaPath: "../../../images/", rawMediaPath: "https://raw.githubusercontent.com/cultuur-gif/expertisedag-gatsby/content/src/images/" }
+            - { name: logosOndersteuning, label: Social Media Image, widget: custompathimage, customMediaPath: "../../../images/", rawMediaPath: "https://raw.githubusercontent.com/cultuur-gif/expertisedag-gatsby/content/src/images/" }
+            - { name: body, label: Text, widget: markdown}

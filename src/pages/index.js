@@ -162,8 +162,8 @@ const IndexPage = ({data}) => {
               apiKey={locCostData.frontmatter.locationApiKey}
               zoom={parseFloat(locCostData.frontmatter.locationZoom)}
               location={{
-                lat: parseFloat(locCostData.frontmatter.location[0]),
-                lng: Number(locCostData.frontmatter.location[1])}}
+                lat: parseFloat(locCostData.frontmatter.location.lat),
+                lng: Number(locCostData.frontmatter.location.lng)}}
             />
           </div>
           <div className={classNames(styles.grid12, styles.costs)}>
@@ -173,7 +173,7 @@ const IndexPage = ({data}) => {
         </section>
 
 
-      {/* Footer  */}
+        {/* Footer  */}
         <section className={classNames(styles.grid, styles.footer)}>
           <div className={classNames(styles.grid12, styles.affiliates)}>
             <h3 className={styles.affiliatesHeader}>Organisatie</h3>
@@ -241,7 +241,10 @@ export const query = graphql`
                 }
               }
             }
-            location
+            location {
+              lat
+              lng
+            }
             locationZoom
           }
           html
