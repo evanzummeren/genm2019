@@ -47,7 +47,7 @@ module.exports = {
                 icon: "images/favicon.png", // This path is relative to the root of the site.
               }
             },
-            `gatsby-plugin-offline`, // After manifest
+            // `gatsby-plugin-offline`, // After manifest
             {
               resolve: `gatsby-plugin-google-analytics`,
               options: {
