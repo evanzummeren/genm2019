@@ -51,8 +51,8 @@ collections:
       - { name: blur, label: Blurred?, widget: boolean}
       - { name: personType, label: Person Type, widget: select, default: speaker, options: [speaker, casestudy, debate], required: true }
       - { name: body, label: Text, widget: markdown}
-  - name: pages
-    label: Pages
+  - name: page
+    label: Page
     delete: false
     editor:
       preview: false
@@ -73,7 +73,7 @@ collections:
         fields:
             - { name: marqueeTitle, label: Marquee Title, widget: string}
             - { name: location, label: Location Coordinates, widget: list}
-            - name: locationZoom,
+            - name: locationZoom
               label: Location Zoomlevel
               fields:
                 - { name: lat, label: Latitude, widget: number}
