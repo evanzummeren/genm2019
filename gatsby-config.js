@@ -16,7 +16,7 @@ module.exports = {
                 logo: "./src/images/favicon.png",
                 injectHTML: true,
                 icons: {
-                  android: true,
+                  android: false,
                   appleIcon: true,
                   appleStartup: true,
                   coast: false,
@@ -40,6 +40,7 @@ module.exports = {
                 icon: "src/images/favicon.png", // This path is relative to the root of the site.
               }
             },
+            `gatsby-plugin-offline`, // After manifest
             {
               resolve: `gatsby-plugin-google-analytics`,
               options: {
