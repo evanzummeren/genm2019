@@ -1,7 +1,7 @@
 ---
 name: Keith Hammonds
 function: Launch your high-impact solutions reporting project
-order: 3
+order: 4
 personType: masterclass
 ---
 

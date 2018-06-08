@@ -153,6 +153,25 @@ const IndexPage = ({ data }) => {
           })}
         </section>
 
+        {/* Masterclasses */}
+        <section
+          className={classNames(styles.grid, styles.gridPaddingLarge)}
+          name={headerData.frontmatter.navigation[2]}
+        >
+          <div className={styles.grid24}>
+            <Marquee title="Masterclass" />
+          </div>
+          {data.persons.edges.map((person, key) => {
+            return (
+              person.node.frontmatter.personType == 'masterclass' && (
+                <div className={styles.grid6} key={key}>
+                  <Card data={person} key={key} />
+                </div>
+              )
+            )
+          })}
+        </section>
+
         {/* Agenda en Twitter */}
         <section
           className={styles.grid}
@@ -291,7 +310,8 @@ export const query = graphql`
           id
           frontmatter {
             name
-            function
+            title
+            subtitle
             blur
             special
             quote
