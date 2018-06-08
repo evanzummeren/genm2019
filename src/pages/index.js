@@ -312,6 +312,7 @@ export const query = graphql`
             title
             subtitle
             blur
+            function
             special
             quote
             personType
