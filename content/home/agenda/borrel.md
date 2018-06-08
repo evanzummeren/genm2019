@@ -1,0 +1,9 @@
+---
+startTime: "2018-06-19T15:45:00+02:00"
+endTime: "2018-06-19T16:45:00+02:00"
+order: 13
+title: Case study
+room: "OMHP D108"
+description: "Afsluitende borrel"
+url: "http://www.genm18.nl"
+---

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8b38c3d-a72e-4f74-a94e-d25f4d1f3e5b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/content/home/agenda/debat.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/home/agenda/debat.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/home/agenda/introductie.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/home/agenda/introductie.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/home/agenda/registratie.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/home/agenda/registratie.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/home/agenda/spreker1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/home/agenda/spreker1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/home/agenda/spreker2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/home/agenda/spreker2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/home/general/locationCost.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/home/general/locationCost.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,68 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="landing.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/home/general/landing.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="locationCost.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/home/general/locationCost.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Sheet/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="introductie.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/home/agenda/introductie.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="108">
+              <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registratie.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/home/agenda/registratie.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="debat.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/home/agenda/debat.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="cases.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/home/agenda/cases.md">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="spreker1.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker1.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="108">
+              <caret line="6" column="99" selection-start-line="6" selection-start-column="99" selection-end-line="6" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -89,16 +40,72 @@
       <file leaf-file-name="spreker2.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker2.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gatsby-config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <file leaf-file-name="lunch.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/home/agenda/lunch.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1210" />
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spreker3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker3.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pauze2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/home/agenda/pauze2.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pauze3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/home/agenda/pauze3.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spreker4.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker4.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spreker5.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker5.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="borrel.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/home/agenda/borrel.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -115,10 +122,19 @@
         <option value="$PROJECT_DIR$/content/home/masterclasses/hammonds.md" />
         <option value="$PROJECT_DIR$/content/home/masterclasses/vis.md" />
         <option value="$PROJECT_DIR$/content/home/agenda/registratie.md" />
+        <option value="$PROJECT_DIR$/content/home/general/locationCost.md" />
+        <option value="$PROJECT_DIR$/content/home/agenda/pauze.md" />
+        <option value="$PROJECT_DIR$/content/home/agenda/debat.md" />
         <option value="$PROJECT_DIR$/content/home/agenda/introductie.md" />
         <option value="$PROJECT_DIR$/content/home/agenda/spreker1.md" />
         <option value="$PROJECT_DIR$/content/home/agenda/spreker2.md" />
-        <option value="$PROJECT_DIR$/content/home/general/locationCost.md" />
+        <option value="$PROJECT_DIR$/content/home/agenda/lunch.md" />
+        <option value="$PROJECT_DIR$/content/home/agenda/spreker3.md" />
+        <option value="$PROJECT_DIR$/content/home/agenda/pauze2.md" />
+        <option value="$PROJECT_DIR$/content/home/agenda/pauze3.md" />
+        <option value="$PROJECT_DIR$/content/home/agenda/spreker4.md" />
+        <option value="$PROJECT_DIR$/content/home/agenda/spreker5.md" />
+        <option value="$PROJECT_DIR$/content/home/agenda/borrel.md" />
       </list>
     </option>
   </component>
@@ -159,7 +175,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -250,6 +268,9 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/home/agenda" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/home" />
     </key>
@@ -277,12 +298,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527852196985</updated>
       <workItem from="1527852201063" duration="752000" />
-      <workItem from="1528447022548" duration="2690000" />
+      <workItem from="1528447022548" duration="4523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3442000" />
+    <option name="totallyTimeSpent" value="5275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -403,42 +424,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/home/agenda/registratie.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/home/agenda/debat.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/home/agenda/cases.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker1.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/home/agenda/introductie.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gatsby-browser.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker2.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gatsby-node.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -473,6 +463,97 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/registratie.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/pauze.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/debat.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/introductie.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker1.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="99" selection-start-line="6" selection-start-column="99" selection-end-line="6" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker2.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/lunch.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker3.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/pauze2.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/pauze3.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker4.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/spreker5.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/home/agenda/borrel.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>
