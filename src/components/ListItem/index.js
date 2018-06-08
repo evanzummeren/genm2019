@@ -8,7 +8,6 @@ import Crumb from '../Crumb'
 
 const ListItem = props => {
   const data = props.data.node
-  console.log(data.frontmatter.showTime)
   return (
     <div
       className={classNames(styles.list, data.frontmatter.blur && styles.blur)}

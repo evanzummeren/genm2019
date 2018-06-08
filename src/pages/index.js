@@ -5,6 +5,7 @@ import { Link } from 'react-scroll'
 const ScrollLink = Link
 import GatsbyLink from 'gatsby-link'
 import bowser from 'bowser'
+import slugify from 'slugify'
 
 // Custom scripts
 import generateCalendar from '../components/ical.js'
@@ -61,8 +62,9 @@ const IndexPage = ({ data }) => {
               <ScrollLink
                 className={styles.navItem}
                 key={key}
-                to={navItem}
+                to={slugify(navItem)}
                 smooth={true}
+                hashSpy={true}
               >
                 {navItem}
               </ScrollLink>
@@ -84,7 +86,7 @@ const IndexPage = ({ data }) => {
               link="http://www.expertisecentrumjournalistiek.nl/agenda/19-juni-2018-de-grote-expertisedag-nieuwe-media/"
             />
             {headerData.frontmatter.details.map((detail, key) => {
-              return <Crumb key={key} text={detail} />
+              return <Crumb key={key} text={detail} blackText={true} />
             })}
           </div>
           <div
@@ -96,7 +98,8 @@ const IndexPage = ({ data }) => {
         {/* Speakers */}
         <section
           className={styles.grid}
-          name={headerData.frontmatter.navigation[0]}
+          id={slugify(headerData.frontmatter.navigation[0])}
+          name={slugify(headerData.frontmatter.navigation[0])}
         >
           <div className={styles.grid24}>
             <Marquee title="Sprekers" />
@@ -115,7 +118,8 @@ const IndexPage = ({ data }) => {
         {/* CaseStudies */}
         <section
           className={styles.grid}
-          name={headerData.frontmatter.navigation[1]}
+          id={slugify(headerData.frontmatter.navigation[1])}
+          name={slugify(headerData.frontmatter.navigation[1])}
         >
           <div className={styles.grid24}>
             <Marquee title="Case studies" />
@@ -134,7 +138,8 @@ const IndexPage = ({ data }) => {
         {/* Viewpoints */}
         <section
           className={classNames(styles.grid, styles.gridPaddingLarge)}
-          name={headerData.frontmatter.navigation[2]}
+          id={slugify(headerData.frontmatter.navigation[2])}
+          name={slugify(headerData.frontmatter.navigation[2])}
         >
           <div className={styles.grid24}>
             <Marquee title="Debat" />
@@ -153,7 +158,8 @@ const IndexPage = ({ data }) => {
         {/* Masterclasses */}
         <section
           className={classNames(styles.grid, styles.gridPaddingLarge)}
-          name={headerData.frontmatter.navigation[2]}
+          id={slugify(headerData.frontmatter.navigation[3])}
+          name={slugify(headerData.frontmatter.navigation[3])}
         >
           <div className={styles.grid24}>
             <Marquee title="Masterclass" />
@@ -172,7 +178,8 @@ const IndexPage = ({ data }) => {
         {/* Agenda en Twitter */}
         <section
           className={styles.grid}
-          name={headerData.frontmatter.navigation[2]}
+          id={slugify(headerData.frontmatter.navigation[4])}
+          name={slugify(headerData.frontmatter.navigation[4])}
         >
           <div className={styles.grid24}>
             <Marquee title="Agenda" />
@@ -187,7 +194,8 @@ const IndexPage = ({ data }) => {
         {/* Location and costs */}
         <section
           className={classNames(styles.grid, styles.location)}
-          name={headerData.frontmatter.navigation[3]}
+          id={slugify(headerData.frontmatter.navigation[5])}
+          name={slugify(headerData.frontmatter.navigation[5])}
         >
           <div className={classNames(styles.grid12, styles.map)}>
             <Map

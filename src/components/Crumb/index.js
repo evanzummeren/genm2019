@@ -8,7 +8,14 @@ import styles from './index.module.css'
 const Card = props => {
   return (
     <div className={styles.crumb}>
-      <p className={styles.crumbText}>{props.text}</p>
+      <p
+        className={classNames(
+          styles.crumbText,
+          props.blackText && styles.crumbTextBlack
+        )}
+      >
+        {props.text}
+      </p>
     </div>
   )
 }
