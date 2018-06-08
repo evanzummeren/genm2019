@@ -13,9 +13,9 @@ const ListItem = props => {
       className={classNames(styles.list, data.frontmatter.blur && styles.blur)}
     >
       <h3>
+        <Crumb text={data.frontmatter.title} /> &nbsp;
         {moment(data.frontmatter.startTime).format('H.mm')} -{' '}
         {moment(data.frontmatter.endTime).format('H.mm')} UUR
-        <Crumb text={data.frontmatter.title} />
       </h3>
       <div className={styles.text}>
         <p>{data.frontmatter.description}</p>

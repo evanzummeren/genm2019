@@ -3,5 +3,9 @@
 }
 
 .blur {
-	filter: blur(3px);
+  filter: blur(3px);
+}
+
+.text {
+  padding: 0 0 0 2rem;
 }
