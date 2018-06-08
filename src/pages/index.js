@@ -5,7 +5,6 @@ import { Link } from 'react-scroll'
 const ScrollLink = Link
 import GatsbyLink from 'gatsby-link'
 import bowser from 'bowser'
-import { Timeline } from 'react-twitter-widgets'
 
 // Custom scripts
 import generateCalendar from '../components/ical.js'
@@ -173,22 +172,6 @@ const IndexPage = ({ data }) => {
               download={'calendar-genm18.ics'}
             />
           </div>
-          {/* <div className={classNames(styles.grid12, styles.twitter)}>
-            <Timeline
-              dataSource={{
-                sourceType: 'widget',
-                widgetId: '986523764660883456',
-              }}
-              options={{
-                height: '600',
-                chrome: 'noheader nofooter noscrollbar transparent',
-                borderColor: '#d7bda5',
-                linkColor: '#5E358C',
-                dnt: 'true', // Don't collect or use any data from our site.
-                omitScript: 1, // Really, well, don't do anything. Disables updates.
-              }}
-            />
-          </div> */}
         </section>
 
         {/* Location and costs */}
