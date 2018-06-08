@@ -104,11 +104,19 @@
     .grid6 {
       grid-column: auto / span 24;
     }
+
+    .gridColumns {
+      column-count: 1;
+    }
   }
 
   @media screen and (min-width: 40em) and (max-width: 64em) {
     .grid6 {
       grid-column: auto / span 12;
+    }
+
+    .gridColumns {
+      column-count: 1;
     }
   }
 }
