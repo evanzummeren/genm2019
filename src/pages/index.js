@@ -177,16 +177,10 @@ const IndexPage = ({ data }) => {
           <div className={styles.grid24}>
             <Marquee title="Agenda" />
           </div>
-          <div className={styles.grid12}>
+          <div className={classNames(styles.grid24, styles.gridColumns)}>
             {data.agenda.edges.map((event, key) => {
               return <ListItem data={event} key={key} />
             })}
-            <Button
-              text="Export als iCal"
-              alternative="true"
-              link={generateCalendar(data.agenda.edges)}
-              download={'calendar-genm18.ics'}
-            />
           </div>
         </section>
 
@@ -341,6 +335,7 @@ export const query = graphql`
           id
           frontmatter {
             startTime
+            showTime
             endTime
             title
             description

@@ -40,7 +40,12 @@
   text-align: left;
 }
 
-@supports (display:grid) {
+.gridColumns {
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+@supports (display: grid) {
   .page {
     text-align: unset;
   }

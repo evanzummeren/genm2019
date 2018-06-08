@@ -7,7 +7,7 @@
 }
 
 .crumbText {
-  transform: rotate(1deg);
+  /* transform: rotate(1deg); */
   color: hsl(30, 38%, 74%);
   margin: 0;
   font-family: 'Fedra Mono Medium', sans-serif;
