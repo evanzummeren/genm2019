@@ -12,6 +12,7 @@ import generateCalendar from '../components/ical.js'
 // Components
 import Dialog from '../components/Dialog'
 import Card from '../components/Card'
+import Crumb from '../components/Crumb'
 import Sheet from '../components/Sheet'
 import Map from '../components/Map'
 import Marquee from '../components/Marquee'
@@ -83,11 +84,7 @@ const IndexPage = ({ data }) => {
               link="http://www.expertisecentrumjournalistiek.nl/agenda/19-juni-2018-de-grote-expertisedag-nieuwe-media/"
             />
             {headerData.frontmatter.details.map((detail, key) => {
-              return (
-                <div className={styles.crumb} key={key}>
-                  <p className={styles.crumbText}>{detail}</p>
-                </div>
-              )
+              return <Crumb key={key} text={detail} />
             })}
           </div>
           <div
