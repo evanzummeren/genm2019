@@ -3,7 +3,7 @@ logosOrganisatie:
   - "../../../images/logo-expertisecentrum.png"
 logosOndersteuning:
   - "../../../images/logo-uva.png"
-  - "../../../images/logo-democratie.png"
+  - "../../../images/logo-svdj.png"
   - "../../../images/logo-nvjacademy.png"
 order: 3
 ---

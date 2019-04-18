@@ -1,8 +1,9 @@
 ---
-name: "Uit New York: Keith Hammonds"
-function: President Solutions Journalism Network (SJN)
+name: "Rawan Shaif"
+function: Jemen-onderzoeker Bellingcat
 largeImage: ../../../images/keith.jpg
-order: 1
+blur: true
+order: 2
 personType: speaker
 ---
 [Keith Hammonds](https://www.alumni.hbs.edu/campaign/making-a-difference/Pages/individual-spotlights.aspx?num=5963) is president van het [Solutions Journalism Network](https://www.solutionsjournalism.org/) (SJN). Het SJN ziet een grote noodzaak om de journalistiek te repareren. Onze huidige nieuwsvoorziening versterkt volgens Hammonds bij de lezers gevoelens van wrok, economisch fatalisme, cynisme en werkt vervreemdend.

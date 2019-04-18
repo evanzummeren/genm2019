@@ -1,6 +1,6 @@
 ---
-title: Grote Expertisedag Nieuwe Media 2018
-description: "Grote Expertisedag Nieuwe Media 2018: Waarheid en vertrouwen – Journalistiek die terugvecht"
+title: Grote Expertisedag Nieuwe Media 2019
+description: "Grote Expertisedag Nieuwe Media 2019"
 author: Expertisecentrum Journalistiek
 socialMediaImage: ../../../images/socialmedia.png
 metaTags:

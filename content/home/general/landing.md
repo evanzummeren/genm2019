@@ -1,11 +1,11 @@
 ---
-dateLoc: "19 juni 2018 - Oudemanhuispoort, Amsterdam"
-title: Waarheid en vertrouwen – Journalistiek die terugvecht
+dateLoc: "18 juni 2019 - Oudemanhuispoort, Amsterdam"
+title: Grote Expertisedag Nieuwe Media 
 button: "Bestel tickets - €165 (NVJ- of VVOJ-leden €135)"
 details:
   - "Eerste 15 freelancers - €75,00"
   - "Studenten - €25"
-dialog: "Regulier - €165,- NVJ-leden – €135,- VVOJ-leden – €135 Freelancers - €75,00 Studenten - €25,-"
+dialog: "Vroegboekkorting tot en met 1 mei - €135,- (daarna €165,-) NVJ-leden – €135,- VVOJ-leden – €135 Freelancers - €75,00 Studenten - €25,-"
 navigation:
   - Sprekers
   - "Case\u2009studies"

@@ -3,7 +3,7 @@ path: /blog/privacy
 date: '2018-04-21'
 title: >-
   Privacybeleid Stichting Expertisecentrum voor journalistiek – Grote
-  Expertisedag Nieuwe Media 2018
+  Expertisedag Nieuwe Media 2019
 authors:
   - Erik van Zummeren
 ---

@@ -1,7 +1,7 @@
 ---
-name: Karel Smouter
-function: Docent Windesheim
-smallImage: ../../../images/smouter.png
+name: Marie-Louise Timcke
+function: Datajournalist
+smallImage: ../../../images/marielouise.jpg
 blur: false
 order: 4
 personType: casestudy

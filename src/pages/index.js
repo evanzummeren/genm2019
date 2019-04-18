@@ -102,7 +102,7 @@ const IndexPage = ({ data }) => {
           name={slugify(headerData.frontmatter.navigation[0])}
         >
           <div className={styles.grid24}>
-            <Marquee title="Sprekers" />
+            <Marquee title="Keynotes" />
           </div>
           {data.persons.edges.map((person, key) => {
             return (
@@ -122,7 +122,7 @@ const IndexPage = ({ data }) => {
           name={slugify(headerData.frontmatter.navigation[1])}
         >
           <div className={styles.grid24}>
-            <Marquee title="Case studies" />
+            <Marquee title="Workshops" />
           </div>
           {data.persons.edges.map((person, key) => {
             return (
@@ -136,7 +136,7 @@ const IndexPage = ({ data }) => {
         </section>
 
         {/* Viewpoints */}
-        <section
+        {/* <section
           className={classNames(styles.grid, styles.gridPaddingLarge)}
           id={slugify(headerData.frontmatter.navigation[2])}
           name={slugify(headerData.frontmatter.navigation[2])}
@@ -153,10 +153,10 @@ const IndexPage = ({ data }) => {
               )
             )
           })}
-        </section>
+        </section> */}
 
         {/* Masterclasses */}
-        <section
+        {/* <section
           className={classNames(styles.grid, styles.gridPaddingLarge)}
           id={slugify(headerData.frontmatter.navigation[3])}
           name={slugify(headerData.frontmatter.navigation[3])}
@@ -173,7 +173,7 @@ const IndexPage = ({ data }) => {
               )
             )
           })}
-        </section>
+        </section> */}
 
         {/* Agenda en Twitter */}
         <section
