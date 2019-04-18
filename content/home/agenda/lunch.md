@@ -1,6 +1,6 @@
 ---
-startTime: "2018-06-19T12:15:00+02:00"
-endTime: "2018-06-19T13:15:00+02:00"
+startTime: "2018-06-19T12:00:00+02:00"
+endTime: "2018-06-19T13:00:00+02:00"
 order: 7
 showTime: false
 title: Lunch

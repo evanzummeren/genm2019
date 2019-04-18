@@ -20,7 +20,7 @@
 @supports (display: grid) {
   .headerImg {
     display: block;
-    max-width: 100%;
+    max-width: 74%;
     padding: 0;
     vertical-align: unset;
     text-align: unset;
@@ -41,7 +41,7 @@
 
 /* Don't like this typographic disturbance. */
 .title {
-  color: rgb(255, 255, 0);
+  color: #5e358c;
   font-size: 2.369rem;
   line-height: 3.5rem;
   max-width: 50rem;

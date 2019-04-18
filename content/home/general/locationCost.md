@@ -6,7 +6,7 @@ location:
 locationZoom: 14
 order: 2
 ---
-Universiteit van Amsterdam, Oudemanhuispoort, Amsterdam (zaal X). De locatie bevindt zich op 15 minuten loopafstand vanaf het Centraal Station. De Oudemanhuispoort is ook goed bereikbaar met de tram. Vanaf Centraal Station: tram 4, 9, 16 of 24 (halte Spui).
+Universiteit van Amsterdam, Oudemanhuispoort, Amsterdam (zaal wordt nog bekend gemaakt). De locatie bevindt zich op 15 minuten loopafstand vanaf het Centraal Station. De Oudemanhuispoort is ook goed bereikbaar met de tram. Vanaf Centraal Station: tram 4, 9, 16 of 24 (halte Spui).
 
 Kosten
 Ticket vroegboekkorting: 135 euro (incl. BTW en lunch).

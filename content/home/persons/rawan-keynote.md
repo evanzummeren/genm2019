@@ -1,13 +1,9 @@
 ---
 name: "Rawan Shaif"
 function: Jemen-onderzoeker Bellingcat
-largeImage: ../../../images/keith.jpg
+largeImage: ../../../images/rawan.jpg
 blur: true
 order: 2
 personType: speaker
 ---
-[Keith Hammonds](https://www.alumni.hbs.edu/campaign/making-a-difference/Pages/individual-spotlights.aspx?num=5963) is president van het [Solutions Journalism Network](https://www.solutionsjournalism.org/) (SJN). Het SJN ziet een grote noodzaak om de journalistiek te repareren. Onze huidige nieuwsvoorziening versterkt volgens Hammonds bij de lezers gevoelens van wrok, economisch fatalisme, cynisme en werkt vervreemdend.
-
-Journalistiek zou burgerschap juist moeten bevorderen. Dat doet Solutions Journalism Network door het publiek naast de dilemma’s oplossingsrichtingen te presenteren. In zijn keynote speech laat Keith zien hoe verschillende newsrooms deze aanpak hebben gebruikt om het vertrouwen terug te winnen en het publieke debat te verschuiven.
-
-Keith is vanaf de oprichting in 2013 betrokken bij het Solutions Journalism Network. Daarvoor werkte hij als eindredacteur bij Fast Company, was bureauchef en redacteur voor BusinessWeek en schreef voor de New York Times in Londen en Johannesburg.
+[Rawan Shaif](https://twitter.com/rawanssa18) is de Jemen-onderzoeker van Bellingcat. Ze is specialist in het met open source technology monitoren van gebieden die over land moeilijk toegankelijk zijn, vanwege gevaarlijke situaties. De afgelopen vier jaar werkte ze als multimedia journalist in Jemen voor onder andere Frontline PBS, Foreign Policy, Der Spiegel en de New York Times. Daar deed ze verslag van de rampzalige humanitaire situatie en de onrechtmatige bombardementen op civiele gebieden door het Saudische leger. Binnenkort wordt Rawan één van de OSINT-wizards die in het nieuw te openen kantoor van Bellingcat in Den Haag zal gaan werken.

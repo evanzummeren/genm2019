@@ -39,7 +39,7 @@ const styles = {
 // Images
 import logoSVG from '../../images/logo.svg'
 import logoPNG from '../../images/logo.png'
-import nose from '../../images/nose.svg'
+import nose from '../../images/svg/logo.svg'
 
 const IndexPage = ({ data }) => {
   const headerData = data.general.edges[0].node
@@ -57,7 +57,7 @@ const IndexPage = ({ data }) => {
               <img className={styles.logo} src={logoSVG} />
             )}
           </GatsbyLink>
-          <div className={styles.nav}>
+          {/* <div className={styles.nav}>
             {headerData.frontmatter.navigation.map((navItem, key) => (
               <ScrollLink
                 className={styles.navItem}
@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
                 {navItem}
               </ScrollLink>
             ))}
-          </div>
+          </div> */}
         </header>
 
         {/* Landing */}
@@ -83,7 +83,7 @@ const IndexPage = ({ data }) => {
             <Button
               text={headerData.frontmatter.button}
               color="purple"
-              link="http://www.expertisecentrumjournalistiek.nl/agenda/19-juni-2018-de-grote-expertisedag-nieuwe-media/"
+              link="http://www.expertisecentrumjournalistiek.nl/agenda/18-juni-grote-expertisedag-nieuwe-media-2019/"
             />
             {headerData.frontmatter.details.map((detail, key) => {
               return <Crumb key={key} text={detail} blackText={true} />

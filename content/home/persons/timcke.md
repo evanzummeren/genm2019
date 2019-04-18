@@ -1,9 +1,9 @@
 ---
 name: Marie-Louise Timcke
-function: Datajournalist
+function: Regionale Datajournalist
 smallImage: ../../../images/marielouise.jpg
 blur: false
 order: 4
 personType: casestudy
 ---
-[Karel Smouter](https://twitter.com/Kcsmouter) is voormalig adjunct-hoofdredacteur van de Correspondent en inmiddels als docent ‘constructieve journalistiek’ verbonden aan Hogeschool Windesheim. Voor de Correspondent gaat hij op zoek naar een manier waarop de dialoog op internet op een rijkere en meer respectvolle manier kan worden gevoerd. Hij komt vertellen over zijn eerste bevindingen en zal met Henk van der Aa in gesprek gaan over constructieve journalistiek.
+[Marie-Louise Timcke](https://twitter.com/datentaeterin) is een Duitse datajournalist en geeft momenteel leiding aan [Funke Interaktiv](https://interaktiv.waz.de/portfolio/), de data-afdeling van de regionale Funke Mediagroep. In die hoedanigheid publiceert ze onder andere applicaties, graphics, kaarten en interactieve verhalen voor de Berliner Morgenpost, het Hamburger Abendblatt en de Neue Ruhr Zeitung.

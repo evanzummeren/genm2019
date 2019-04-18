@@ -32,6 +32,13 @@
   padding: 0 0 0 1rem;
 }
 
+@media screen and (min-width: 60em) {
+  .logo {
+   display: none;
+  }
+}
+
+
 @media screen and (min-width: 1em) and (max-width: 40em) {
   .header {
     padding: 2rem 2rem 0rem 2rem;
