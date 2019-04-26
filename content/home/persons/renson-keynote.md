@@ -9,7 +9,7 @@ personType: speaker
 
 Ine verzorgt tijdens de expertisedag zowel een plenaire keynote over haar werk als een workshop die meer praktisch is.
 
-*Masterclass: Datavergaring met het publiek*
+*Masterclass van Ine Renson: Datavergaring met het publiek*
 
 In haar workshop gaat Ine dieper in op de mogelijkheden en valkuilen van grootschalige (digitale) samenwerking met het publiek, de wetenschap en de overheid. Wat kunnen Nederlandse journalisten met haar aanpak? Hoe behoud je je journalistieke vrijheid en onafhankelijkheid? Hoe zat de operatie logistiek in elkaar, hoe maakte ze tienduizenden burgers warm om mee te doen? Welke digitale tools gebruikte ze om mensen te betrekken bij het project? Hoe kwamen de (digitale) journalistieke producties en de resultaten tot stand?
 
