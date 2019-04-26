@@ -18,13 +18,19 @@ order: 1
 
 Met trots presenteert het Expertisecentrum Journalistiek 18 juni as. voor de negende keer de De negende Grote Expertisedag Nieuwe Media te Amsterdam. Nog innovatiever en veel interactiever dan de vorige editie.
 
-Hoe een land te volgen waar je aan de grond je leven riskeert?
-Hoe een milieuvervuiling vanuit de lucht in kaart te brengen?
-Hoe een fake news-netwerk op te rollen?
-Hoe ontwikkel je goede datajournalistiek in de regio?
+Hoe kan techniek de vertrouwensband tussen publiek en journalistiek versterken? 
 
-Kortom hoe kan techniek je helpen de vertrouwensband tussen publiek en journalistiek te versterken? Welke technologische oplossingen zijn er? En wat zal altijd mensenwerk blijven? We zoomen in op journalisten die terugvechten met publieksparticipatie in het onderzoeksproces, met open source-informatie, met immersive journalism en met de laatste ontwikkelingen op het gebied van fact-checking, en behandelen ook de digitale beveiliging van je operaties.
+Met (inter)nationale prijswinnende journalistieke pioniers van onder andere: Bellingcat, NowHeremedia, De Standaard, Funke Interaktiv, NOS en RTL Nieuws.
 
-De negende Expertisedag Nieuwe Media is meer hands-on dan ooit. In de ochtend plenaire sprekers van internationale pioniers, in de middag sessies met masterclasses en workshops van deze jonge innovatieve journalisten en andere spoorzoekers.
+Specialisten in:
+- Publieksparticipatie bij het onderzoeksproces
+- De inzet van Open Source Intelligence bij waarheidsvinding (Bellingcat-methode)
+- Immersive en 360-journalism om een verhaal anders te vertellen
+- De nieuwste factcheck-trends
+- Digitale beveiliging van je journalistieke operaties
+- Scrapen (het geautomatiseerd binnenhalen van informatie via websites)
+
+De negende Expertisedag Nieuwe Media is meer hands-on dan ooit. In de ochtend plenaire presentaties van (inter)nationale pioniers. In de middag masterclasses en workshops waar je zelf aan de slag gaat onder leiding van deze innovatieve journalisten.
 
 Zoals elk jaar brengen de sprekers veel concrete tips voor journalisten die zich snel willen laten bijpraten. Centrale vraag: hoe op digitale wijze nieuws beter te vinden, te checken en te verspreiden? Hoe de waarheidsvinding te verbeteren en het vertrouwen van het publiek te herstellen? 
+
