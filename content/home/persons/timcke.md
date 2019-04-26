@@ -10,4 +10,4 @@ personType: casestudy
 
 *Masterclass van Marie-Louise Timcke: Regional datajournalism*
 
-Datajournalistiek heeft veel potentieel voor de lokale journalistiek. Hoe luidruchtig is het in mijn buurt? In wat voor staat verkeren de lokale fietspaden? En in welke buurt kan ik met mijn salaris nog de huur betalen? De meest interessante datasets kom je vaak op lokaal niveau tegen. In deze workshop leren deelnemers waar ze lokale data kunnen vinden, hoe ze verhalen in nummers kunnen ontdekken en hoe je deze vervolgens op een interactieve manier vertelt.
+Datajournalistiek biedt lokale journalisten veel kansen. Hoe luidruchtig is het in mijn buurt? In wat voor staat verkeren de lokale fietspaden? En in welke buurt kan ik met mijn salaris nog de huur betalen? De meest interessante datasets kom je vaak op lokaal niveau tegen. In deze workshop leren deelnemers waar ze lokale data kunnen vinden, hoe ze er verhalen in kunnen ontdekken en hoe je deze vervolgens op een interactieve manier vertelt.
