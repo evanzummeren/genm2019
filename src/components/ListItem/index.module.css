@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.list:last-child {
+  opacity: 0;
+}
+
 .titleContainer {
   display: flex;
   justify-content: space-between;

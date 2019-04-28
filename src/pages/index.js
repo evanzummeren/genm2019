@@ -189,6 +189,13 @@ const IndexPage = ({ data }) => {
               return <ListItem data={event} key={key} />
             })}
           </div>
+          <div className="buttonContainer">
+          <Button
+              text={headerData.frontmatter.button}
+              color="purple"
+              link="http://www.expertisecentrumjournalistiek.nl/agenda/18-juni-grote-expertisedag-nieuwe-media-2019/"
+            />
+            </div>
         </section>
 
         {/* Location and costs */}
