@@ -18,7 +18,7 @@ order: 1
 
 Met trots presenteert het Expertisecentrum Journalistiek 18 juni as. voor de negende keer de Grote Expertisedag Nieuwe Media te Amsterdam. Hoe techniek de vertrouwensband tussen publiek en journalistiek versterken kan.
 
-Met (inter)nationale prijswinnende journalistieke pioniers van: Rawan Shaif en Wim Zwijnenburg (Bellingcat), Gayatri Parameswaran (NowHeremedia), Ine Renson (De Standaard), Marie-Louise Timcke (Funke Interaktiv), Winny de Jong (NOS) en Daniël Verlaan (RTL Nieuws) en Peter Burger (Universiteit Leiden).
+Met (inter)nationale, prijswinnende, journalistieke pioniers: Rawan Shaif en Wim Zwijnenburg (Bellingcat), Gayatri Parameswaran (NowHeremedia), Ine Renson (De Standaard), Marie-Louise Timcke (Funke Interaktiv), Winny de Jong (NOS) en Daniël Verlaan (RTL Nieuws) en Peter Burger (Universiteit Leiden).
 
 Specialisten in:
 - Publieksparticipatie bij het onderzoeksproces
