@@ -1,6 +1,6 @@
 ---
 dateLoc: "18 juni 2019 - Oudemanhuispoort, Amsterdam"
-title: Grote Expertisedag Nieuwe Media #9
+title: Hoe techniek de vertrouwensband tussen publiek en journalistiek versterken kan
 button: "Bestel tickets - €135 (t/m 15 mei, daarna €165,-)"
 details:
   - "Eerste 15 freelancers - €75,00"
@@ -16,11 +16,9 @@ navigation:
 order: 1
 ---
 
-Met trots presenteert het Expertisecentrum Journalistiek 18 juni as. voor de negende keer de De negende Grote Expertisedag Nieuwe Media te Amsterdam. Nog innovatiever en veel interactiever dan de vorige editie.
+Met trots presenteert het Expertisecentrum Journalistiek 18 juni as. voor de negende keer de Grote Expertisedag Nieuwe Media te Amsterdam. Hoe techniek de vertrouwensband tussen publiek en journalistiek versterken kan.
 
-Hoe kan techniek de vertrouwensband tussen publiek en journalistiek versterken? 
-
-Met (inter)nationale prijswinnende journalistieke pioniers van onder andere: Bellingcat, NowHeremedia, De Standaard, Funke Interaktiv, NOS en RTL Nieuws.
+Met (inter)nationale prijswinnende journalistieke pioniers van onder andere: Rawan Shaif en Wim Zwijnenburg (Bellingcat), Gayatri Parameswaran (NowHeremedia), Ine Renson (De Standaard), Marie-Louise Timcke (Funke Interaktiv), Winny de Jong (NOS) en Daniël Verlaan (RTL Nieuws) en Peter Verburg (Universiteit Leiden).
 
 Specialisten in:
 - Publieksparticipatie bij het onderzoeksproces
