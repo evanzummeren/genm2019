@@ -1,11 +1,11 @@
 ---
 dateLoc: "18 juni 2019 - Oudemanhuispoort, Amsterdam"
 title: "Grote Expertisedag Nieuwe Media #9"
-button: "Bestel tickets - €135 (t/m 15 mei, daarna €165,-)"
+button: "Bestel tickets - €165,-"
 details:
   - "Eerste 15 freelancers - €75,00"
   - "Studenten - €25"
-dialog: "Vroegboekkorting t/m 15 mei - €135,- (daarna €165,-) Freelancers - €75,00 Studenten - €25,-"
+dialog: "Tickets - €165,- NVJ-ledenkorting – €135,- Freelancers - €75,00 Studenten - €25,-"
 navigation:
   - Sprekers
   - "Case\u2009studies"
