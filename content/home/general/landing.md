@@ -32,3 +32,5 @@ De negende Expertisedag Nieuwe Media is meer hands-on dan ooit. In de ochtend pl
 
 Zoals elk jaar brengen de sprekers veel concrete tips voor journalisten die zich snel willen laten bijpraten. Centrale vraag: hoe op digitale wijze nieuws beter te vinden, te checken en te verspreiden? Hoe de waarheidsvinding te verbeteren en het vertrouwen van het publiek te herstellen? 
 
+[Klik hier voor het programmaboekje](http://www.expertisecentrumjournalistiek.nl/wp-content/uploads/2019/06/Programmaboekje-GENM-digital.pdf)
+
